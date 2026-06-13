@@ -1,0 +1,5 @@
+{
+  "pattern": "pipeline",
+  "agent_count": 1,
+  "rationale": "Simple dependent phases can run parent-only without extra agents."
+}

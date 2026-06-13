@@ -1,0 +1,5 @@
+{
+  "pattern": "fan-out-fan-in",
+  "agent_count": 4,
+  "rationale": "Independent read-heavy research can run in parallel and be merged by parent."
+}

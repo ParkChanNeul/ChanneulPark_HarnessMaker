@@ -1,0 +1,91 @@
+{
+  "skills/harness/SKILL.md": {
+    "target": ".agents/skills/harness/SKILL.md",
+    "required_headings": [
+      "Phase 0",
+      "Phase 1",
+      "Phase 2",
+      "Phase 3",
+      "Phase 4",
+      "Phase 5",
+      "Phase 6",
+      "Phase 7"
+    ],
+    "required_concepts": [
+      "도메인 분석",
+      "아키텍처",
+      "에이전트 정의",
+      "skill",
+      "오케스트레이션",
+      "검증",
+      "부분 재실행",
+      "에러 핸들링"
+    ]
+  },
+  "skills/harness/references/agent-design-patterns.md": {
+    "target": ".agents/skills/harness/references/agent-design-patterns.md",
+    "required_concepts": [
+      "pipeline",
+      "fan-out",
+      "expert pool",
+      "producer-reviewer",
+      "supervisor",
+      "hierarchical"
+    ]
+  },
+  "skills/harness/references/orchestrator-template.md": {
+    "target": ".agents/skills/harness/references/orchestrator-template.md",
+    "required_concepts": [
+      "초기 실행",
+      "follow-up",
+      "새 실행",
+      "정상 흐름",
+      "에러 흐름",
+      "재시도",
+      "타임아웃"
+    ]
+  },
+  "skills/harness/references/team-examples.md": {
+    "target": ".agents/skills/harness/references/team-examples.md",
+    "required_concepts": [
+      "research",
+      "SF 소설",
+      "webtoon",
+      "코드 리뷰",
+      "migration",
+      "데이터 흐름"
+    ]
+  },
+  "skills/harness/references/skill-writing-guide.md": {
+    "target": ".agents/skills/harness/references/skill-writing-guide.md",
+    "required_concepts": [
+      "description",
+      "트리거",
+      "좋은 예시",
+      "progressive disclosure",
+      "scripts",
+      "데이터 스키마"
+    ]
+  },
+  "skills/harness/references/skill-testing-guide.md": {
+    "target": ".agents/skills/harness/references/skill-testing-guide.md",
+    "required_concepts": [
+      "with-skill",
+      "baseline",
+      "assertion",
+      "트리거 검증",
+      "near-miss",
+      "iteration"
+    ]
+  },
+  "skills/harness/references/qa-agent-guide.md": {
+    "target": ".agents/skills/harness/references/qa-agent-guide.md",
+    "required_concepts": [
+      "boundary",
+      "교차 비교",
+      "integration",
+      "체크리스트",
+      "검증 우선순위"
+    ]
+  }
+}

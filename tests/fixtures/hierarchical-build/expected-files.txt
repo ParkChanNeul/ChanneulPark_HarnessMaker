@@ -1,0 +1,4 @@
+_workspace/discovery.md
+_workspace/architecture.md
+_workspace/skills.md
+_workspace/qa-report.md
