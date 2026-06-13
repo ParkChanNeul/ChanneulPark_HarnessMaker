@@ -1,5 +1,7 @@
 # 스킬 테스트 & 반복 개선 가이드
 
+> MODIFICATION NOTICE: ChanneulPark HarnessMaker Codex-native port of https://github.com/revfactory/harness at cceac68ea1d0ad198ef4b7b906cd238375836387. Runtime paths and coordination primitives were ported to Codex while preserving upstream workflow substance.
+
 하네스에서 생성한 스킬의 품질을 검증하고 반복적으로 개선하는 방법론. SKILL.md Phase 6의 보충 레퍼런스.
 
 ---
@@ -271,7 +273,7 @@ description 최적화가 필요한 경우:
 4. Test set 기준으로 best description 선택 (Train set 기준이 아님 — 과적합 방지)
 5. 최대 5회 반복
 
-> 이 과정은 `claude -p`를 사용하는 자동화 스크립트로 수행한다. 토큰 비용이 높으므로 스킬이 충분히 안정화된 후 최종 단계에서 실행한다.
+> 이 과정은 `Codex CLI evaluation`를 사용하는 자동화 스크립트로 수행한다. 토큰 비용이 높으므로 스킬이 충분히 안정화된 후 최종 단계에서 실행한다.
 
 ---
 

@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.2.0-brightgreen.svg" alt="Version">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"></a>
-  <img src="https://img.shields.io/badge/Claude_Code-Plugin-purple.svg" alt="Claude Code Plugin">
+  <img src="https://img.shields.io/badge/Codex-Skill_Package-purple.svg" alt="Codex Skill Package">
   <img src="https://img.shields.io/badge/Patterns-6_Architectures-orange.svg" alt="6 Architecture Patterns">
   <img src="https://img.shields.io/badge/Mode-Agent_Teams-green.svg" alt="Agent Teams">
   <a href="https://github.com/revfactory/harness/stargazers"><img src="https://img.shields.io/github/stars/revfactory/harness?style=social" alt="GitHub Stars"></a>
@@ -17,19 +17,19 @@
   <a href="#"><img src="https://img.shields.io/badge/README-EN%20%7C%20KO%20%7C%20JA-lightgrey" alt="i18n"></a>
 </p>
 
-# Harness — Claude Code のためのチームアーキテクチャファクトリー
+# Harness — Codex のためのチームアーキテクチャファクトリー
 
 [English](README.md) | [한국어](README_KO.md) | **日本語**
 
-> **Harness は Claude Code 向けのチームアーキテクチャファクトリーです。** **「ハーネスを構成して」** (日本語) ·  **"build a harness for this project"** (English) · **"하네스 구성해줘"** (한국어) と伝えるだけで、プラグインがドメイン記述をエージェントチームとそのチームが使うスキルへと変換します — あらかじめ定義された 6 種類のチームアーキテクチャパターンから 1 つを選んで。
+> **Harness は Codex 向けのチームアーキテクチャファクトリーです。** **「ハーネスを構成して」** (日本語) ·  **"build a harness for this project"** (English) · **"하네스 구성해줘"** (한국어) と伝えるだけで、プラグインがドメイン記述をエージェントチームとそのチームが使うスキルへと変換します — あらかじめ定義された 6 種類のチームアーキテクチャパターンから 1 つを選んで。
 
 ## 概要
 
-Harnessは、Claude Codeのエージェントチームシステムを活用し、複雑なタスクを専門エージェントチームに分解・統制するアーキテクチャツールです。「ハーネスを構成して」と伝えるだけで、ドメインに適したエージェント定義（`.claude/agents/`）とスキル（`.claude/skills/`）を自動生成します。
+Harnessは、Codexのエージェントチームシステムを活用し、複雑なタスクを専門エージェントチームに分解・統制するアーキテクチャツールです。「ハーネスを構成して」と伝えるだけで、ドメインに適したエージェント定義（`.codex/agents/`）とスキル（`.agents/skills/`）を自動生成します。
 
 ## カテゴリー — Harness はどこに位置するか
 
-Harness は Claude Code エコシステムの **L3 Meta-Factory** 層 — 他のハーネスそのものではなく「他のハーネスを生成する層」 — に位置します。その層の中で、**Team-Architecture Factory** というサブ層を選択します。
+Harness は Codex エコシステムの **L3 Meta-Factory** 層 — 他のハーネスそのものではなく「他のハーネスを生成する層」 — に位置します。その層の中で、**Team-Architecture Factory** というサブ層を選択します。
 
 | 層 | 担当領域 | 共存する隣人 |
 |----|----------|--------------|
@@ -69,9 +69,9 @@ Phase 1: ドメイン分析
     ↓
 Phase 2: チームアーキテクチャ設計（Agent Teams vs サブエージェント）
     ↓
-Phase 3: エージェント定義の生成（.claude/agents/）
+Phase 3: エージェント定義の生成（.codex/agents/）
     ↓
-Phase 4: スキル生成（.claude/skills/）
+Phase 4: スキル生成（.agents/skills/）
     ↓
 Phase 5: 統合とオーケストレーション
     ↓
@@ -80,47 +80,39 @@ Phase 6: 検証とテスト
 
 ## インストール
 
-### マーケットプレイス経由
-
-#### マーケットプレイスの追加
-```shell
-/plugin marketplace add revfactory/harness
-```
-
-#### プラグインのインストール
-```shell
-/plugin install harness-marketplace
-```
-
-### グローバルスキルとして直接インストール
+対象リポジトリへ直接インストールします:
 
 ```shell
-# skillsディレクトリを ~/.claude/skills/harness/ にコピー
-cp -r skills/harness ~/.claude/skills/harness
+python3 scripts/install_harness.py \
+  --scope project \
+  --target /path/to/target-repo \
+  --with-agent-templates
 ```
 
-## プラグイン構成
+このパッケージを検証します:
+
+```shell
+python3 scripts/validate_codex_port.py
+python3 -m unittest discover -v
+```
+
+## パッケージ構成
 
 ```
 harness/
-├── .claude-plugin/
-│   └── plugin.json                 # プラグインマニフェスト
-├── skills/
-│   └── harness/
-│       ├── SKILL.md                # メインスキル定義（6フェーズワークフロー）
-│       └── references/
-│           ├── agent-design-patterns.md   # 6種のアーキテクチャパターン
-│           ├── orchestrator-template.md   # チーム/サブエージェント オーケストレーターテンプレート
-│           ├── team-examples.md           # 実践チーム構成例 5種
-│           ├── skill-writing-guide.md     # スキル作成ガイド
-│           ├── skill-testing-guide.md     # テスト・評価方法論
-│           └── qa-agent-guide.md          # QAエージェント統合ガイド
-└── README.md
+├── .agents/skills/harness/
+│   ├── SKILL.md
+│   └── references/
+├── .codex/agents/*.toml
+├── scripts/
+│   ├── install_harness.py
+│   └── validate_codex_port.py
+└── AGENTS.md
 ```
 
 ## 使い方
 
-Claude Codeで以下のように呼び出します：
+Codexで以下のように呼び出します：
 
 ```
 Build a harness for this project
@@ -132,8 +124,8 @@ Set up a harness
 
 | モード | 説明 | 推奨ケース |
 |--------|------|------------|
-| **Agent Teams**（デフォルト） | TeamCreate + SendMessage + TaskCreate | エージェント2名以上、コラボレーションが必要な場合 |
-| **サブエージェント** | Agentツール直接呼び出し | 単発タスク、エージェント間通信不要の場合 |
+| **Agent Teams**（デフォルト） | parent dispatch + follow-up + task plan | エージェント2名以上、コラボレーションが必要な場合 |
+| **サブエージェント** | 単一custom agentまたはparent直接実行 | 単発タスク、エージェント間通信不要の場合 |
 
 <p align="center">
   <img src="harness_team.png" alt="Harness Agent Team" width="500">
@@ -156,22 +148,25 @@ Harnessが生成するファイル：
 
 ```
 your-project/
-├── .claude/
-│   ├── agents/          # エージェント定義ファイル
-│   │   ├── analyst.md
-│   │   ├── builder.md
-│   │   └── qa.md
+├── .codex/
+│   └── agents/          # エージェント定義ファイル
+│       ├── analyst.toml
+│       ├── builder.toml
+│       └── qa.toml
+├── .agents/
 │   └── skills/          # スキルファイル
 │       ├── analyze/
 │       │   └── SKILL.md
 │       └── build/
 │           ├── SKILL.md
 │           └── references/
+├── AGENTS.md
+└── _workspace/
 ```
 
 ## ユースケース — そのまま使えるプロンプト
 
-Harnessインストール後、以下のプロンプトをClaude Codeにコピーしてお使いください：
+Harnessインストール後、以下のプロンプトをCodexにコピーしてお使いください：
 
 **ディープリサーチ**
 ```
@@ -231,15 +226,15 @@ A/B test plans with iterative quality review.
 
 ## 共存 — Harness と隣人たち
 
-Harness は Claude Code / エージェントフレームワークのエコシステムで一人ではありません。以下のリポジトリは隣接する層に位置しており、いずれも「X は ···、Harness は ···」という並列構造で記述されているため、用途に応じて選んだり、複数を組み合わせて利用できます。
+Harness は Codex / エージェントフレームワークのエコシステムで一人ではありません。以下のリポジトリは隣接する層に位置しており、いずれも「X は ···、Harness は ···」という並列構造で記述されているため、用途に応じて選んだり、複数を組み合わせて利用できます。
 
 | リポジトリ | 相手のポジション | Harness との関係 |
 |------------|------------------|------------------|
 | [coleam00/Archon](https://github.com/coleam00/Archon) | "harness builder" — 決定的で再現可能なランタイム構成 | **同じ L3、隣のサブ層。** Archon は Runtime-Configuration Factory、Harness は Team-Architecture Factory。ランタイム決定性は Archon、チームアーキテクチャは Harness、または両者の組み合わせ。 |
-| [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) | 同一コンセプトの Codex 移植 | **同じ L3、異なるランタイム。** Claude Code では Harness、Codex では meta-harness。 |
+| [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) | 同一コンセプトの Codex 移植 | **同じ L3、異なるランタイム。** Codex では Harness、Codex では meta-harness。 |
 | [affaan-m/ECC](https://github.com/affaan-m/everything-claude-code) | "Agent harness performance & workflow layer" — 既存ハーネスの上に乗る標準化層 | **異なる層。** ECC は複数ハーネスの上の標準化層、Harness はハーネスを生成するファクトリー。直列的に組み合わせ可能。 |
 | [wshobson/agents](https://github.com/wshobson/agents) | サブエージェント / スキルカタログ (182 agents, 149 skills) | **ファクトリー ↔ 部品供給。** wshobson は「ショッピングするカタログ」、Harness は「チーム設計」。Harness が生成したチーム内に wshobson のエントリを部品として取り込み可能。 |
-| [LangGraph](https://langchain-ai.github.io/langgraph/) | ステートグラフ・オーケストレーション、LLM-agnostic | **異なるトラック。** 長時間実行・状態復元が要なら LangGraph、Claude Code ネイティブでの素早いチーム設計が要なら Harness。 |
+| [LangGraph](https://langchain-ai.github.io/langgraph/) | ステートグラフ・オーケストレーション、LLM-agnostic | **異なるトラック。** 長時間実行・状態復元が要なら LangGraph、Codex ネイティブでの素早いチーム設計が要なら Harness。 |
 
 ## Harnessで構築されたプロジェクト
 
@@ -265,7 +260,7 @@ Harness は Claude Code / エージェントフレームワークのエコシス
 
 ## 要件
 
-- [Agent Teams機能の有効化](https://code.claude.com/docs/en/agent-teams)：`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
+- [Agent Teams機能の有効化](https://code.claude.com/docs/en/agent-teams)：`no experimental team flag required`
 
 ## FAQ
 
@@ -291,9 +286,9 @@ Harness は Claude Code / エージェントフレームワークのエコシス
 </details>
 
 <details>
-<summary><b>Q3. 「Claude Code 専用」は狭すぎませんか？ Gemini・Codex は？</b></summary>
+<summary><b>Q3. 「Codex 専用」は狭すぎませんか？ Gemini・Codex は？</b></summary>
 
-**A.** 現時点で公式のランタイムは Claude Code のみです。同一コンセプトの Codex 移植 [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) がすでに公開されており、既存の Codex チームはそちらから開始できます。Harness は「Claude Code ネイティブ・深く」を選択しており、クロスランタイムの需要は共存リポジトリ（meta-harness、harness-init、OpenRig）との連携計画としてロードマップに反映される予定です。
+**A.** 現時点で公式のランタイムは Codex のみです。同一コンセプトの Codex 移植 [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) がすでに公開されており、既存の Codex チームはそちらから開始できます。Harness は「Codex ネイティブ・深く」を選択しており、クロスランタイムの需要は共存リポジトリ（meta-harness、harness-init、OpenRig）との連携計画としてロードマップに反映される予定です。
 
 **Evidence:**
 - Codex 移植: [github.com/SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness)

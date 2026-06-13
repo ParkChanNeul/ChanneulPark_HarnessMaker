@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harness — Agent Team & Skill Architect for Claude Code</title>
+<title>Harness — Agent Team & Skill Architect for Codex</title>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -192,7 +192,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 <!-- ── Hero ── -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="badge" data-i18n="hero.badge">Claude Code Plugin</div>
+    <div class="badge" data-i18n="hero.badge">Codex Skill Package</div>
     <h1 data-i18n="hero.title" data-i18n-html="true">Build <span>Agent Teams</span><br>That Actually Work</h1>
     <p data-i18n="hero.desc">Harness is a meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use &mdash; all from a single prompt.</p>
     <div class="hero-actions">
@@ -266,7 +266,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 <section id="usecases">
   <div class="container">
     <h2 class="reveal" data-i18n="usecases.title">Try These Prompts</h2>
-    <p class="reveal" data-i18n="usecases.desc">Copy any prompt into Claude Code after installing Harness. Click to expand.</p>
+    <p class="reveal" data-i18n="usecases.desc">Copy any prompt into Codex after installing Harness. Click to expand.</p>
     <div class="usecases-grid reveal">
       <div class="usecase-card" data-active="false">
         <div class="uc-icon">&#128270;</div>
@@ -368,7 +368,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <div class="phase-dot">03</div>
         <div class="phase-content">
           <h3 data-i18n="workflow.phase3.title">Agent Definition Generation</h3>
-          <p data-i18n="workflow.phase3.desc">Generate <code>.claude/agents/*.md</code> files with roles, principles, I/O protocols, and team communication contracts.</p>
+          <p data-i18n="workflow.phase3.desc">Generate <code>.codex/agents/*.toml</code> files with roles, principles, I/O protocols, and team communication contracts.</p>
         </div>
       </div>
       <div class="phase" data-phase="4">
@@ -554,9 +554,9 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 // ── i18n Translation System ──
 const i18n = {
   "hero.badge": {
-    "en": "Claude Code Plugin",
-    "ko": "Claude Code \ud50c\ub7ec\uadf8\uc778",
-    "ja": "Claude Code \u30d7\u30e9\u30b0\u30a4\u30f3"
+    "en": "Codex Skill Package",
+    "ko": "Codex \ud50c\ub7ec\uadf8\uc778",
+    "ja": "Codex \u30d7\u30e9\u30b0\u30a4\u30f3"
   },
   "hero.title": {
     "en": "Build <span>Agent Teams</span><br>That Actually Work",
@@ -654,9 +654,9 @@ const i18n = {
     "ja": "\u3053\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3092\u8a66\u3057\u3066\u307f\u3088\u3046"
   },
   "usecases.desc": {
-    "en": "Copy any prompt into Claude Code after installing Harness. Click to expand.",
-    "ko": "Harness \uc124\uce58 \ud6c4 \uc544\ubb34 \ud504\ub86c\ud504\ud2b8\ub098 Claude Code\uc5d0 \ubcf5\uc0ac\ud574\uc11c \uc0ac\uc6a9\ud558\uc138\uc694. \ud074\ub9ad\ud558\uc5ec \ud3bc\uce58\uae30.",
-    "ja": "Harness\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5f8c\u3001\u4efb\u610f\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3092Claude Code\u306b\u30b3\u30d4\u30fc\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u30af\u30ea\u30c3\u30af\u3067\u5c55\u958b\u3002"
+    "en": "Copy any prompt into Codex after installing Harness. Click to expand.",
+    "ko": "Harness \uc124\uce58 \ud6c4 \uc544\ubb34 \ud504\ub86c\ud504\ud2b8\ub098 Codex\uc5d0 \ubcf5\uc0ac\ud574\uc11c \uc0ac\uc6a9\ud558\uc138\uc694. \ud074\ub9ad\ud558\uc5ec \ud3bc\uce58\uae30.",
+    "ja": "Harness\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5f8c\u3001\u4efb\u610f\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3092Codex\u306b\u30b3\u30d4\u30fc\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u30af\u30ea\u30c3\u30af\u3067\u5c55\u958b\u3002"
   },
   "usecases.research.title": {
     "en": "Deep Research",
@@ -814,9 +814,9 @@ const i18n = {
     "ja": "\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u5b9a\u7fa9\u751f\u6210"
   },
   "workflow.phase3.desc": {
-    "en": "Generate <code>.claude/agents/*.md</code> files with roles, principles, I/O protocols, and team communication contracts.",
-    "ko": "<code>.claude/agents/*.md</code> \ud30c\uc77c\uc744 \uc0dd\uc131\ud558\uba70, \uc5ed\ud560, \uc6d0\uce59, \uc785\ucd9c\ub825 \ud504\ub85c\ud1a0\ucf5c, \ud300 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158 \uacc4\uc57d\uc744 \ud3ec\ud568\ud569\ub2c8\ub2e4.",
-    "ja": "<code>.claude/agents/*.md</code>\u30d5\u30a1\u30a4\u30eb\u3092\u751f\u6210\u3057\u3001\u5f79\u5272\u3001\u539f\u5247\u3001\u5165\u51fa\u529b\u30d7\u30ed\u30c8\u30b3\u30eb\u3001\u30c1\u30fc\u30e0\u30b3\u30df\u30e5\u30cb\u30b1\u30fc\u30b7\u30e7\u30f3\u898f\u7d04\u3092\u542b\u3081\u307e\u3059\u3002"
+    "en": "Generate <code>.codex/agents/*.toml</code> files with roles, principles, I/O protocols, and team communication contracts.",
+    "ko": "<code>.codex/agents/*.toml</code> \ud30c\uc77c\uc744 \uc0dd\uc131\ud558\uba70, \uc5ed\ud560, \uc6d0\uce59, \uc785\ucd9c\ub825 \ud504\ub85c\ud1a0\ucf5c, \ud300 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158 \uacc4\uc57d\uc744 \ud3ec\ud568\ud569\ub2c8\ub2e4.",
+    "ja": "<code>.codex/agents/*.toml</code>\u30d5\u30a1\u30a4\u30eb\u3092\u751f\u6210\u3057\u3001\u5f79\u5272\u3001\u539f\u5247\u3001\u5165\u51fa\u529b\u30d7\u30ed\u30c8\u30b3\u30eb\u3001\u30c1\u30fc\u30e0\u30b3\u30df\u30e5\u30cb\u30b1\u30fc\u30b7\u30e7\u30f3\u898f\u7d04\u3092\u542b\u3081\u307e\u3059\u3002"
   },
   "workflow.phase4.title": {
     "en": "Skill Generation",

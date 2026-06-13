@@ -1,5 +1,7 @@
 # 스킬 작성 가이드
 
+> MODIFICATION NOTICE: ChanneulPark HarnessMaker Codex-native port of https://github.com/revfactory/harness at cceac68ea1d0ad198ef4b7b906cd238375836387. Runtime paths and coordination primitives were ported to Codex while preserving upstream workflow substance.
+
 하네스에서 생성하는 스킬의 품질을 높이기 위한 상세 작성 가이드. SKILL.md Phase 4의 보충 레퍼런스.
 
 ---
@@ -19,17 +21,17 @@
 
 ## 1. Description 작성 패턴
 
-Description은 스킬의 유일한 트리거 메커니즘이다. Claude는 `available_skills` 목록에서 name + description만 보고 스킬 사용 여부를 결정한다.
+Description은 스킬의 유일한 트리거 메커니즘이다. Codex는 `available_skills` 목록에서 name + description만 보고 스킬 사용 여부를 결정한다.
 
 ### 트리거 메커니즘 이해
 
-Claude는 자신의 기본 도구로 쉽게 처리할 수 있는 단순 작업에는 스킬을 호출하지 않는 경향이 있다. "이 PDF 읽어줘" 같은 단순 요청은 description이 완벽해도 트리거되지 않을 수 있다. 복잡하고 다단계이며 전문적인 작업일수록 스킬 트리거 확률이 높다.
+Codex는 자신의 기본 도구로 쉽게 처리할 수 있는 단순 작업에는 스킬을 호출하지 않는 경향이 있다. "이 PDF 읽어줘" 같은 단순 요청은 description이 완벽해도 트리거되지 않을 수 있다. 복잡하고 다단계이며 전문적인 작업일수록 스킬 트리거 확률이 높다.
 
 ### 작성 원칙
 
 1. **스킬이 하는 일** + **구체적 트리거 상황**을 모두 기술
 2. 유사하지만 트리거하면 안 되는 경우를 구분하는 경계 조건 명시
-3. 약간 "pushy"하게 — Claude가 트리거를 보수적으로 판단하는 경향을 보상
+3. 약간 "pushy"하게 — Codex가 트리거를 보수적으로 판단하는 경향을 보상
 
 ### 좋은 예시
 
@@ -94,8 +96,8 @@ ALWAYS use pdfplumber for table extraction. NEVER use PyPDF2 for tables.
 ### 컨텍스트 절약
 
 컨텍스트 윈도우는 공공재다. 모든 문장이 토큰 비용을 정당화하는지 자문한다:
-- "Claude가 이미 알고 있는 내용인가?" → 삭제
-- "이 설명이 없으면 Claude가 실수하는가?" → 유지
+- "Codex가 이미 알고 있는 내용인가?" → 삭제
+- "이 설명이 없으면 Codex가 실수하는가?" → 유지
 - "구체적 예시 하나가 긴 설명보다 효과적인가?" → 예시로 대체
 
 ---
@@ -265,7 +267,7 @@ assertion 기반 채점 결과:
 - README.md, CHANGELOG.md, INSTALLATION_GUIDE.md 등 부가 문서
 - 스킬 생성 과정의 메타 정보 (테스트 결과, 반복 이력)
 - 사용자 대상 설명서 (스킬은 AI 에이전트를 위한 지시서)
-- 이미 Claude가 알고 있는 일반적 지식
+- 이미 Codex가 알고 있는 일반적 지식
 
 ---
 

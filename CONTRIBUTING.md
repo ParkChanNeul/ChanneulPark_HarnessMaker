@@ -1,6 +1,6 @@
 # Contributing to Harness
 
-Thanks for considering a contribution to **Harness** — a Claude Code meta-skill factory that designs agent teams and generates skills.
+Thanks for considering a contribution to **Harness** — a Codex meta-skill factory that designs agent teams and generates skills.
 
 This document covers: response SLAs, how to contribute, development setup, PR conventions, commit message rules, code of conduct, and maintainer list.
 
@@ -29,7 +29,7 @@ Different kinds of contributions go through different entry points. Pick the one
 ### Bug report
 
 - Open an issue using the **Bug report** form (`.github/ISSUE_TEMPLATE/bug_report.yml`).
-- Required: Claude Code version, `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS` flag state, reproduction steps, expected vs actual, OS.
+- Required: Codex version or app context, Python version for installer issues, reproduction steps, expected vs actual, OS.
 - Small reproductions (< 30 lines) are ideal. If your repro needs a full project, link a public fork.
 
 ### Feature request
@@ -62,47 +62,35 @@ Different kinds of contributions go through different entry points. Pick the one
 
 ### Prerequisites
 
-- Claude Code `v2.x` (Agent Teams API required)
-- Node.js `>= 18` (for local tooling used in CI)
+- Codex CLI or Codex app access for runtime checks
+- Python `>= 3.11` for installer and validation tooling
+- Node.js `>= 18` only if you run optional markdown/YAML lint tooling
 - Git
 
-### Environment flag
+### Local install test
 
-Harness currently requires Claude Code's experimental Agent Teams feature. Set the flag in your shell profile or per-session:
-
-```bash
-export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
-```
-
-We track this dependency in `docs/experimental-dependency.md` (if Anthropic promotes the flag to stable, we update the README within 72h per the SLA above).
-
-### Local plugin link
-
-To test your changes in a local Claude Code session without publishing to the marketplace:
+To test your changes in a temporary target repository:
 
 ```bash
-# From your checkout
-claude plugin link ./harness
-
-# Verify
-claude plugin list | grep harness
+python3 scripts/install_harness.py \
+  --scope project \
+  --target /path/to/target-repo \
+  --with-agent-templates
 ```
-
-Unlink with `claude plugin unlink harness` when you're done.
 
 ### Running the meta-skill
 
-```bash
-claude "build a harness for a fintech risk-assessment team"
-```
+Ask Codex from the target repo: `build a harness for a fintech risk-assessment team`.
 
-Scaffolded agents and skills land under `.claude/agents/` and `.claude/skills/` in the target project.
+Scaffolded agents and skills land under `.codex/agents/` and `.agents/skills/` in the target project.
 
 ### Tests & lints
 
 - Markdown lint: `npx markdownlint '**/*.md'`
 - YAML lint (issue templates & workflows): `npx yaml-lint .github/`
-- Skill metadata validation: `python scripts/validate_skills.py` (if present)
+- Codex port validation: `python3 scripts/validate_codex_port.py`
+- Unit tests: `python3 -m unittest discover -v`
+- Installer smoke test: `python3 scripts/test_install_harness.py`
 
 CI runs these on every PR. Local execution is encouraged but not required — we won't block on CI-caught issues that are trivial to fix on merge.
 
