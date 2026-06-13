@@ -1,0 +1,6 @@
+# Example only. Codex does not automatically read this file.
+# Merge needed settings manually into .codex/config.toml for a trusted project.
+
+[agents]
+max_threads = 4
+max_depth = 1

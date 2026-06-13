@@ -1,0 +1,23 @@
+[[agents]]
+name = "discovery_analyst"
+mode = "read-only"
+reads = []
+produces = ["discovery-result"]
+
+[[agents]]
+name = "architecture_designer"
+mode = "read-only"
+reads = ["discovery-result"]
+produces = ["architecture-result"]
+
+[[agents]]
+name = "skill_designer"
+mode = "read-only"
+reads = ["discovery-result", "architecture-result"]
+produces = ["skill-design-result"]
+
+[[agents]]
+name = "qa_reviewer"
+mode = "read-only"
+reads = ["discovery-result", "architecture-result", "skill-design-result"]
+produces = ["qa-result"]

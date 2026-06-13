@@ -1,0 +1,5 @@
+{
+  "pattern": "hierarchical-delegation",
+  "agent_count": 4,
+  "rationale": "Subprojects need bounded delegated workflows with parent integration."
+}

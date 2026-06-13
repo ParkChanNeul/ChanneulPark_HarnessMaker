@@ -1,0 +1,8 @@
+{
+  "expected_pass": true,
+  "checks": [
+    "pattern-valid",
+    "no-parallel-write-conflict",
+    "parent-owned-final-write"
+  ]
+}
