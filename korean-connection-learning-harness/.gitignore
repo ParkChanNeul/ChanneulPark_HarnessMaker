@@ -1,0 +1,8 @@
+_workspace/runs/
+private/
+*.local.*
+*.private.*
+__pycache__/
+*.py[cod]
+.playwright-cli/
+.vscode/
