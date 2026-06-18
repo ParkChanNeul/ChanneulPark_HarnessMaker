@@ -2,15 +2,29 @@
 
 ## Shared Runtime Rules
 
-- The parent agent reads `.agents/skills/korean-connection-orchestrator/SKILL.md` before running the harness.
-- The parent dispatches custom agents with explicit inputs, expected output contracts, evidence requirements, and completion criteria.
-- Subagents do not write final files. They return proposed content and path recommendations.
-- The parent writes `_workspace/` handoffs, compares conflicting evidence, requests follow-up when needed, and writes final artifacts.
+- The parent reads `.agents/skills/korean-connection-orchestrator/SKILL.md` before running the harness.
+- Front-stage conversational routing is separate from execution modes.
+- The parent dispatches approved custom agents with explicit inputs, expected contracts, evidence requirements, and completion criteria.
+- Subagents do not write final files. The parent writes handoffs, compares evidence, requests follow-up, and writes final artifacts.
+
+## Front-Stage Conversational Routing
+
+```text
+bare request -> lesson_intake
+rich input -> lesson_turn
+unknown choice -> lesson_unknown
+explicit run -> lesson_resume
+teacher approval -> lesson_scope_lock
+lesson result or notes -> post_lesson_reflection
+teacher next-direction approval -> next_lesson_decision
+```
+
+Front-stage runs no specialist by default. With an explicit learner-context or lesson-result path and a teacher request for evidence, learner-state and progression agents may return read-only advisory findings. Advice cannot approve scope or start a build.
 
 ## Mode: `build_lesson`
 
 ```text
-lesson_request
+locked lesson_scope_lock
 -> kc_learner_state_analyst
 -> kc_learning_progression_planner
 -> kc_lesson_architect
@@ -21,12 +35,12 @@ lesson_request
 -> parent writes approved artifacts
 ```
 
-Completion requires `learner_context_snapshot`, `progression_plan`, `lesson_blueprint`, `practice_plan`, `student_deck_spec`, and `assessment_report`.
+Without a valid lock, return `BLOCKED: approved lesson_scope_lock is required` and do not dispatch agents. Completion requires learner snapshot, progression plan, lesson blueprint, practice plan, student deck spec, and assessment report, all consistent with the lock.
 
 ## Mode: `render_materials`
 
 ```text
-lesson_blueprint + practice_plan + student_deck_spec
+approved lesson_blueprint + practice_plan + student_deck_spec
 -> kc_student_experience_designer
 -> parent renderer
 -> material_manifest
@@ -34,19 +48,21 @@ lesson_blueprint + practice_plan + student_deck_spec
 -> optional kc_privacy_auditor
 ```
 
-Completion requires a `material_manifest` and a review result.
+Rendering cannot change locked targets. Completion requires material manifest and review result.
 
 ## Mode: `post_lesson_followup`
 
-```text
-lesson_result
--> kc_learning_followup_teacher
--> kc_assessment_reviewer
--> optional kc_privacy_auditor
--> parent writes weekly learning pack and next lesson check
-```
+A lesson result or teacher note first produces a Post-Lesson Teacher Card.
 
-Completion requires `weekly_learning_pack`, `homework_plan`, `quizlet_plan`, `follow_up_message`, and `next_lesson_check`.
+### Scope: `homework_only`
+
+Requires an approved homework option in that card. Produces weekly pack without next-lesson fields, homework plan, Quizlet plan, and follow-up message.
+
+### Scope: `full_followup`
+
+Additionally requires a locked `next_lesson_decision_lock`. May produce next lesson check, evidence-supported state delta, and next-progression handoffs.
+
+Both scopes run `kc_learning_followup_teacher`, `kc_assessment_reviewer`, and conditional privacy audit.
 
 ## Mode: `review_outputs`
 
@@ -57,7 +73,7 @@ target artifacts
 -> parent records pass, fixes, or blockers
 ```
 
-Use this mode for quality checks without generating new lesson content.
+Review lock consistency when lesson or follow-up artifacts are present.
 
 ## Mode: `research_to_domain`
 
@@ -66,7 +82,7 @@ research note
 -> kc_research_synthesizer
 -> kc_domain_curator
 -> human approval gate
--> parent applies approved domain changes only if requested
+-> parent applies approved changes only when requested
 ```
 
 Research may propose. It does not silently rewrite approved domain knowledge.
@@ -80,7 +96,7 @@ domain + contracts + references + agents + skills
 -> optional kc_privacy_auditor
 ```
 
-Use this mode to detect drift, missing contract coverage, and stale responsibilities.
+Use this mode to detect drift, missing contract coverage, stale responsibilities, and registry mismatches.
 
 ## Mode: `partial_rerun`
 
@@ -92,11 +108,13 @@ changed input
 -> parent updates affected artifacts
 ```
 
-Do not rerun upstream agents unless the changed input invalidates their evidence.
+A lock change creates a revision or superseding lock. Do not silently mutate approval history.
 
 ## Failure Handling
 
-- Missing required input: stop and return a blocker with exact missing paths.
-- Contract mismatch: rerun the owning producer with the reviewer finding.
+- Missing input: stop with exact paths and required contract.
+- Missing lesson lock: return the exact build blocker and recommend the relevant front-stage skill.
+- Missing next lock: allow only explicitly requested `homework_only`; otherwise block.
+- Contract mismatch: rerun the owning producer with reviewer evidence.
 - Privacy issue: block tracked output until the parent removes or generalizes the detail.
-- Conflicting evidence: preserve both claims in `_workspace/` and follow source priority for the current run.
+- Conflicting evidence: preserve both claims and follow source priority.

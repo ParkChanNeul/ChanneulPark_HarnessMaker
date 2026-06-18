@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Prepares card content for spaced vocabulary and expression practice.
+Prepares approved spaced vocabulary and expression practice.
 
 ## Producer
 
@@ -10,23 +10,19 @@ Prepares card content for spaced vocabulary and expression practice.
 
 ## Consumers
 
-Parent agent, learner.
+Parent agent, learner, `kc_assessment_reviewer`.
 
 ## Required Fields
 
 ```yaml
 quizlet_plan_id: "unique id"
+followup_scope: "homework_only | full_followup"
+source_post_lesson_teacher_card: "path or id"
 source_targets: []
-sets:
-  - set_name: "learner-facing set name"
-    card_type: "reference | qna | mixed"
-    cards:
-      - front: "prompt"
-        back: "answer"
-        tags: []
+sets: []
 review_notes: []
 ```
 
 ## Validation
 
-Cards should support retrieval, not only recognition. Q&A cards should prompt production when possible.
+Cards must match the approved homework focus and support retrieval rather than recognition only.

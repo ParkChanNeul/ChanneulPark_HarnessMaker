@@ -1,11 +1,9 @@
 ---
 name: kc-learning-progression-planning
-description: "Plan Korean Connection learning progression. Use for choosing next lesson targets, grammar sequence, situation sequence, spiral review, retrieval, transfer, and long-term mastery planning."
+description: Use when Korean Connection needs evidence-based progression options before teacher approval or a progression plan after an approved lesson scope lock.
 ---
 
 # KC Learning Progression Planning
-
-Use this skill after learner state analysis and before lesson architecture.
 
 ## Read First
 
@@ -18,26 +16,29 @@ Use this skill after learner state analysis and before lesson architecture.
 7. `domain/03_curriculum/module_map.md`
 8. `domain/03_curriculum/sequence_rules.md`
 9. `domain/03_curriculum/spiral_review_rules.md`
-10. `contracts/progression_plan.md`
+10. `contracts/conversation/lesson_scope_lock.md`
+11. `contracts/progression_plan.md`
 
-## Workflow
+## Before Lock: Advisory Mode
 
-1. Start from the requested situation and learner goal.
-2. Read the learner snapshot for active grammar, conversation, and mission evidence.
-3. Choose at most one default new target for A1-B1 lessons unless there is an override reason.
-4. Choose review targets from recent weak or due items.
-5. Choose retrieval targets from older items that need delayed recall.
-6. Choose transfer targets that move prior language into a non-identical context.
-7. Explain why this lesson should happen now.
-8. Return a `progression_plan`.
+With explicit learner-context or lesson-result paths and a teacher request for reasoning, return bounded options with evidence, burden, risks, and limitations. Do not select the final direction, create a lock, write files, or start a build.
+
+## After Lock: Planning Workflow
+
+1. Require `lesson_scope_lock_ref`.
+2. Read learner evidence and the approved situation, mode, targets, vocabulary scope, and overrides.
+3. Structure approved new targets.
+4. Select review, retrieval, and transfer only within the lock's allowed treatment.
+5. Explain why the approved lesson should happen now.
+6. Return `progression_plan`.
 
 ## Decision Rules
 
-- Situation leads target selection; grammar is tracked and sequenced after the situation is chosen.
-- Culture can influence sequencing only when it changes language choice or social distance.
-- A lesson without retrieval or transfer needs a clear diagnostic or first-lesson reason.
-- If mastery evidence is missing, do not guess stability. Flag the missing evidence.
+- Do not change locked grammar, vocabulary count, or mode.
+- Do not reintroduce explicit review excluded by the teacher.
+- Prior targets may be retrieval, carrier, transfer, or defer.
+- Missing evidence becomes a blocker or limitation, not an automatic direction change.
 
 ## Output
 
-Return proposed progression plan content, target rationale, rejected targets, evidence paths, and blockers. Do not write final files.
+Return plan content, lock reference, target rationale, rejected alternatives, teacher overrides applied, evidence paths, and blockers. Do not write final files.

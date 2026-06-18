@@ -1,97 +1,135 @@
 ---
 name: korean-connection-orchestrator
-description: "Operate Korean Connection Learning Harness V2. Use for build_lesson, render_materials, post_lesson_followup, review_outputs, research_to_domain, audit_domain, and partial_rerun workflows."
+description: Use when operating Korean Connection lesson conversations, approved lesson builds, material rendering, post-lesson follow-up, output review, research curation, domain audit, or partial reruns.
 ---
 
 # Korean Connection Orchestrator
 
-This skill coordinates the Korean Connection Learning Harness V2. The top-level Codex agent is the parent orchestrator. There is no separate orchestrator agent TOML.
+The top-level Codex agent is the parent orchestrator. There is no separate orchestrator agent TOML.
 
 ## Read First
 
 1. `AGENTS.md`
 2. `README.md`
-3. `references/runtime_workflows.md`
-4. `references/agent_responsibility_matrix.md`
-5. `references/artifact_dependency_map.md`
-6. `references/human_approval_gates.md`
-7. `domain/07_governance/source_priority.md`
-8. `domain/07_governance/privacy.md`
+3. `references/conversational_teacher_loop.md`
+4. `references/conversation_state_machine.md`
+5. `references/runtime_workflows.md`
+6. `references/agent_registry.toml`
+7. `references/agent_responsibility_matrix.md`
+8. `references/artifact_dependency_map.md`
+9. `references/human_approval_gates.md`
+10. `domain/07_governance/source_priority.md`
+11. `domain/07_governance/privacy.md`
 
-## Core Principle
+## Core Principles
 
 ```text
-Situation-led / Culture-explained / Grammar-tracked / Practice-repeated / Mastery-verified
+Situation-led
+Culture-explained
+Grammar-and-vocabulary tracked
+Practice-repeated
+Mastery-verified
+Teacher-approved progression
 ```
+
+## Routing Model
+
+Front-stage conversational skill routing and back-stage execution modes are separate. A conversational route produces questions, options, or locks; it is not an execution mode and does not dispatch the production chain by default.
+
+## Front-Stage Conversational Routing
+
+- `lesson_intake` → `kc-lesson-intake`
+- `lesson_resume` → `kc-lesson-resume`
+- `lesson_turn` → `kc-lesson-turn`
+- `lesson_unknown` → `kc-lesson-unknown`
+- `lesson_scope_lock` → `kc-lesson-scope-lock`
+- `post_lesson_reflection` → `kc-post-lesson-reflection`
+- `next_lesson_decision` → `kc-next-lesson-decision`
+
+### Bare Invocation
+
+“다음 수업 만들어줘” or a partial situation request routes to `lesson_intake`. Do not call `build_lesson`.
+
+### Non-linear Entry
+
+Preserve supplied level, duration, situation, grammar, vocabulary count, and output preferences. Ask only for missing blockers. Rich input may route directly to `lesson_turn`, but it never bypasses teacher approval.
+
+### Resume Safety
+
+`lesson_resume` requires an exact `run_dir` or `run_id`. Never infer the most recent run, the only run, or a fixture.
+
+### Unknown and Continue Safety
+
+Unknown answers route to bounded choices and a recommendation. The phrase `continue does not approve` any missing lock field: “진행”, “계속”, “다음”, or “좋아” cannot bypass blockers.
+
+### Advisory Specialist Exception
+
+Front-stage uses no specialist agent by default. If an explicit learner-context or lesson-result path exists and the teacher asks for evidence-based reasoning, the parent may dispatch `kc_learner_state_analyst` and `kc_learning_progression_planner` in read-only advisory mode. Their findings remain proposals. They cannot write files, approve a lock, or trigger a build.
 
 ## Parent Responsibilities
 
-1. Select the mode.
-2. Identify required inputs and missing blockers.
-3. Dispatch custom agents with explicit input paths, output contracts, and completion criteria.
-4. Store intermediate handoffs under `_workspace/runs/` when useful.
-5. Compare conflicting evidence and follow source priority.
-6. Request follow-up from producer agents when reviewers find blockers.
-7. Run privacy audit when learner-identifying or archive-derived context appears.
-8. Write final artifacts only after required review.
+1. Select a conversational route or execution mode.
+2. Keep teacher facts, AI interpretation, recommendations, and approvals distinct.
+3. Dispatch only agents approved in `references/agent_registry.toml`.
+4. Provide explicit input paths, output contracts, and completion criteria.
+5. Write final artifacts and lock revisions; subagents return proposals only.
+6. Preserve teacher overrides through progression, architecture, follow-up, and assessment.
+7. Run privacy review when identifying context appears.
 
-## Modes
+## Execution Modes
 
 ### `build_lesson`
 
-Run:
+Require a `lesson_scope_lock` path with `lock_status: locked`, `approved_by_teacher: true`, non-empty `approval_evidence`, and `unresolved_blockers: []`.
 
-1. `kc_learner_state_analyst`
-2. `kc_learning_progression_planner`
-3. `kc_lesson_architect`
-4. `kc_practice_designer`
-5. `kc_student_experience_designer`
-6. `kc_assessment_reviewer`
-7. `kc_privacy_auditor` when triggered
+If the gate fails, return exactly:
 
-Required outputs: learner snapshot, progression plan, lesson blueprint, practice plan, student deck spec, assessment report.
+```text
+BLOCKED: approved lesson_scope_lock is required
+```
+
+Recommend `kc-lesson-intake`, `kc-lesson-turn`, or `kc-lesson-scope-lock`; do not dispatch the specialist chain.
+
+After the gate passes, run learner-state analysis, progression planning, lesson architecture, practice design, student experience design, assessment review, and conditional privacy audit. Every downstream artifact must reference the approved lock and preserve overrides.
 
 ### `render_materials`
 
-Run `kc_student_experience_designer`, parent rendering, `kc_assessment_reviewer`, and conditional privacy audit.
-
-Required outputs: design manifest, material manifest, assessment report.
+Render from an approved lesson blueprint, practice plan, and deck spec. Run student-experience design, parent rendering, assessment review, and conditional privacy audit. Rendering cannot change locked lesson targets.
 
 ### `post_lesson_followup`
 
-Run `kc_learning_followup_teacher`, `kc_assessment_reviewer`, and conditional privacy audit.
+Choose one scope; these are subscopes, not new execution modes.
 
-Required outputs: weekly learning pack, homework plan, Quizlet plan, follow-up message, next lesson check, proposed state delta.
+- `homework_only`: requires a Post-Lesson Teacher Card with an approved homework option and approval evidence. May create homework, Quizlet, follow-up message, and a weekly pack without next-lesson fields.
+- `full_followup`: requires the approved Post-Lesson Teacher Card plus a locked `next_lesson_decision_lock`. May additionally create `next_lesson_check`, learner-state scheduling, and next-progression-related artifacts.
+
+A lesson result or teacher note first routes through `post_lesson_reflection`. Do not auto-select homework or next direction.
 
 ### `review_outputs`
 
-Run `kc_assessment_reviewer` and conditional privacy audit against supplied artifacts.
-
-Required output: assessment report and, if triggered, privacy report.
+Run assessment review and conditional privacy audit against supplied artifacts. Review lock consistency when lesson or follow-up artifacts are present.
 
 ### `research_to_domain`
 
-Run `kc_research_synthesizer`, then `kc_domain_curator`, then stop at human approval unless the user explicitly asks to apply approved changes.
-
-Required outputs: research insight proposal and domain update proposal.
+Run research synthesis, domain curation, and the existing human approval gate. Research cannot silently rewrite approved domain knowledge.
 
 ### `audit_domain`
 
-Run `kc_domain_curator`, `kc_assessment_reviewer`, and conditional privacy audit.
-
-Required outputs: drift notes, assessment report, and proposed fixes.
+Run domain curation, assessment review, and conditional privacy audit to identify drift and proposed fixes.
 
 ### `partial_rerun`
 
-Identify the changed input, rerun the owning agent and downstream consumers only, then rerun the reviewer.
+Identify the changed input, rerun its owner and downstream consumers, then review. A lock change creates a revision or superseded lock; never silently mutate approval history.
 
 ## Failure Handling
 
-- Missing input: stop with exact missing path and required contract.
-- Contract failure: rerun the owning producer with the reviewer finding.
-- Privacy blocker: remove or generalize the detail, then rerun privacy audit.
-- Conflicting evidence: preserve both claims in `_workspace/` and follow source priority.
+- Missing input: stop with the exact missing path or contract.
+- Missing lesson lock: return the exact build blocker and front-stage handoff.
+- Missing next lock in full follow-up: downgrade only if the teacher explicitly requests `homework_only`; otherwise block.
+- Contract failure: rerun the owning producer with reviewer evidence.
+- Privacy blocker: generalize the detail and rerun privacy review.
+- Conflicting evidence: preserve both claims and follow source priority.
 
 ## Completion Criteria
 
-A run is complete only when required contracts exist in proposed or written form, reviewer blockers are resolved, privacy blockers are resolved, and the parent reports validation status.
+A conversation is complete when it reaches the requested teacher decision boundary. An execution run is complete only when its required approval contracts, generated artifacts, reviewer status, and privacy status are valid.

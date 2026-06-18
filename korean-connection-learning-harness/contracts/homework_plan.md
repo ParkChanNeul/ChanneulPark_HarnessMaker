@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Defines compact practice between lessons.
+Defines compact teacher-approved practice between lessons.
 
 ## Producer
 
@@ -16,13 +16,10 @@ Parent agent, learner, `kc_assessment_reviewer`.
 
 ```yaml
 homework_plan_id: "unique id"
+followup_scope: "homework_only | full_followup"
 source_lesson_result: "path or id"
-tasks:
-  - task_id: "id"
-    target: "grammar, expression, or skill id"
-    task: "learner-facing instruction"
-    estimated_minutes: 5
-    success_evidence: "what completion shows"
+source_post_lesson_teacher_card: "path or id"
+tasks: []
 support:
   examples: []
   hints: []
@@ -30,4 +27,4 @@ support:
 
 ## Validation
 
-Homework should be short, doable, and connected to evidence needed for mastery.
+The selected workload must match the approved Post-Lesson Teacher Card. Homework-only does not require a next lesson lock.

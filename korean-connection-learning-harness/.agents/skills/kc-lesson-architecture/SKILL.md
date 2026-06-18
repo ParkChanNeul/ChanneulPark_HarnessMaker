@@ -1,37 +1,34 @@
 ---
 name: kc-lesson-architecture
-description: "Architect Korean Connection lessons. Use for lesson blueprints, situation-led lesson flow, target balance, culture explanation placement, evidence capture, and learner-safe lesson titles."
+description: Use when an approved Korean Connection lesson scope and progression plan must be operationalized into a lesson blueprint.
 ---
 
 # KC Lesson Architecture
 
-Use this skill to turn a progression plan into a lesson blueprint.
-
 ## Read First
 
-1. `domain/04_lesson_system/lesson_contract.md`
-2. `domain/04_lesson_system/culture_usage_rules.md`
-3. `domain/04_lesson_system/student_experience_rules.md`
-4. `domain/02_learning_model/pedagogy_principles.md`
-5. `contracts/lesson_blueprint.md`
+1. `contracts/conversation/lesson_scope_lock.md`
+2. `contracts/progression_plan.md`
+3. `domain/04_lesson_system/lesson_contract.md`
+4. `domain/04_lesson_system/culture_usage_rules.md`
+5. `domain/04_lesson_system/student_experience_rules.md`
+6. `domain/02_learning_model/pedagogy_principles.md`
+7. `contracts/lesson_blueprint.md`
 
 ## Workflow
 
-1. State the learner action: what the learner should be able to do in the situation.
-2. Select new, review, retrieval, transfer, and conversation skill targets from the progression plan.
-3. Place one culture point only where it explains a language decision.
-4. Build a lesson flow from warmup through model, controlled practice, guided practice, role-play, transfer, and wrap.
-5. Name evidence that should be collected during the lesson.
-6. Add an override reason if target counts violate the default contract.
-7. Return a `lesson_blueprint`.
+1. Require a valid scope lock and matching progression plan.
+2. Copy approved targets, vocabulary scope, and teacher overrides without reinterpretation.
+3. State the approved learner action.
+4. Place culture only where it explains language choice.
+5. Build warmup, model, controlled, guided, role-play, transfer, and wrap stages.
+6. Define evidence to collect.
+7. Return `lesson_blueprint`.
 
-## Decision Rules
+## Boundary
 
-- Do not use culture as the final outcome. It is an explanation layer.
-- Do not put internal reasoning headings in student-facing titles.
-- Keep the blueprint practical enough to render into student materials.
-- Make all target categories explicit, even when a category is intentionally empty.
+This role performs approved target operationalization. It does not select replacement targets, add excluded review, change vocabulary load, or alter lesson mode.
 
 ## Output
 
-Return proposed lesson blueprint content, flow, evidence plan, override reasons, evidence paths, and blockers. Do not write final files.
+Return blueprint content, lock reference, flow, evidence plan, overrides applied, evidence paths, and blockers. Do not write final files.

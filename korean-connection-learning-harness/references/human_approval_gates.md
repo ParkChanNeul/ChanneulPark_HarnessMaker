@@ -1,40 +1,44 @@
 # Human Approval Gates
 
-## Required Gates
+## Lesson Scope Gate
 
-Human approval is required for:
+`build_lesson` requires a locked, teacher-approved, blocker-free `lesson_scope_lock`. AI recommendations and advisory findings are not approval.
 
-- changing approved files under `domain/`
-- changing approved files under `contracts/`
+## Post-Lesson Gates
+
+- Approved homework selection in `post_lesson_teacher_card` authorizes `homework_only`.
+- Locked `next_lesson_decision_lock` additionally authorizes `full_followup`, next-lesson checks, state scheduling, and progression-related outputs.
+
+## Governance Gates
+
+Human approval remains required for:
+
+- changing approved `domain/` files
+- changing approved `contracts/` policy
 - changing agent boundaries or required skills
-- promoting a research insight to a default rule
+- promoting research insight to a default rule
 - relaxing privacy rules
-- using private learner details in any tracked artifact
+- using private learner details in tracked artifacts
 - overriding mastery promotion rules
 
-## Approval Artifact
+## Approval Evidence
 
-Use `contracts/approval_state.md` for structured approval records.
+Use the controlling contract's teacher approval field and non-empty `approval_evidence`. Generic continuation language cannot approve unresolved scope. Governance changes continue to use `contracts/approval_state.md`.
 
 ## Gate Workflow
 
 ```text
-proposal artifact
--> reviewer report
+proposal or decision card
+-> reviewer when applicable
 -> human decision
--> approval_state
+-> approval or lock artifact
 -> parent applies approved scope only
 ```
 
-## Rejection Workflow
+## Rejection and Revision
 
-If approval is rejected or needs revision:
-
-- preserve the proposal in `_workspace/runs/`
-- record the decision and reason
-- do not apply the proposed domain or contract change
-- rerun only the affected producer if a revision is requested
+Preserve rejected proposals in workspace evidence. A rejected or changed lock becomes a revision or superseded lock; rerun only affected producers and downstream reviewers.
 
 ## Emergency Privacy Rule
 
-If a privacy issue is found, the parent can remove or generalize private details immediately before human approval. This is a safety correction, not a domain policy change.
+The parent may remove or generalize private details immediately before human approval. This is a safety correction, not a domain policy change.

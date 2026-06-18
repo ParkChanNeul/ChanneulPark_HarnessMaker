@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Reviews artifacts against learning quality, contract completeness, and safety.
+Reviews artifacts against learning quality, contract completeness, teacher authority, and safety.
 
 ## Producer
 
@@ -18,23 +18,17 @@ Parent agent, responsible producer agent.
 assessment_report_id: "unique id"
 reviewed_artifacts: []
 overall_status: "pass | pass_with_notes | blocked"
-findings:
-  - severity: "blocker | major | minor | note"
-    artifact: "path or id"
-    issue: "what failed"
-    evidence: "specific evidence"
-    required_fix: "smallest fix"
-contract_checks:
-  passed: []
-  failed: []
-learning_checks:
-  passed: []
-  failed: []
-privacy_checks:
-  passed: []
-  failed: []
+findings: []
+contract_checks: {passed: [], failed: []}
+learning_checks: {passed: [], failed: []}
+approval_checks:
+  lesson_scope_lock_valid: null
+  teacher_overrides_preserved: null
+  followup_scope_valid: null
+  next_lesson_decision_lock_valid: null
+privacy_checks: {passed: [], failed: []}
 ```
 
 ## Validation
 
-Assessment must cite exact artifacts and distinguish blockers from improvement notes.
+Assessment cites exact artifacts, distinguishes blockers from notes, and blocks missing or inconsistent teacher approval gates.

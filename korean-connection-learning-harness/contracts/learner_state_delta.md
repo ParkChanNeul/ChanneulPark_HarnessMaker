@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Records how a run should update learner state.
+Records evidence-supported state changes and, in full follow-up only, approved scheduling handoffs.
 
 ## Producer
 
@@ -10,29 +10,23 @@ Records how a run should update learner state.
 
 ## Consumers
 
-Parent agent, next `kc_learner_state_analyst` run.
+Parent agent, next learner-state analysis.
 
 ## Required Fields
 
 ```yaml
 delta_id: "unique id"
-source_artifact: "lesson_result, assessment_report, or follow_up_message path"
-grammar_updates:
-  - target_id: "id"
-    from_status: "status"
-    to_status: "status"
-    evidence: []
-conversation_updates:
-  - skill_id: "id"
-    from_status: "status"
-    to_status: "status"
-    evidence: []
+source_artifact: "lesson result or assessment path"
+followup_scope: "full_followup"
+source_next_lesson_decision_lock: "path or id"
+grammar_updates: []
+vocabulary_updates: []
+conversation_updates: []
 mission_updates: []
 review_schedule_updates: []
-approval_needed:
-  - "promotion or governance decision"
+approval_needed: []
 ```
 
 ## Validation
 
-No status may be promoted without evidence. `stable` requires delayed retrieval or transfer evidence.
+No status is promoted without evidence. Scheduling and next-progression changes require a locked next-lesson decision.

@@ -2,34 +2,31 @@
 
 ## Purpose
 
-Defines when the parent agent can write output directly and when human approval is required.
+Defines when the parent can write output directly and when teacher or governance approval is required.
 
 ## Parent-Owned Writes
 
-The parent agent may write:
+The parent may write generated lesson artifacts, review reports, workspace handoffs, conversation cards, locks after approval, and proposed domain updates.
 
-- generated lesson blueprints
-- practice plans
-- material specs
-- review reports
-- workspace handoffs
-- proposed domain updates
+## Teacher Decision Gates
 
-## Human Approval Required
+- Lesson generation requires a locked `lesson_scope_lock`.
+- Homework-only follow-up requires approved homework in `post_lesson_teacher_card`.
+- Next-lesson and progression outputs require a locked `next_lesson_decision_lock`.
+- Generic continuation language cannot satisfy a missing gate.
 
-Human approval is required before:
+## Governance Approval Required
 
-- changing approved files under `domain/`
-- changing artifact contracts under `contracts/`
-- promoting research insight to a default rule
-- changing agent responsibilities
-- relaxing privacy restrictions
-- marking a learner target as stable without evidence
+Human approval is required before changing approved domain files, changing contract policy, promoting research to a default, changing agent responsibilities, relaxing privacy, or marking a target stable without evidence.
 
 ## Approval State
 
-Every approved change should reference an `approval_state` contract record or a clear user instruction in the session transcript.
+Governance-sensitive changes reference `approval_state`. Lesson decisions use the dedicated conversation lock contracts and session evidence.
+
+## Revision Rule
+
+Never silently overwrite a lock. Create a revision or superseding lock and preserve the earlier record.
 
 ## Partial Rerun Rule
 
-If a rerun affects only one artifact, rerun the owning agent and any downstream reviewer. Do not rerun unrelated upstream agents unless their input changed.
+Rerun the owning producer and downstream reviewer only. Lock revisions invalidate only artifacts controlled by changed fields.

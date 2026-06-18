@@ -5,23 +5,29 @@
 ```text
 Situation-led
 Culture-explained
-Grammar-tracked
+Grammar-and-vocabulary tracked
 Practice-repeated
 Mastery-verified
+Teacher-approved progression
 ```
 
 ## Definitions
 
 Situation-led: choose a real-life situation or learner friction before choosing a grammar explanation.
 
-Culture-explained: explain the cultural, social, or relationship meaning only when it helps the learner choose, remember, or use language.
+Culture-explained: explain cultural, social, or relationship meaning only when it helps the learner choose, remember, or use language.
 
-Grammar-tracked: every target grammar or expression has a state, evidence, review schedule, and transfer path.
+Grammar-and-vocabulary tracked: each target grammar, expression, chunk, or vocabulary set has a state, evidence, review role, and transfer path.
 
 Practice-repeated: the learner retrieves and produces language across controlled, guided, independent, and transfer practice.
 
-Mastery-verified: do not mark a target as learned because it appeared once. Mastery requires evidence over time.
+Mastery-verified: do not mark a target learned because it appeared once; require evidence over time.
 
-## Guardrail
+Teacher-approved progression: AI may analyze evidence and recommend advance, review, mixed, vocabulary, listening, conversation, or diagnostic direction, but the teacher owns the final progression decision.
 
-Culture is a context engine. Grammar and expressions are cumulative skills. A lesson fails if culture explanation displaces retrieval, production, transfer, or delayed review.
+## Guardrails
+
+- Culture is a context engine, not a replacement for cumulative language practice.
+- Advisory analysis is not a scope lock.
+- A teacher may exclude separate review and reuse prior language as carrier, retrieval, or transfer.
+- No agent may change a locked target, vocabulary load, or next-lesson decision.

@@ -1,43 +1,40 @@
 ---
 name: kc-learning-followup
-description: "Create Korean Connection follow-up. Use for post-lesson weekly learning packs, homework, Quizlet plans, follow-up messages, next lesson checks, and learner state delta proposals."
+description: Use when approved Korean Connection post-lesson decisions must become homework-only or full follow-up artifacts.
 ---
 
 # KC Learning Follow-Up
-
-Use this skill after a lesson result exists.
 
 ## Read First
 
 1. `domain/04_lesson_system/mission_and_followup.md`
 2. `domain/04_lesson_system/homework_and_retention.md`
-3. `domain/05_learner_state/lesson_result.schema.md`
-4. `contracts/lesson_result.md`
-5. `contracts/weekly_learning_pack.md`
-6. `contracts/homework_plan.md`
-7. `contracts/quizlet_plan.md`
-8. `contracts/follow_up_message.md`
-9. `contracts/next_lesson_check.md`
-10. `contracts/learner_state_delta.md`
+3. `contracts/lesson_result.md`
+4. `contracts/conversation/post_lesson_teacher_card.md`
+5. `contracts/conversation/next_lesson_decision_lock.md`
+6. `contracts/weekly_learning_pack.md`
+7. `contracts/homework_plan.md`
+8. `contracts/quizlet_plan.md`
+9. `contracts/follow_up_message.md`
+10. `contracts/next_lesson_check.md`
+11. `contracts/learner_state_delta.md`
 
-## Workflow
+## Scope: `homework_only`
 
-1. Read the lesson result and distinguish planned targets from observed evidence.
-2. Choose review focus from successful retrieval, breakdowns, missed items, and transfer attempts.
-3. Create short homework tied to mastery evidence.
-4. Create Quizlet cards that prompt retrieval and production.
-5. Write a privacy-safe follow-up message.
-6. Create the next lesson check.
-7. Propose learner state deltas only where evidence supports updates.
-8. Return the weekly learning pack and related contracts.
+Require observed lesson evidence and an approved homework option. Produce homework, Quizlet, follow-up message, and a weekly pack with null next-lesson fields. Do not create next lesson check, progression direction, or learner-state scheduling.
+
+## Scope: `full_followup`
+
+Additionally require a locked next-lesson decision. Produce homework-only artifacts plus next lesson check and evidence-supported state/progression handoffs.
 
 ## Decision Rules
 
-- Do not praise or diagnose private student traits; focus on learning behavior.
-- A missed target becomes a next lesson input, not a failure label.
-- Homework should be small enough to complete between lessons.
-- Request privacy audit when a message includes personal context.
+- Base follow-up on observed evidence, not planned coverage.
+- Preserve teacher-selected workload, direction, and prior-target treatment.
+- Do not turn `carrier` into explicit review.
+- Keep homework small and privacy-safe.
+- Promote no mastery state without evidence.
 
 ## Output
 
-Return proposed weekly pack, homework plan, Quizlet plan, follow-up message, next lesson check, learner state delta, evidence paths, and blockers. Do not write final files.
+Return proposed artifacts, source card, next-lock reference when required, follow-up scope, evidence paths, and blockers. Do not write final files.

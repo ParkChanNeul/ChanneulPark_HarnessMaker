@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Specifies student-facing slide content before rendering.
+Specifies student-facing slide content from an approved lesson before rendering.
 
 ## Producer
 
@@ -16,22 +16,15 @@ Parent renderer, `kc_assessment_reviewer`.
 
 ```yaml
 student_deck_spec_id: "unique id"
+lesson_scope_lock_ref: "path or id"
 source_blueprint: "path or id"
 deck_mode: "student_deck"
 slide_count_target: "number or range"
-slides:
-  - slide_id: "id"
-    student_title: "visible title"
-    purpose: "teaching purpose"
-    content_blocks: []
-    interaction: "say | choose | transform | roleplay | reflect | none"
-design_notes:
-  pacing: []
-  visual_rhythm: []
-  accessibility: []
+slides: []
+design_notes: {pacing: [], visual_rhythm: [], accessibility: []}
 non_student_notes: []
 ```
 
 ## Validation
 
-Slides must be learner-facing and mission-first. Internal planning labels cannot appear as slide titles.
+Slides remain learner-facing and mission-first. Rendering cannot add targets or expose internal planning labels.

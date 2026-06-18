@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Defines a student-safe post-lesson message.
+Defines a student-safe message within the teacher-approved homework scope.
 
 ## Producer
 
@@ -10,20 +10,17 @@ Defines a student-safe post-lesson message.
 
 ## Consumers
 
-Parent agent, learner, `kc_privacy_auditor`.
+Parent agent, learner, `kc_privacy_auditor`, `kc_assessment_reviewer`.
 
 ## Required Fields
 
 ```yaml
 follow_up_message_id: "unique id"
+followup_scope: "homework_only | full_followup"
+source_post_lesson_teacher_card: "path or id"
 learner_alias: "non-identifying handle"
 tone: "warm | concise | coaching | formal"
-message:
-  greeting: "text"
-  lesson_win: "text"
-  review_focus: "text"
-  homework: "text"
-  next_step: "text"
+message: {}
 privacy_review:
   required: true
   notes: []
@@ -31,4 +28,4 @@ privacy_review:
 
 ## Validation
 
-The message may reference learning behavior but not private student identity or sensitive context.
+The message may describe learning behavior but cannot imply an unapproved next direction or contain identifying details.

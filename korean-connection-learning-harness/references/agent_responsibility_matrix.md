@@ -1,37 +1,36 @@
 # Agent Responsibility Matrix
 
-## Coordination Rule
+## Registry and Coordination
 
-Top-level Codex is the parent orchestrator. Subagents return findings, proposed artifacts, evidence paths, blockers, and rerun notes. The parent owns final file writes.
+`references/agent_registry.toml` is the machine-readable approved registry. Validators require all entries marked `required = true` and reject unregistered agent TOMLs without assuming a permanent agent count.
+
+Top-level Codex is the parent orchestrator. Subagents return findings, proposed artifacts, evidence paths, blockers, and rerun notes. The parent owns conversation contracts, locks, and final file writes.
 
 ## Matrix
 
-| Agent | Skill | Primary Responsibility | Reads | Produces | Write Boundary |
+| Agent | Skill | Primary Responsibility | Reads | Produces | Lock Boundary |
 |---|---|---|---|---|---|
-| `kc_learner_state_analyst` | `kc-learner-state-analysis` | Build safe learner snapshot and state deltas | lesson request, lesson result, learner state schemas | `learner_context_snapshot`, proposed `learner_state_delta` | read-only |
-| `kc_learning_progression_planner` | `kc-learning-progression-planning` | Choose sequence, review, retrieval, and transfer targets | learner snapshot, curriculum, mastery schemas | `progression_plan` | read-only |
-| `kc_lesson_architect` | `kc-lesson-architecture` | Design lesson blueprint around situation and target mix | progression plan, lesson system domain docs | `lesson_blueprint` | read-only |
-| `kc_practice_designer` | `kc-practice-design` | Build practice ladder and evidence capture | lesson blueprint, practice ladder, mastery schemas | `practice_plan`, homework/quizlet seeds | read-only |
-| `kc_student_experience_designer` | `kc-student-experience-design` | Turn blueprint and practice into student-facing material specs | lesson blueprint, practice plan, student experience rules | `student_deck_spec`, `design_manifest` draft | read-only |
-| `kc_learning_followup_teacher` | `kc-learning-followup` | Convert result into weekly pack, homework, Quizlet, and next lesson check | lesson result, practice plan, learner snapshot | `weekly_learning_pack`, `homework_plan`, `quizlet_plan`, `follow_up_message`, `next_lesson_check`, proposed `learner_state_delta` | read-only |
-| `kc_assessment_reviewer` | `kc-assessment-review` | Review quality, contracts, learning balance, and evidence | generated artifacts, contracts, domain docs | `assessment_report` | read-only |
-| `kc_research_synthesizer` | `kc-research-synthesis` | Convert research notes into bounded insight proposals | research notes, evidence levels, source priority | `research_insight_proposal` | read-only |
-| `kc_domain_curator` | `kc-domain-curation` | Convert approved insights into domain update proposals | insight proposal, domain docs, approval rules | `domain_update_proposal` | read-only |
-| `kc_privacy_auditor` | `kc-privacy-audit` | Detect private or identifying learner data | target artifacts, privacy governance | `privacy_report` | read-only |
+| `kc_learner_state_analyst` | `kc-learner-state-analysis` | safe learner snapshot and state deltas | request, result, learner schemas | snapshot, proposed delta | advisory before lock only when explicitly requested |
+| `kc_learning_progression_planner` | `kc-learning-progression-planning` | progression options before lock; approved plan after lock | snapshot, curriculum, scope lock | progression plan | cannot change approved mode, targets, or review exclusion |
+| `kc_lesson_architect` | `kc-lesson-architecture` | operationalize approved targets | progression plan, scope lock, lesson domain | lesson blueprint | no target selection |
+| `kc_practice_designer` | `kc-practice-design` | practice ladder and evidence capture | blueprint, practice rules, mastery schemas | practice plan, homework/Quizlet seeds | preserve locked target treatment |
+| `kc_student_experience_designer` | `kc-student-experience-design` | learner-facing material specs | blueprint, practice, student rules | deck spec, design manifest draft | rendering cannot change scope |
+| `kc_learning_followup_teacher` | `kc-learning-followup` | approved homework-only or full follow-up | result, post card, optional next lock | weekly pack, homework, Quizlet, message, optional next outputs | next outputs require next lock |
+| `kc_assessment_reviewer` | `kc-assessment-review` | contract, learning, evidence, and approval QA | generated artifacts, locks, domain docs | assessment report | block unapproved builds and lock drift |
+| `kc_research_synthesizer` | `kc-research-synthesis` | evidence-labeled insight proposals | research notes, evidence levels | research insight proposal | existing governance gate |
+| `kc_domain_curator` | `kc-domain-curation` | approved domain update proposals | insight proposal, domain, approval rules | domain update proposal | human approval required |
+| `kc_privacy_auditor` | `kc-privacy-audit` | identifying-data review | target artifacts, privacy rules | privacy report | conditional privacy gate |
+
+## Advisory Mode
+
+Only learner-state analysis and progression planning may be used in front-stage advisory mode, and only with explicit source paths plus a teacher request for evidence. Returned advice is not approval.
 
 ## Review Duties
 
-`kc_assessment_reviewer` must check that:
+`kc_assessment_reviewer` checks situation, culture, tracked grammar/vocabulary, repeated practice, mastery evidence, teacher approval, lock consistency, follow-up scope, and learner-safe visible titles.
 
-- situation leads the lesson
-- culture explains language choice instead of replacing practice
-- grammar and expressions are tracked as cumulative targets
-- practice includes retrieval, independent production, and transfer
-- mastery claims are evidence-based
-- student-facing artifacts hide internal reasoning labels
-
-`kc_privacy_auditor` must block real identifying details and archive-derived private context.
+`kc_privacy_auditor` blocks real identifying details and archive-derived private context.
 
 ## Conditional Routing
 
-Run `kc_privacy_auditor` before finalizing student-facing or tracked artifacts when the input includes learner biography, archive material, social account context, demographic details, or any phrase that looks identifying.
+Run privacy audit before finalizing student-facing or tracked artifacts when input contains biography, archive material, social account context, demographic details, or identifying combinations.

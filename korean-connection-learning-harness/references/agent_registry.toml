@@ -1,0 +1,62 @@
+schema_version = 1
+registry_status = "approved"
+
+[[agents]]
+name = "kc_learner_state_analyst"
+skill = "kc-learner-state-analysis"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_learning_progression_planner"
+skill = "kc-learning-progression-planning"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_lesson_architect"
+skill = "kc-lesson-architecture"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_practice_designer"
+skill = "kc-practice-design"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_student_experience_designer"
+skill = "kc-student-experience-design"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_learning_followup_teacher"
+skill = "kc-learning-followup"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_assessment_reviewer"
+skill = "kc-assessment-review"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_research_synthesizer"
+skill = "kc-research-synthesis"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_domain_curator"
+skill = "kc-domain-curation"
+required = true
+status = "approved"
+
+[[agents]]
+name = "kc_privacy_auditor"
+skill = "kc-privacy-audit"
+required = true
+status = "approved"

@@ -1,0 +1,19 @@
+# Next Lesson Decision Lock
+
+```yaml
+next_lesson_decision_lock_id: cafe-next-lock-001
+revision: 1
+source_post_lesson_card: post_lesson_teacher_card.md
+lock_status: locked
+approved_by_teacher: true
+approval_evidence: 새 문법으로 넘어가고 카페 표현은 carrier로 사용해 주세요.
+selected_direction: {mode: advance, primary_situation: hobbies, approved_new_targets: [want_go_sipeoyo]}
+prior_targets:
+  - {target_id: cafe_ordering, treatment: carrier}
+  - {target_id: staff_question_response, treatment: retrieval}
+vocabulary_direction: {new_pack: hobbies_core, new_item_target: 8, review_items: [], carrier_items: [cafe_ordering], homework_expansion_target: 2}
+homework_scope: {estimated_minutes: 8, focus: 듣고 짧게 답하기, required_outputs: [homework_plan, quizlet_plan, follow_up_message]}
+next_lesson_check: [카페 질문에 즉답 가능한지 확인]
+teacher_notes: []
+unresolved_blockers: []
+```

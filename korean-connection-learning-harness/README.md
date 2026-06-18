@@ -1,42 +1,74 @@
 # Korean Connection Learning Harness V2
 
-This project is a Codex-native harness for Korean Connection learning operations.
+This project is a Codex-native, Teacher-in-the-Loop harness for Korean Connection learning operations.
 
-It does not extend or copy the existing italki lesson builder. The existing italki repository is a read-only reference for prior domain knowledge, useful patterns, and known bias.
+It does not extend or copy the existing italki lesson builder. The existing italki repository is read-only reference material, not a production dependency.
 
-## Core Loop
+## Conversational Teacher Loop
 
 ```text
-learner state analysis
--> long-term progression plan
+teacher request
+-> context and unknowns
+-> options and AI recommendation
+-> teacher approval
+-> Lesson Scope Lock
+-> specialist execution
+-> lesson result reflection
+-> homework approval
+-> optional Next Lesson Decision Lock
+```
+
+Bare requests do not build lessons. Rich input reduces questions but never bypasses the approval gate. An exact `run_dir` is required to resume an existing run.
+
+## Core Learning Loop
+
+```text
+approved lesson scope
+-> learner state analysis
+-> teacher-compliant progression plan
 -> lesson blueprint
 -> repeated practice design
 -> student deck and HTML material design
 -> lesson result
--> weekly learning pack, homework, Quizlet, mission
+-> approved follow-up
 -> mastery evidence review
--> next lesson input
+-> next lesson input when separately locked
 ```
 
-## Learning Principle
+## Learning Principles
 
 ```text
 Situation-led
 Culture-explained
-Grammar-tracked
+Grammar-and-vocabulary tracked
 Practice-repeated
 Mastery-verified
+Teacher-approved progression
 ```
 
-Culture is not a replacement for grammar. Culture explains why a form matters, where it is safe, and how it changes relationship distance. Grammar and expressions remain cumulative skills that need retrieval, production, transfer, and delayed review.
+Culture explains why a form matters, where it is safe, and how it changes relationship distance. Grammar, vocabulary, and expressions remain cumulative skills that need retrieval, production, transfer, and delayed review. AI recommends; the teacher approves progression.
+
+## Existing Execution Modes
+
+The seven execution modes remain `build_lesson`, `render_materials`, `post_lesson_followup`, `review_outputs`, `research_to_domain`, `audit_domain`, and `partial_rerun`. Conversational routes are not execution modes.
+
+- `build_lesson` requires a valid `lesson_scope_lock`.
+- `post_lesson_followup` supports `homework_only` from an approved Post-Lesson Teacher Card.
+- `full_followup` additionally requires a locked Next Lesson Decision Lock before next-lesson or progression outputs.
+
+## Agent Model
+
+The current specialist agents remain read-only and are registered in `references/agent_registry.toml`. Validators read the registry rather than assuming a permanent count, so future approved grammar, lexicon, or vocabulary agents can be added without rewriting count assertions.
 
 ## Source Priority
 
 1. Current user instructions
 2. Approved documents in `domain/`
 3. Approved documents in `contracts/`
-4. Existing italki reference repository
-5. Archive and historical examples
+4. Current learner evidence and approval locks
+5. Existing italki reference repository
+6. Archive and historical examples
+7. External research
 
 ## Safety Boundaries
 
@@ -44,3 +76,14 @@ Culture is not a replacement for grammar. Culture explains why a form matters, w
 - Do not use the existing italki repo as a production dependency.
 - Do not copy archive lessons, student cases, or private context into active examples.
 - Do not create a nested Git repository.
+- Do not infer the latest run or treat fixtures as active learner state.
+
+## Validation
+
+```bash
+python3.11 scripts/validate_structure.py
+python3.11 scripts/validate_contracts.py
+python3.11 scripts/validate_agent_boundaries.py
+python3.11 scripts/validate_conversational_runtime.py
+python3.11 scripts/validate_harness.py
+```
