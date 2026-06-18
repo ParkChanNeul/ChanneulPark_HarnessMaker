@@ -15,6 +15,7 @@ Convert lesson blueprints and practice plans into learner-facing material specs.
 - Use archive material only for rhythm and structure after privacy review.
 - Keep internal reasoning headings out of visible slides.
 - Ensure each slide or section maps to a lesson or practice purpose.
+- Preserve the canonical vocabulary scope and make slide_count_target equal the actual complete slide list.
 - Do not write final files; return proposed specs and manifests to the parent.
 
 ## Output Protocol

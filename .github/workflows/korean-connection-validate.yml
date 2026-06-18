@@ -1,0 +1,54 @@
+name: Korean Connection Harness Validation
+
+on:
+  push:
+    paths:
+      - "korean-connection-learning-harness/**"
+      - ".github/workflows/korean-connection-validate.yml"
+  pull_request:
+    paths:
+      - "korean-connection-learning-harness/**"
+      - ".github/workflows/korean-connection-validate.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: korean-connection-learning-harness
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate structure
+        run: python3.11 scripts/validate_structure.py
+
+      - name: Validate contract documentation
+        run: python3.11 scripts/validate_contracts.py
+
+      - name: Validate agent boundaries
+        run: python3.11 scripts/validate_agent_boundaries.py
+
+      - name: Validate semantic contracts
+        run: python3.11 scripts/validate_semantic_contracts.py
+
+      - name: Validate Golden run
+        run: python3.11 scripts/validate_golden_run.py
+
+      - name: Validate conversational runtime
+        run: python3.11 scripts/validate_conversational_runtime.py
+
+      - name: Check computed Golden assessment
+        run: python3.11 scripts/render_golden_assessment.py --check
+
+      - name: Run executable acceptance tests
+        run: python3.11 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Validate complete harness
+        run: python3.11 scripts/validate_harness.py

@@ -30,10 +30,13 @@ options:
     review_candidates: []
     conversation_targets: []
     vocabulary_scope:
-      new_item_count: null
-      productive_core_count: null
-      receptive_support_count: null
-      homework_expansion_count: null
+      target_pack: ""
+      lesson_vocabulary_set_ref: null
+      in_class_new_item_count: 0
+      productive_core_count: 0
+      receptive_support_count: 0
+      review_item_ids: []
+      homework_expansion_count: 0
     benefits: []
     risks: []
 recommendation:
@@ -48,4 +51,4 @@ advisory_inputs: []
 
 ## Validation
 
-A recommendation is not approval. Advisory specialist output cannot set `scope_status` to `locked` or dispatch `build_lesson`.
+A recommendation is not approval. Advisory specialist output cannot set `scope_status` to `locked` or dispatch `build_lesson`. Vocabulary counts must be non-negative integers, and `in_class_new_item_count` must equal `productive_core_count + receptive_support_count`.

@@ -18,6 +18,18 @@ lesson_intake_state
 
 Progression, blueprint, practice, and material review must remain consistent with the active lock.
 
+The normalized vocabulary scope is copied without field renaming across:
+
+```text
+lesson_scope_lock
+-> progression_plan
+-> lesson_blueprint
+-> practice_plan
+-> student_deck_spec
+```
+
+Practice tasks carry target IDs so the validator can prove target coverage.
+
 ## Follow-Up Dependencies
 
 ```text
@@ -35,6 +47,19 @@ lesson_result or teacher notes
 ```
 
 Homework approval and next-direction approval are separate gates.
+
+## Validation Dependencies
+
+```text
+Markdown contract
+-> structured artifact loader
+-> semantic contract validator
+-> Golden cross-artifact validator
+-> computed Golden assessment
+-> executable unittest
+```
+
+The computed assessment consumes validator results. It is not an independent manual pass declaration.
 
 ## Research Dependencies
 

@@ -28,9 +28,9 @@ def fail(message: str) -> None:
     sys.exit(1)
 
 
-def run_script(script_name: str) -> None:
+def run_command(args: list[str], label: str) -> None:
     result = subprocess.run(
-        [sys.executable, str(ROOT / 'scripts' / script_name)],
+        args,
         cwd=ROOT,
         text=True,
         stdout=subprocess.PIPE,
@@ -38,7 +38,7 @@ def run_script(script_name: str) -> None:
         check=False,
     )
     if result.returncode != 0:
-        fail(f'{script_name} failed:\n{result.stdout}')
+        fail(f'{label} failed:\n{result.stdout}')
     print(result.stdout.strip())
 
 
@@ -51,10 +51,38 @@ def scan_text_files() -> list[Path]:
 
 def main() -> None:
     for script in [
-        'validate_structure.py', 'validate_contracts.py',
-        'validate_agent_boundaries.py', 'validate_conversational_runtime.py',
+        'validate_structure.py',
+        'validate_contracts.py',
+        'validate_agent_boundaries.py',
+        'validate_semantic_contracts.py',
+        'validate_golden_run.py',
+        'validate_conversational_runtime.py',
     ]:
-        run_script(script)
+        run_command(
+            [sys.executable, str(ROOT / 'scripts' / script)],
+            script,
+        )
+    run_command(
+        [
+            sys.executable,
+            str(ROOT / 'scripts' / 'render_golden_assessment.py'),
+            '--check',
+        ],
+        'render_golden_assessment.py --check',
+    )
+    run_command(
+        [
+            sys.executable,
+            '-m',
+            'unittest',
+            'discover',
+            '-s',
+            'tests',
+            '-p',
+            'test_*.py',
+        ],
+        'unittest discover',
+    )
 
     orchestrator = ROOT / '.agents' / 'skills' / 'korean-connection-orchestrator' / 'SKILL.md'
     orchestrator_text = orchestrator.read_text(encoding='utf-8')

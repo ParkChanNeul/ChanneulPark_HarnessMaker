@@ -118,3 +118,26 @@ A lock change creates a revision or superseding lock. Do not silently mutate app
 - Contract mismatch: rerun the owning producer with reviewer evidence.
 - Privacy issue: block tracked output until the parent removes or generalizes the detail.
 - Conflicting evidence: preserve both claims and follow source priority.
+
+## Validation Workflow
+
+```text
+validate_structure
+-> validate_contracts
+-> validate_agent_boundaries
+-> validate_semantic_contracts
+-> validate_golden_run
+-> validate_conversational_runtime
+-> render_golden_assessment --check
+-> unittest discover
+-> privacy and core-term checks
+```
+
+`validate_contracts` checks documentation structure and canonical field definitions. Artifact values are parsed and checked by the semantic and Golden validators. The conversational runtime validator does not call the full harness validator, preventing recursive execution.
+
+## Test Artifact Roles
+
+- Markdown Acceptance Scenario: human-readable requirement.
+- Executable Unit Test: proves pass and fail behavior.
+- Golden Fixture: complete valid example flow.
+- Golden Assessment: validator-computed report for that flow.

@@ -13,6 +13,8 @@ Select a direction from `advance`, `review`, `mixed`, `transfer`, `vocabulary_fo
 
 Natural reuse as `carrier` is not explicit review. Preserve a teacher decision to advance without converting it into a review lesson.
 
+Use the canonical vocabulary direction fields: `target_pack`, `lesson_vocabulary_set_ref`, `in_class_new_item_count`, `productive_core_count`, `receptive_support_count`, `review_item_ids`, `carrier_item_ids`, and `homework_expansion_count`. Do not translate carrier items into explicit review.
+
 ## Lock Rule
 
 Require explicit approval evidence and no unresolved blockers. Do not interpret a generic continuation phrase as approval. Revise or supersede an existing lock instead of silently overwriting it.

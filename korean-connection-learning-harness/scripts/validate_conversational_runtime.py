@@ -77,6 +77,15 @@ GOLDEN_FILES = [
     '11_assessment_report.md',
 ]
 
+SEMANTIC_RUNTIME_FILES = [
+    'scripts/structured_artifacts.py',
+    'scripts/validate_semantic_contracts.py',
+    'scripts/validate_golden_run.py',
+    'scripts/render_golden_assessment.py',
+    'tests/test_conversational_guards.py',
+    'tests/test_golden_run.py',
+]
+
 PRIVATE_PATTERNS = [
     r'legal_name\s*:',
     r'@[A-Za-z0-9_]{3,}',
@@ -181,6 +190,10 @@ def main() -> None:
         if not fixture.is_file():
             failures.append(f'missing conversation fixture: {fixture.relative_to(ROOT)}')
 
+    for rel in SEMANTIC_RUNTIME_FILES:
+        if not (ROOT / rel).is_file():
+            failures.append(f'missing semantic runtime file: {rel}')
+
     golden = ROOT / 'tests' / 'fixtures' / 'golden' / 'conversational_cafe'
     for rel in GOLDEN_FILES:
         path = golden / rel
@@ -190,7 +203,16 @@ def main() -> None:
     scope_contract = contract_root / 'lesson_scope_lock.md'
     if scope_contract.is_file():
         content = text(scope_contract)
-        for term in ['approved_by_teacher', 'approval_evidence', 'unresolved_blockers', 'vocabulary_scope', 'productive_core', 'receptive_support', 'homework_expansion']:
+        for term in [
+            'approved_by_teacher',
+            'approval_evidence',
+            'unresolved_blockers',
+            'vocabulary_scope',
+            'in_class_new_item_count',
+            'productive_core_count',
+            'receptive_support_count',
+            'homework_expansion_count',
+        ]:
             if term not in content:
                 failures.append(f'lesson_scope_lock missing field {term}')
 

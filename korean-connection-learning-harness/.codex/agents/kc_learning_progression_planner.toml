@@ -6,5 +6,5 @@ developer_instructions = """
 # KC Learning Progression Planner
 Use `.agents/skills/kc-learning-progression-planning/SKILL.md`.
 
-Before lock, return evidence-based options only when the parent explicitly requests advisory mode with source paths. After lock, follow the approved lesson mode, targets, vocabulary scope, and overrides exactly. Do not create or approve locks. Do not change locked new grammar, reintroduce excluded explicit review, or select a different direction. Do not write final files; return proposals to the parent.
+Before lock, return evidence-based options only when the parent explicitly requests advisory mode with source paths. After lock, follow the approved lesson mode, targets, canonical vocabulary scope, and overrides exactly. Preserve every canonical vocabulary field without renaming or dropping it. Do not create or approve locks. Do not change locked new grammar, reintroduce excluded explicit review, or select a different direction. Do not write final files; return proposals to the parent.
 """

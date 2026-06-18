@@ -18,7 +18,7 @@ description: Use when an approved Korean Connection lesson scope and progression
 ## Workflow
 
 1. Require a valid scope lock and matching progression plan.
-2. Copy approved targets, vocabulary scope, and teacher overrides without reinterpretation.
+2. Copy approved targets, the complete canonical vocabulary scope, and teacher overrides without reinterpretation.
 3. State the approved learner action.
 4. Place culture only where it explains language choice.
 5. Build warmup, model, controlled, guided, role-play, transfer, and wrap stages.

@@ -30,11 +30,14 @@ prior_targets:
   - target_id: "id"
     treatment: "explicit_review | retrieval | carrier | transfer | defer"
 vocabulary_direction:
-  new_pack: ""
-  new_item_target: 0
-  review_items: []
-  carrier_items: []
-  homework_expansion_target: 0
+  target_pack: ""
+  lesson_vocabulary_set_ref: null
+  in_class_new_item_count: 0
+  productive_core_count: 0
+  receptive_support_count: 0
+  review_item_ids: []
+  carrier_item_ids: []
+  homework_expansion_count: 0
 homework_scope:
   estimated_minutes: 0
   focus: ""
@@ -46,4 +49,4 @@ unresolved_blockers: []
 
 ## Validation
 
-A locked decision requires teacher approval evidence and no blockers. `carrier` is natural reuse, not explicit review. Changes require a revision or superseding lock.
+A locked decision requires teacher approval evidence and no blockers. Vocabulary counts must be non-negative integers and internally consistent. `carrier` is natural reuse, not explicit review, and one prior target cannot have both treatments. Changes require a revision or superseding lock.

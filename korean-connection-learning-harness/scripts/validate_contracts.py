@@ -20,6 +20,23 @@ CONVERSATION_CONTRACTS = [
 ]
 
 REQUIRED_SECTIONS = ['## Purpose', '## Producer', '## Consumers', '## Required Fields', '## Validation']
+CANONICAL_VOCABULARY_FIELDS = [
+    'target_pack',
+    'lesson_vocabulary_set_ref',
+    'in_class_new_item_count',
+    'productive_core_count',
+    'receptive_support_count',
+    'review_item_ids',
+    'homework_expansion_count',
+]
+VOCABULARY_CONTRACTS = [
+    CONVERSATION_DIR / 'teacher_decision_card.md',
+    CONVERSATION_DIR / 'lesson_scope_lock.md',
+    CONTRACT_DIR / 'progression_plan.md',
+    CONTRACT_DIR / 'lesson_blueprint.md',
+    CONTRACT_DIR / 'practice_plan.md',
+    CONTRACT_DIR / 'student_deck_spec.md',
+]
 
 
 def validate_contract(path: Path, failures: list[str]) -> None:
@@ -59,17 +76,17 @@ def main() -> None:
     if extra_conversation:
         failures.append('unexpected conversation contracts: ' + ', '.join(extra_conversation))
 
-    lock_text = (CONVERSATION_DIR / 'lesson_scope_lock.md').read_text(encoding='utf-8')
-    for term in ['approved_by_teacher', 'approval_evidence', 'unresolved_blockers', 'revision', 'supersedes']:
-        if term not in lock_text:
-            failures.append(f'lesson_scope_lock missing {term}')
-    post_text = (CONVERSATION_DIR / 'post_lesson_teacher_card.md').read_text(encoding='utf-8')
-    if 'homework_approved' not in post_text:
-        failures.append('post_lesson_teacher_card missing homework approval')
+    for path in VOCABULARY_CONTRACTS:
+        content = path.read_text(encoding='utf-8')
+        for field in CANONICAL_VOCABULARY_FIELDS:
+            if field not in content:
+                failures.append(
+                    f'{path.relative_to(ROOT)} missing canonical vocabulary field {field}'
+                )
+
     next_text = (CONVERSATION_DIR / 'next_lesson_decision_lock.md').read_text(encoding='utf-8')
-    for treatment in ['explicit_review', 'retrieval', 'carrier', 'transfer', 'defer']:
-        if treatment not in next_text:
-            failures.append(f'next_lesson_decision_lock missing {treatment}')
+    if 'carrier_item_ids' not in next_text:
+        failures.append('next_lesson_decision_lock missing carrier_item_ids')
 
     if failures:
         fail(failures)

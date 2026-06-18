@@ -21,16 +21,18 @@ Use this skill when converting lesson and practice plans into student-facing mat
 1. Identify the learner-facing mission and keep it visible early.
 2. Convert the lesson flow into a student deck spec.
 3. Convert practice moves into slide interactions or material sections.
-4. Keep slide titles student-safe and action-oriented.
-5. Use archive-style rhythm only as structure, never as copied content or private context.
-6. Add pacing, visual rhythm, and accessibility notes.
-7. Return `student_deck_spec` and draft `design_manifest`.
+4. Copy the complete canonical vocabulary scope from the blueprint.
+5. Keep slide titles student-safe and action-oriented.
+6. Use archive-style rhythm only as structure, never as copied content or private context.
+7. Add pacing, visual rhythm, and accessibility notes.
+8. Return `student_deck_spec` and draft `design_manifest`.
 
 ## Decision Rules
 
 - Default teaching-material mode is `student_deck`.
 - Do not expose internal headings such as `Cultural Tension`, `Korean Social Rule`, `Social Meaning`, `Language Mechanism`, or `Grammar Tool`.
 - Every visible section should help the learner say, choose, transform, role-play, or remember something.
+- `slide_count_target` must equal the actual number of complete slide objects.
 - Request privacy audit if learner-specific context appears.
 
 ## Output

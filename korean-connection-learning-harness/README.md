@@ -80,10 +80,25 @@ The current specialist agents remain read-only and are registered in `references
 
 ## Validation
 
+Validation has four distinct layers:
+
+- Contract Documentation Validation checks contract names, sections, and canonical field definitions.
+- Semantic Artifact Validation parses JSON-compatible YAML payloads and checks state, lock, approval, enum, and vocabulary rules.
+- Cross-artifact Validation checks references and consistency from lock through progression, blueprint, practice, deck, and follow-up.
+- Executable Acceptance Tests use `unittest` to prove valid cases pass and invalid cases fail.
+
+The Markdown files under `tests/acceptance/` remain human-readable requirements. The Golden Fixture under `tests/fixtures/golden/conversational_cafe/` is a complete valid contract flow. Its Assessment Report is generated from validator output, not manually declared.
+
 ```bash
 python3.11 scripts/validate_structure.py
 python3.11 scripts/validate_contracts.py
 python3.11 scripts/validate_agent_boundaries.py
+python3.11 scripts/validate_semantic_contracts.py
+python3.11 scripts/validate_golden_run.py
 python3.11 scripts/validate_conversational_runtime.py
+python3.11 scripts/render_golden_assessment.py --check
+python3.11 -m unittest discover -s tests -p 'test_*.py'
 python3.11 scripts/validate_harness.py
 ```
+
+Use `python3.11 scripts/render_golden_assessment.py --write` only when intentionally maintaining the tracked Golden Fixture.

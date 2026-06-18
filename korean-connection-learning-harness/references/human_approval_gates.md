@@ -25,6 +25,8 @@ Human approval remains required for:
 
 Use the controlling contract's teacher approval field and non-empty `approval_evidence`. Generic continuation language cannot approve unresolved scope. Governance changes continue to use `contracts/approval_state.md`.
 
+Semantic validation additionally requires a locked contract to have no unresolved blockers and internally consistent vocabulary counts. Recommendation and advisory fields never satisfy approval.
+
 ## Gate Workflow
 
 ```text
@@ -42,3 +44,7 @@ Preserve rejected proposals in workspace evidence. A rejected or changed lock be
 ## Emergency Privacy Rule
 
 The parent may remove or generalize private details immediately before human approval. This is a safety correction, not a domain policy change.
+
+## Computed Gate Evidence
+
+Golden and CI acceptance comes from semantic validators and executable tests. A manually written `overall_status: pass` cannot override a failed approval, reference, or cross-artifact check.

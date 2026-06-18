@@ -39,14 +39,10 @@ targets:
 vocabulary_scope:
   target_pack: ""
   lesson_vocabulary_set_ref: null
-  vocabulary_count: 0
-  in_class_new_items: 0
-  productive_core: 0
+  in_class_new_item_count: 0
   productive_core_count: 0
-  receptive_support: 0
   receptive_support_count: 0
-  review_items: []
-  homework_expansion: 0
+  review_item_ids: []
   homework_expansion_count: 0
 material_scope:
   student_deck: true
@@ -69,4 +65,4 @@ created_artifact_refs: []
 
 ## Validation
 
-When `lock_status` is `locked`, `approved_by_teacher` must be true, `approval_evidence` must be non-empty, and `unresolved_blockers` must be empty. A locked contract is immutable; changes require a revision or superseding lock.
+When `lock_status` is `locked`, `approved_by_teacher` must be true, `approval_evidence` must be non-empty, and `unresolved_blockers` must be empty. Vocabulary counts must be non-negative integers, and `in_class_new_item_count` must equal `productive_core_count + receptive_support_count` unless a specific vocabulary-count Teacher Override is recorded. A locked contract is immutable; changes require a revision or superseding lock.

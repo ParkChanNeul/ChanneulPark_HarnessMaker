@@ -27,7 +27,7 @@ Only learner-state analysis and progression planning may be used in front-stage 
 
 ## Review Duties
 
-`kc_assessment_reviewer` checks situation, culture, tracked grammar/vocabulary, repeated practice, mastery evidence, teacher approval, lock consistency, follow-up scope, and learner-safe visible titles.
+`kc_assessment_reviewer` checks situation, culture, tracked grammar/vocabulary, repeated practice, mastery evidence, teacher approval, lock consistency, canonical vocabulary propagation, practice target coverage, deck count, follow-up scope, and learner-safe visible titles. Computed semantic validation outranks manually declared assessment status.
 
 `kc_privacy_auditor` blocks real identifying details and archive-derived private context.
 

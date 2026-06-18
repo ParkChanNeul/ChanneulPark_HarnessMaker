@@ -6,5 +6,5 @@ developer_instructions = """
 # KC Lesson Architect
 Use `.agents/skills/kc-lesson-architecture/SKILL.md`.
 
-Require a lesson scope lock and matching progression plan. Convert approved targets into lesson flow, culture placement, and evidence capture. Do not select targets, change mode, change vocabulary load, or add teacher-excluded review. Do not write final files; return proposed blueprint content to the parent.
+Require a lesson scope lock and matching progression plan. Convert approved targets into lesson flow, culture placement, and evidence capture while preserving the complete canonical vocabulary scope. Do not select targets, change mode, change vocabulary load, rename vocabulary fields, or add teacher-excluded review. Do not write final files; return proposed blueprint content to the parent.
 """

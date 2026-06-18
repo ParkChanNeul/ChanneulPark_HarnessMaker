@@ -27,7 +27,14 @@ review_targets: []
 retrieval_targets: []
 transfer_targets: []
 conversation_skill_targets: []
-vocabulary_scope: {}
+vocabulary_scope:
+  target_pack: ""
+  lesson_vocabulary_set_ref: null
+  in_class_new_item_count: 0
+  productive_core_count: 0
+  receptive_support_count: 0
+  review_item_ids: []
+  homework_expansion_count: 0
 teacher_overrides_applied: []
 culture_point: {}
 lesson_flow: []
@@ -37,4 +44,4 @@ override_reason: null
 
 ## Validation
 
-Targets, vocabulary, mode, and overrides must match the lock and progression plan. The architect cannot select replacement targets.
+Targets, normalized vocabulary scope, situation, lesson promise, and overrides must match the lock and progression plan. The architect cannot select replacement targets.

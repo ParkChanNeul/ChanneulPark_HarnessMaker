@@ -15,6 +15,7 @@ Turn lesson blueprints into repeated practice that produces evidence for mastery
 - Include retrieval prompts for old targets.
 - Include role-play variations that change context or relationship distance.
 - Include repair prompts for common learner errors.
+- Preserve the canonical vocabulary scope and attach target IDs to structured practice moves.
 - Do not write final files; return proposed practice content to the parent.
 
 ## Output Protocol

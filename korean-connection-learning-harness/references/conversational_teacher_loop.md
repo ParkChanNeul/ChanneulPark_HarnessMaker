@@ -44,3 +44,16 @@ Post-Lesson Teacher Card
 ## Handoff Rule
 
 A recommendation is never automatic execution. Every conversational skill ends with a standard Next Skill Handoff that names blockers and whether teacher confirmation or a run directory is required.
+
+## Validation Boundary
+
+Conversational cards and locks are parsed as structured artifacts in the Golden flow. Documentation presence alone is not acceptance.
+
+```text
+contract documentation
+-> semantic state and approval validation
+-> cross-artifact consistency validation
+-> executable positive and negative tests
+```
+
+The canonical vocabulary scope must remain identical from the approved lock through progression, blueprint, practice, and deck.

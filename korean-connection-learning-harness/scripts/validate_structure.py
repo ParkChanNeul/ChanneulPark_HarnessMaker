@@ -28,7 +28,12 @@ REQUIRED_FILES = [
     'references/agent_registry.toml', 'references/agent_responsibility_matrix.md',
     'references/runtime_workflows.md', 'references/artifact_dependency_map.md',
     'references/human_approval_gates.md', 'references/conversational_teacher_loop.md',
-    'references/conversation_state_machine.md', 'scripts/validate_conversational_runtime.py',
+    'references/conversation_state_machine.md',
+    'scripts/structured_artifacts.py', 'scripts/validate_semantic_contracts.py',
+    'scripts/validate_golden_run.py', 'scripts/render_golden_assessment.py',
+    'scripts/validate_conversational_runtime.py',
+    'tests/test_conversational_guards.py', 'tests/test_golden_run.py',
+    '_workspace/02_semantic_validation_audit.md',
 ]
 
 REQUIRED_DIRS = [

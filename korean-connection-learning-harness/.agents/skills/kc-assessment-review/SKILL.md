@@ -27,6 +27,8 @@ description: Use when Korean Connection artifacts need contract, learning-qualit
 8. Full follow-up matches the next-lesson lock.
 9. Student-facing titles hide internal reasoning.
 10. Private details are absent or routed to privacy audit.
+11. Canonical vocabulary fields and count equations are preserved across the lock, progression, blueprint, practice, and deck.
+12. A Golden assessment pass is accepted only when it matches computed validator output.
 
 ## Severity
 

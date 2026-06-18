@@ -35,6 +35,7 @@ With explicit learner-context or lesson-result paths and a teacher request for r
 ## Decision Rules
 
 - Do not change locked grammar, vocabulary count, or mode.
+- Copy the complete canonical vocabulary scope without renaming or dropping fields.
 - Do not reintroduce explicit review excluded by the teacher.
 - Prior targets may be retrieval, carrier, transfer, or defer.
 - Missing evidence becomes a blocker or limitation, not an automatic direction change.

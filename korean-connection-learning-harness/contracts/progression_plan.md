@@ -26,7 +26,14 @@ review_targets: []
 retrieval_targets: []
 transfer_targets: []
 conversation_skill_targets: []
-vocabulary_scope: {}
+vocabulary_scope:
+  target_pack: ""
+  lesson_vocabulary_set_ref: null
+  in_class_new_item_count: 0
+  productive_core_count: 0
+  receptive_support_count: 0
+  review_item_ids: []
+  homework_expansion_count: 0
 teacher_overrides_applied: []
 blocked_targets: []
 spiral_review_plan: []
@@ -35,4 +42,4 @@ next_lesson_rationale: "why this approved lesson now"
 
 ## Validation
 
-The plan must match the controlling lock. Review may be empty when the teacher explicitly excludes separate review; prior targets may instead be carrier, retrieval, transfer, or defer.
+The plan must match the controlling lock, including the complete normalized vocabulary scope. Review may be empty when the teacher explicitly excludes separate review; prior targets may instead be carrier, retrieval, transfer, or defer.

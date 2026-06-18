@@ -11,6 +11,8 @@ open -> partial -> ready_to_lock -> locked
 - `ready_to_lock`: all required scope values are known and explicit approval is the only remaining step.
 - `locked`: approval evidence exists and blockers are empty.
 
+An open blocking unknown forbids `ready_to_lock`. Intake artifacts cannot create `locked`; only a valid Lesson Scope Lock can represent that state.
+
 ## Backward Transitions
 
 A goal change, duration change, new learner evidence, or request that conflicts with a lock returns the conversation to `partial` or `ready_to_lock`.
@@ -24,3 +26,5 @@ Never overwrite a locked contract silently. Use one of:
 - new Teacher Decision Card followed by a replacement lock
 
 Old locks remain auditable and must not be treated as active after supersession.
+
+Semantic validators enforce these transitions in structured Golden and test payloads.

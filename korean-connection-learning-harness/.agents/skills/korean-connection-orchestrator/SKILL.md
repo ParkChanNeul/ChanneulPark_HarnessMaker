@@ -75,6 +75,7 @@ Front-stage uses no specialist agent by default. If an explicit learner-context 
 5. Write final artifacts and lock revisions; subagents return proposals only.
 6. Preserve teacher overrides through progression, architecture, follow-up, and assessment.
 7. Run privacy review when identifying context appears.
+8. Run semantic, cross-artifact, and executable acceptance validation before accepting a Golden or runtime assessment result.
 
 ## Execution Modes
 
@@ -132,4 +133,4 @@ Identify the changed input, rerun its owner and downstream consumers, then revie
 
 ## Completion Criteria
 
-A conversation is complete when it reaches the requested teacher decision boundary. An execution run is complete only when its required approval contracts, generated artifacts, reviewer status, and privacy status are valid.
+A conversation is complete when it reaches the requested teacher decision boundary. An execution run is complete only when its required approval contracts, generated artifacts, reviewer status, privacy status, canonical vocabulary scope, and cross-artifact links are valid. A manually written `overall_status: pass` is not evidence; calculated validation results control acceptance.

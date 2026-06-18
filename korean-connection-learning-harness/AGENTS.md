@@ -14,3 +14,4 @@
 |---|---|---|---|
 | 2026-06-14 | Initial V2 harness build | full project | Rebuild around learning progression, practice, and mastery |
 | 2026-06-18 | Teacher-in-the-Loop conversational routing | front stage, locks, post-lesson gates | Keep progression decisions under explicit teacher authority |
+| 2026-06-18 | Semantic validation hardening | contracts, Golden Fixture, validators, tests, CI | Make approval, vocabulary, references, and cross-artifact consistency executable |

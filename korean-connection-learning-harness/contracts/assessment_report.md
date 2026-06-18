@@ -31,4 +31,4 @@ privacy_checks: {passed: [], failed: []}
 
 ## Validation
 
-Assessment cites exact artifacts, distinguishes blockers from notes, and blocks missing or inconsistent teacher approval gates.
+Assessment cites exact artifacts, distinguishes blockers from notes, and blocks missing or inconsistent teacher approval gates. Golden assessment reports are generated from semantic and cross-artifact validation; a manually edited pass value is invalid.

@@ -19,20 +19,22 @@ Use this skill after a lesson blueprint exists.
 ## Workflow
 
 1. Map every target in the lesson blueprint to at least one practice move.
-2. Create controlled practice for form and meaning.
-3. Create guided practice that adds choice.
-4. Create independent production where the learner must choose language without a visible model.
-5. Create transfer practice in a changed situation, role, or relationship distance.
-6. Add retrieval prompts for prior targets.
-7. Add common-error repair prompts.
-8. Seed homework and Quizlet follow-up.
-9. Return a `practice_plan`.
+2. Copy the complete canonical vocabulary scope from the blueprint.
+3. Create controlled practice for form and meaning.
+4. Create guided practice that adds choice.
+5. Create independent production where the learner must choose language without a visible model.
+6. Create transfer practice in a changed situation, role, or relationship distance.
+7. Add retrieval prompts for prior targets.
+8. Add common-error repair prompts.
+9. Seed homework and Quizlet follow-up.
+10. Return a `practice_plan`.
 
 ## Decision Rules
 
 - Recognition is not enough. Include production.
 - Production in the same prompt is not enough. Include transfer.
 - Transfer without evidence capture is not enough. State what success shows.
+- Every structured practice move must name its target IDs.
 - Keep practice small and repeatable; avoid turning one lesson into a full course.
 
 ## Output

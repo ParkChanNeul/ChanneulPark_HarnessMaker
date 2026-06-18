@@ -13,6 +13,10 @@ Require learner level or bounded range, duration, situation, mode, new grammar d
 
 Approval evidence must quote or faithfully summarize the teacher's decision. Generic “진행”, “계속”, “좋아”, or “다음” does not approve an incomplete scope.
 
+## Vocabulary Scope
+
+Write only `target_pack`, `lesson_vocabulary_set_ref`, `in_class_new_item_count`, `productive_core_count`, `receptive_support_count`, `review_item_ids`, and `homework_expansion_count`. Counts are non-negative integers. Productive plus receptive must equal the in-class total unless a specific vocabulary-count Teacher Override is recorded.
+
 ## Write Rule
 
 Write under `_workspace/runs/<run_id>/00_conversation/lesson_scope_lock.md` only when the teacher provides a run directory, requests a new run, or explicitly authorizes lock creation. Do not silently overwrite a locked contract. Create a revision or mark the old lock superseded.

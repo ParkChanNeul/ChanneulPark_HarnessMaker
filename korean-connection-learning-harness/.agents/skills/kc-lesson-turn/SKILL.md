@@ -16,6 +16,10 @@ Create a human-readable Teacher Decision Card. Do not generate lesson materials.
 5. Recommend one option with rationale and limitations.
 6. List decisions still required before scope can lock.
 
+## Vocabulary Scope
+
+Use only the canonical fields from `contracts/conversation/teacher_decision_card.md`: `target_pack`, `lesson_vocabulary_set_ref`, `in_class_new_item_count`, `productive_core_count`, `receptive_support_count`, `review_item_ids`, and `homework_expansion_count`. The in-class count must equal productive plus receptive counts.
+
 ## Advisory Specialist Exception
 
 Front-stage is parent-led by default. When the teacher supplies an explicit learner-context or lesson-result path and asks for evidence-based reasoning, the parent may call `kc_learner_state_analyst` and `kc_learning_progression_planner` in read-only advisory mode. Their results are proposals only. They cannot lock scope, write workspace artifacts, or start `build_lesson`.
