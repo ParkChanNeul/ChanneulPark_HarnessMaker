@@ -7,22 +7,36 @@
   "source_progression_plan": "02_progression_plan.md",
   "lesson_title": "카페에서 주문하고 답하기",
   "learner_alias": "synthetic_cafe_learner",
-  "situation": "cafe",
+  "situation_scope": {
+    "pack_ref": "cafe_ordering",
+    "sub_situation_ids": [
+      "order_item",
+      "answer_staff_question",
+      "request_takeout"
+    ]
+  },
   "lesson_promise": "주문하고 직원 질문에 짧게 답한다",
-  "new_targets": [
-    "request_juseyo"
-  ],
-  "review_targets": [
-    "iyo_order"
-  ],
-  "retrieval_targets": [
-    "polite_yo"
-  ],
-  "transfer_targets": [
-    "request_juseyo_to_takeout"
-  ],
-  "conversation_skill_targets": [
-    "listen_answer_confirm"
+  "language_targets": [
+    {
+      "target_ref": "chunk_request_noun_juseyo",
+      "treatment": "new"
+    },
+    {
+      "target_ref": "discourse_short_noun_iyo",
+      "treatment": "review"
+    },
+    {
+      "target_ref": "register_haeyo_polite",
+      "treatment": "retrieval"
+    },
+    {
+      "target_ref": "grammar_request_verb_eo_juseyo",
+      "treatment": "transfer"
+    },
+    {
+      "target_ref": "interaction_confirm_and_answer",
+      "treatment": "practice"
+    }
   ],
   "vocabulary_scope": {
     "target_pack": "cafe_core",

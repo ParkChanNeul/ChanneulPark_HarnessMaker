@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "base_profile_ref": "general_adult_conversation",
+  "active_overlay_refs": [
+    "korea_resident_worker",
+    "heritage_oral",
+    "heritage_reconnection"
+  ],
+  "reserved_overlay_refs": [
+    "topik_exam"
+  ]
+}

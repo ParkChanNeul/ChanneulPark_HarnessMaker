@@ -45,13 +45,14 @@ def run_command(args: list[str], label: str) -> None:
 def scan_text_files() -> list[Path]:
     return [
         path for path in ROOT.rglob('*')
-        if path.is_file() and '.git' not in path.parts and path.suffix in {'.md', '.toml', '.py', '.txt'}
+        if path.is_file() and '.git' not in path.parts and path.suffix in {'.json', '.md', '.toml', '.py', '.txt'}
     ]
 
 
 def main() -> None:
     for script in [
         'validate_structure.py',
+        'validate_language_map.py',
         'validate_contracts.py',
         'validate_agent_boundaries.py',
         'validate_semantic_contracts.py',
@@ -62,6 +63,14 @@ def main() -> None:
             [sys.executable, str(ROOT / 'scripts' / script)],
             script,
         )
+    run_command(
+        [
+            sys.executable,
+            str(ROOT / 'scripts' / 'render_language_map_coverage.py'),
+            '--check',
+        ],
+        'render_language_map_coverage.py --check',
+    )
     run_command(
         [
             sys.executable,

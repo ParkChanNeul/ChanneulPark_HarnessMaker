@@ -18,7 +18,7 @@
     "지연 회상"
   ],
   "state_update_candidates": [
-    "request_juseyo independent 후보"
+    "chunk_request_noun_juseyo independent 후보"
   ],
   "homework_options": [
     {
@@ -32,17 +32,24 @@
     {
       "option_id": "B",
       "mode": "advance",
-      "new_target_candidates": [
-        "want_go_sipeoyo"
-      ],
-      "prior_target_treatment": [
+      "situation_scope": {
+        "pack_ref": "preferences_opinions",
+        "sub_situation_ids": [
+          "talk_about_hobbies"
+        ]
+      },
+      "candidate_language_targets": [
         {
-          "target_id": "cafe_ordering",
+          "target_ref": "grammar_want_go_sipeoyo",
+          "treatment": "new"
+        },
+        {
+          "target_ref": "chunk_request_noun_juseyo",
           "treatment": "carrier"
         },
         {
-          "target_id": "staff_question_response",
-          "treatment": "retrieval"
+          "target_ref": "interaction_confirm_and_answer",
+          "treatment": "review"
         }
       ],
       "reason": "강사가 새 진도를 선호",

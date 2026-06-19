@@ -11,11 +11,12 @@ lesson_result_id: "lesson result id"
 lesson_id: "lesson id"
 learner_alias: "non-identifying handle"
 date: "YYYY-MM-DD or lesson slot"
-planned_targets:
-  new: []
-  review: []
-  retrieval: []
-  transfer: []
+situation_scope:
+  pack_ref: "canonical situation pack id"
+  sub_situation_ids: []
+language_targets:
+  - target_ref: "canonical language target id"
+    treatment: "new | review | retrieval | transfer | practice | carrier | defer"
 observed_evidence:
   strengths: []
   breakdowns: []

@@ -1,16 +1,16 @@
-# Grammar Mastery Schema
+# Language Target Mastery Schema
 
 ## Purpose
 
-Tracks grammar and expression targets as cumulative skills rather than one-time lesson topics.
+Tracks canonical language targets as cumulative skills rather than one-time lesson topics.
 
 ## Target Record
 
 ```yaml
-target_id: "grammar.or.expression.id"
+target_ref: "canonical language target id"
 display_name: "short learner-facing label"
 function: "what the learner can do with it"
-level_band: "A0 | A1 | A2 | B1 | B2"
+level_band: "A0 | A1 | A2 | B1 | B2 | C1 | C2 | special_content"
 status: "unseen | introduced | controlled | guided | independent | transfer_attempted | stable | needs_repair"
 last_seen_lesson: "lesson id or null"
 next_review_due: "date or lesson slot"

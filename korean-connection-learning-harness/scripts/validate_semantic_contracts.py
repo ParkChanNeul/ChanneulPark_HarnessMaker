@@ -37,11 +37,36 @@ NEXT_LESSON_MODES = {
     "conversation_repair",
 }
 PRIOR_TARGET_TREATMENTS = {
-    "explicit_review",
+    "new",
+    "review",
     "retrieval",
-    "carrier",
     "transfer",
+    "practice",
+    "carrier",
     "defer",
+}
+LANGUAGE_TARGET_TREATMENTS = PRIOR_TARGET_TREATMENTS
+LEGACY_TARGET_FIELDS = {
+    "targets",
+    "approved_new_grammar",
+    "approved_review_grammar",
+    "approved_new_targets",
+    "approved_review_targets",
+    "new_grammar_candidates",
+    "new_target_candidates",
+    "review_candidates",
+    "review_targets",
+    "retrieval_targets",
+    "transfer_targets",
+    "conversation_targets",
+    "conversation_skill_targets",
+    "planned_targets",
+}
+LEGACY_SITUATION_FIELDS = {
+    "primary_situation",
+    "target_situation",
+    "situation",
+    "pack_id",
 }
 
 VOCABULARY_FIELDS = [
@@ -98,7 +123,7 @@ LESSON_LOCK_FIELDS = [
     "approval_evidence",
     "learner",
     "lesson",
-    "targets",
+    "language_targets",
     "vocabulary_scope",
     "material_scope",
     "teacher_overrides",
@@ -130,13 +155,82 @@ NEXT_LOCK_FIELDS = [
     "approved_by_teacher",
     "approval_evidence",
     "selected_direction",
-    "prior_targets",
+    "language_targets",
     "vocabulary_direction",
     "homework_scope",
     "next_lesson_check",
     "teacher_notes",
     "unresolved_blockers",
 ]
+
+
+def validate_language_targets(
+    targets: Any,
+    context: str,
+) -> list[str]:
+    if not isinstance(targets, list):
+        return [f"{context}: language targets must be an array"]
+
+    errors: list[str] = []
+    seen: set[str] = set()
+    for index, target in enumerate(targets):
+        target_context = f"{context}[{index}]"
+        if not isinstance(target, dict):
+            errors.append(f"{target_context}: target must be an object")
+            continue
+        errors.extend(
+            require_fields(target, ["target_ref", "treatment"], target_context)
+        )
+        unexpected = sorted(set(target) - {"target_ref", "treatment"})
+        if unexpected:
+            errors.append(
+                f"{target_context}: unexpected fields {', '.join(unexpected)}"
+            )
+        target_ref = target.get("target_ref")
+        if not isinstance(target_ref, str) or not target_ref.strip():
+            errors.append(f"{target_context}: target_ref must be non-empty")
+        elif target_ref in seen:
+            errors.append(
+                f"{context}: target {target_ref!r} cannot have multiple treatments"
+            )
+        else:
+            seen.add(target_ref)
+        treatment = target.get("treatment")
+        if treatment not in LANGUAGE_TARGET_TREATMENTS:
+            errors.append(f"{target_context}: invalid treatment {treatment!r}")
+    return errors
+
+
+def validate_situation_scope(scope: Any, context: str) -> list[str]:
+    if not isinstance(scope, dict):
+        return [f"{context}: situation_scope must be an object"]
+    errors = require_fields(scope, ["pack_ref", "sub_situation_ids"], context)
+    unexpected = sorted(set(scope) - {"pack_ref", "sub_situation_ids"})
+    if unexpected:
+        errors.append(f"{context}: unexpected fields {', '.join(unexpected)}")
+    if not isinstance(scope.get("pack_ref"), str) or not scope.get(
+        "pack_ref", ""
+    ).strip():
+        errors.append(f"{context}: pack_ref must be non-empty")
+    sub_situations = scope.get("sub_situation_ids")
+    if not isinstance(sub_situations, list) or not all(
+        isinstance(item, str) and item.strip() for item in sub_situations
+    ):
+        errors.append(f"{context}: sub_situation_ids must be an array of strings")
+    elif len(sub_situations) != len(set(sub_situations)):
+        errors.append(f"{context}: sub_situation_ids must be unique")
+    return errors
+
+
+def reject_legacy_fields(data: Any, context: str) -> list[str]:
+    if not isinstance(data, dict):
+        return []
+    errors: list[str] = []
+    for field in sorted(LEGACY_TARGET_FIELDS.intersection(data)):
+        errors.append(f"{context}: legacy target field {field} is forbidden")
+    for field in sorted(LEGACY_SITUATION_FIELDS.intersection(data)):
+        errors.append(f"{context}: legacy situation field {field} is forbidden")
+    return errors
 
 
 def _is_non_negative_integer(value: Any) -> bool:
@@ -272,9 +366,8 @@ def validate_teacher_decision_card(data: dict) -> list[str]:
                 [
                     "option_id",
                     "mode",
-                    "new_grammar_candidates",
-                    "review_candidates",
-                    "conversation_targets",
+                    "situation_scope",
+                    "candidate_language_targets",
                     "vocabulary_scope",
                     "benefits",
                     "risks",
@@ -285,6 +378,19 @@ def validate_teacher_decision_card(data: dict) -> list[str]:
         option_ids.append(option.get("option_id"))
         if option.get("mode") not in LESSON_MODES:
             errors.append(f"{option_context}: invalid mode {option.get('mode')!r}")
+        errors.extend(reject_legacy_fields(option, option_context))
+        errors.extend(
+            validate_situation_scope(
+                option.get("situation_scope"),
+                f"{option_context}.situation_scope",
+            )
+        )
+        errors.extend(
+            validate_language_targets(
+                option.get("candidate_language_targets"),
+                f"{option_context}.candidate_language_targets",
+            )
+        )
         errors.extend(
             validate_vocabulary_scope(
                 option.get("vocabulary_scope"),
@@ -328,6 +434,21 @@ def validate_lesson_scope_lock(data: dict) -> list[str]:
         duration = lesson.get("duration_minutes")
         if not isinstance(duration, int) or isinstance(duration, bool) or duration <= 0:
             errors.append(f"{context}: lesson.duration_minutes must be positive integer")
+        errors.extend(reject_legacy_fields(lesson, f"{context}.lesson"))
+        errors.extend(
+            validate_situation_scope(
+                lesson.get("situation_scope"),
+                f"{context}.lesson.situation_scope",
+            )
+        )
+
+    errors.extend(reject_legacy_fields(data, context))
+    errors.extend(
+        validate_language_targets(
+            data.get("language_targets"),
+            f"{context}.language_targets",
+        )
+    )
 
     if status == "locked":
         if data.get("approved_by_teacher") is not True:
@@ -353,6 +474,48 @@ def validate_post_lesson_teacher_card(data: dict) -> list[str]:
     status = data.get("status")
     if status not in SCOPE_STATUSES:
         errors.append(f"{context}: invalid status {status!r}")
+    errors.extend(reject_legacy_fields(data, context))
+
+    next_options = data.get("next_lesson_options")
+    if not isinstance(next_options, list):
+        errors.append(f"{context}: next_lesson_options must be an array")
+    else:
+        for index, option in enumerate(next_options):
+            option_context = f"{context}.next_lesson_options[{index}]"
+            if not isinstance(option, dict):
+                errors.append(f"{option_context}: option must be an object")
+                continue
+            errors.extend(
+                require_fields(
+                    option,
+                    [
+                        "option_id",
+                        "mode",
+                        "situation_scope",
+                        "candidate_language_targets",
+                        "reason",
+                        "risk",
+                    ],
+                    option_context,
+                )
+            )
+            if option.get("mode") not in NEXT_LESSON_MODES:
+                errors.append(
+                    f"{option_context}: invalid mode {option.get('mode')!r}"
+                )
+            errors.extend(reject_legacy_fields(option, option_context))
+            errors.extend(
+                validate_situation_scope(
+                    option.get("situation_scope"),
+                    f"{option_context}.situation_scope",
+                )
+            )
+            errors.extend(
+                validate_language_targets(
+                    option.get("candidate_language_targets"),
+                    f"{option_context}.candidate_language_targets",
+                )
+            )
 
     option_ids = {
         option.get("option_id")
@@ -400,6 +563,14 @@ def validate_next_lesson_decision_lock(data: dict) -> list[str]:
         errors.append(
             f"{context}: invalid selected_direction.mode {direction.get('mode')!r}"
         )
+    else:
+        errors.extend(reject_legacy_fields(direction, f"{context}.selected_direction"))
+        errors.extend(
+            validate_situation_scope(
+                direction.get("situation_scope"),
+                f"{context}.selected_direction.situation_scope",
+            )
+        )
 
     if status == "locked":
         if data.get("approved_by_teacher") is not True:
@@ -409,21 +580,13 @@ def validate_next_lesson_decision_lock(data: dict) -> list[str]:
         if data.get("unresolved_blockers"):
             errors.append(f"{context}: locked requires empty unresolved_blockers")
 
-    seen_targets: set[Any] = set()
-    for index, target in enumerate(data.get("prior_targets", [])):
-        target_context = f"{context}.prior_targets[{index}]"
-        if not isinstance(target, dict):
-            errors.append(f"{target_context}: target treatment must be an object")
-            continue
-        target_id = target.get("target_id")
-        treatment = target.get("treatment")
-        if treatment not in PRIOR_TARGET_TREATMENTS:
-            errors.append(f"{target_context}: invalid treatment {treatment!r}")
-        if target_id in seen_targets:
-            errors.append(
-                f"{context}: target {target_id!r} cannot have multiple treatments"
-            )
-        seen_targets.add(target_id)
+    errors.extend(reject_legacy_fields(data, context))
+    errors.extend(
+        validate_language_targets(
+            data.get("language_targets"),
+            f"{context}.language_targets",
+        )
+    )
 
     errors.extend(
         validate_vocabulary_scope(

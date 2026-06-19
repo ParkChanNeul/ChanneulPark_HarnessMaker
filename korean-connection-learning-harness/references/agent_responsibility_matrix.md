@@ -16,9 +16,9 @@ Top-level Codex is the parent orchestrator. Subagents return findings, proposed 
 | `kc_practice_designer` | `kc-practice-design` | practice ladder and evidence capture | blueprint, practice rules, mastery schemas | practice plan, homework/Quizlet seeds | preserve locked target treatment |
 | `kc_student_experience_designer` | `kc-student-experience-design` | learner-facing material specs | blueprint, practice, student rules | deck spec, design manifest draft | rendering cannot change scope |
 | `kc_learning_followup_teacher` | `kc-learning-followup` | approved homework-only or full follow-up | result, post card, optional next lock | weekly pack, homework, Quizlet, message, optional next outputs | next outputs require next lock |
-| `kc_assessment_reviewer` | `kc-assessment-review` | contract, learning, evidence, and approval QA | generated artifacts, locks, domain docs | assessment report | block unapproved builds and lock drift |
-| `kc_research_synthesizer` | `kc-research-synthesis` | evidence-labeled insight proposals | research notes, evidence levels | research insight proposal | existing governance gate |
-| `kc_domain_curator` | `kc-domain-curation` | approved domain update proposals | insight proposal, domain, approval rules | domain update proposal | human approval required |
+| `kc_assessment_reviewer` | `kc-assessment-review` | contract, learning, registry, migration, evidence, and approval QA | generated artifacts, locks, language map, packs, profiles, domain docs | assessment report | block unapproved builds, lock drift, formal-only target coverage, and unsupported core coverage |
+| `kc_research_synthesizer` | `kc-research-synthesis` | evidence-labeled insight and source-catalog proposals | accessed official sources, research notes, evidence levels | research insight and source record proposals | never invent or mark inaccessible sources reviewed |
+| `kc_domain_curator` | `kc-domain-curation` | approved domain and canonical map update proposals | insight proposal, registries, packs, profiles, migration tables, approval rules | domain update proposal | common schemas and human approval required |
 | `kc_privacy_auditor` | `kc-privacy-audit` | identifying-data review | target artifacts, privacy rules | privacy report | conditional privacy gate |
 
 ## Advisory Mode
@@ -27,7 +27,7 @@ Only learner-state analysis and progression planning may be used in front-stage 
 
 ## Review Duties
 
-`kc_assessment_reviewer` checks situation, culture, tracked grammar/vocabulary, repeated practice, mastery evidence, teacher approval, lock consistency, canonical vocabulary propagation, practice target coverage, deck count, follow-up scope, and learner-safe visible titles. Computed semantic validation outranks manually declared assessment status.
+`kc_assessment_reviewer` checks canonical `language_targets`, canonical `situation_scope`, situation, culture, tracked vocabulary, repeated practice, mastery evidence, teacher approval, lock consistency, target surface evidence, registry membership, source-backed core coverage, canonical vocabulary propagation, deck count, follow-up scope, and learner-safe visible titles. Computed semantic validation outranks manually declared assessment status.
 
 `kc_privacy_auditor` blocks real identifying details and archive-derived private context.
 

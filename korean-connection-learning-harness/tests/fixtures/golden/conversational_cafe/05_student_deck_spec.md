@@ -31,7 +31,7 @@
     {
       "slide_id": "cafe-s02",
       "student_title": "기억나는 표현 말하기",
-      "purpose": "polite_yo와 기존 주문 표현을 회상한다",
+      "purpose": "해요체와 기존 주문 표현을 회상한다",
       "content_blocks": [
         "모델 없이 아는 표현을 먼저 말한다"
       ],
@@ -60,7 +60,7 @@
     {
       "slide_id": "cafe-s05",
       "student_title": "N-(이)요로 답하기",
-      "purpose": "iyo_order를 복습한다",
+      "purpose": "짧은 명사 답변 N-(이)요를 복습한다",
       "content_blocks": [
         "아메리카노요",
         "라테요"
@@ -70,7 +70,7 @@
     {
       "slide_id": "cafe-s06",
       "student_title": "-주세요로 주문하기",
-      "purpose": "request_juseyo를 도입하고 생산한다",
+      "purpose": "명사·품목 + 주세요 주문 Chunk를 도입하고 생산한다",
       "content_blocks": [
         "아메리카노 주세요",
         "라테 주세요"
@@ -91,7 +91,7 @@
     {
       "slide_id": "cafe-s08",
       "student_title": "직원 질문에 바로 답하기",
-      "purpose": "listen_answer_confirm을 guided practice로 연습한다",
+      "purpose": "확인하고 답하기를 guided practice로 연습한다",
       "content_blocks": [
         "드시고 가세요?",
         "포장이세요?"
@@ -112,9 +112,12 @@
     {
       "slide_id": "cafe-s10",
       "student_title": "포장 주문으로 바꾸기",
-      "purpose": "request_juseyo_to_takeout 전이와 수업 Wrap을 수행한다",
+      "purpose": "동사 요청 V-아/어 주세요 전이와 수업 Wrap을 수행한다",
       "content_blocks": [
-        "매장 주문을 포장 주문으로 바꾼다",
+        "포장해 주세요",
+        "데워 주세요",
+        "얼음은 빼 주세요",
+        "시럽은 넣어 주세요",
         "오늘의 미션을 다시 확인한다"
       ],
       "interaction": "roleplay"

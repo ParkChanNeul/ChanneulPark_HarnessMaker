@@ -18,6 +18,27 @@ lesson_intake_state
 
 Progression, blueprint, practice, and material review must remain consistent with the active lock.
 
+The canonical language and situation scope is copied without field renaming across:
+
+```text
+teacher_decision_card.candidate_language_targets
+-> lesson_scope_lock.language_targets
+-> progression_plan.language_targets
+-> lesson_blueprint.language_targets
+-> practice_plan.language_targets
+-> lesson_result.language_targets
+-> next_lesson_check.language_targets
+
+lesson_scope_lock.situation_scope
+-> progression_plan.situation_scope
+-> lesson_blueprint.situation_scope
+-> practice_plan.situation_scope
+-> lesson_result.situation_scope
+-> next_lesson_check.situation_scope
+```
+
+`target_ref` resolves target type and metadata through the eight registries. No active artifact stores a duplicate `target_type`, split target arrays, `primary_situation`, or a second pack truth.
+
 The normalized vocabulary scope is copied without field renaming across:
 
 ```text
@@ -66,6 +87,8 @@ The computed assessment consumes validator results. It is not an independent man
 ```text
 research note
   -> research_insight_proposal
+      -> source_catalog verification
+          -> language-map coverage and migration assessment
       -> domain_update_proposal
           -> approval_state
               -> approved domain or contract update
@@ -93,4 +116,5 @@ artifact with learner context
 | follow-up artifacts | `kc_learning_followup_teacher` | assessment + conditional privacy |
 | `privacy_report` | `kc_privacy_auditor` | parent agent |
 | `research_insight_proposal` | `kc_research_synthesizer` | `kc_domain_curator` |
+| language-map, Situation Pack, or profile proposal | `kc_domain_curator` | `kc_assessment_reviewer` + human approval |
 | `domain_update_proposal` | `kc_domain_curator` | human approval |

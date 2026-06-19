@@ -11,19 +11,25 @@
   "approval_evidence": "새 문법으로 넘어가고 카페 표현은 carrier로 사용해 주세요.",
   "selected_direction": {
     "mode": "advance",
-    "primary_situation": "hobbies",
-    "approved_new_targets": [
-      "want_go_sipeoyo"
-    ]
+    "situation_scope": {
+      "pack_ref": "preferences_opinions",
+      "sub_situation_ids": [
+        "talk_about_hobbies"
+      ]
+    }
   },
-  "prior_targets": [
+  "language_targets": [
     {
-      "target_id": "cafe_ordering",
+      "target_ref": "grammar_want_go_sipeoyo",
+      "treatment": "new"
+    },
+    {
+      "target_ref": "chunk_request_noun_juseyo",
       "treatment": "carrier"
     },
     {
-      "target_id": "staff_question_response",
-      "treatment": "retrieval"
+      "target_ref": "interaction_confirm_and_answer",
+      "treatment": "review"
     }
   ],
   "vocabulary_direction": {

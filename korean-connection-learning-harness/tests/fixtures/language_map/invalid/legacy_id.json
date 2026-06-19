@@ -1,0 +1,41 @@
+{
+  "target_id": "sample",
+  "target_type": "grammar_construction",
+  "canonical_form": "V-아요",
+  "level": {
+    "primary_band": "A1",
+    "confidence": "medium",
+    "source_refs": ["source"]
+  },
+  "functions": ["request_juseyo"],
+  "situation_refs": ["pack"],
+  "prerequisites": {"hard": [], "soft": []},
+  "complexity": {
+    "prerequisite_depth": 0,
+    "morphology_load": "low",
+    "semantic_load": "low",
+    "processing_load": "low",
+    "register_load": "low",
+    "discourse_load": "low"
+  },
+  "skill_mastery": {
+    "listening": [],
+    "speaking": [],
+    "reading": [],
+    "writing": [],
+    "pronunciation": [],
+    "interaction": []
+  },
+  "language_varieties": ["standard"],
+  "explanations": {"ko": "설명", "en": "Explanation"},
+  "common_errors": [],
+  "examples": {
+    "basic": ["1", "2", "3", "4"],
+    "situation_variants": ["1", "2", "3"],
+    "contrasts": ["1", "2"],
+    "error_examples": ["1", "2"]
+  },
+  "example_refs": [],
+  "source_refs": ["source"],
+  "status": "active"
+}

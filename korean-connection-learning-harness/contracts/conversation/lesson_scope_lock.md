@@ -28,14 +28,13 @@ learner:
 lesson:
   mode: "advance | review | mixed | vocabulary_focus | listening_focus | conversation_focus | diagnostic"
   duration_minutes: 50
-  primary_situation: ""
+  situation_scope:
+    pack_ref: "canonical situation pack id"
+    sub_situation_ids: []
   lesson_promise: ""
-targets:
-  approved_new_grammar: []
-  approved_review_grammar: []
-  retrieval_targets: []
-  transfer_targets: []
-  conversation_skill_targets: []
+language_targets:
+  - target_ref: "canonical language target id"
+    treatment: "new | review | retrieval | transfer | practice | carrier | defer"
 vocabulary_scope:
   target_pack: ""
   lesson_vocabulary_set_ref: null
@@ -65,4 +64,4 @@ created_artifact_refs: []
 
 ## Validation
 
-When `lock_status` is `locked`, `approved_by_teacher` must be true, `approval_evidence` must be non-empty, and `unresolved_blockers` must be empty. Vocabulary counts must be non-negative integers, and `in_class_new_item_count` must equal `productive_core_count + receptive_support_count` unless a specific vocabulary-count Teacher Override is recorded. A locked contract is immutable; changes require a revision or superseding lock.
+When `lock_status` is `locked`, `approved_by_teacher` must be true, `approval_evidence` must be non-empty, and `unresolved_blockers` must be empty. `situation_scope` and `language_targets` are the only canonical situation and target truth; split target fields and `primary_situation` are forbidden. Vocabulary counts must be non-negative integers, and `in_class_new_item_count` must equal `productive_core_count + receptive_support_count` unless a specific vocabulary-count Teacher Override is recorded. A locked contract is immutable; changes require a revision or superseding lock.

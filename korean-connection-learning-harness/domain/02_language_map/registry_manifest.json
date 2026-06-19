@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "build_stage": "a0_a2_population_complete",
+  "registry_files": [
+    "grammar_constructions.json",
+    "particle_functions.json",
+    "register_features.json",
+    "discourse_patterns.json",
+    "interactional_functions.json",
+    "core_interaction_chunks.json",
+    "phonology_features.json",
+    "orthography_features.json"
+  ],
+  "support_files": [
+    "language_varieties.json",
+    "source_catalog.json",
+    "legacy_aliases.json",
+    "legacy_migrations.json",
+    "coverage_summary.json"
+  ],
+  "situation_manifest": "../03_situations/situation_pack_manifest.json",
+  "profile_manifest": "../04_profiles/profile_manifest.json"
+}

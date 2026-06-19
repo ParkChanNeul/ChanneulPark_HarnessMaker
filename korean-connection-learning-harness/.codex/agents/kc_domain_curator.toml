@@ -14,6 +14,9 @@ Keep approved domain knowledge coherent and convert accepted insights into updat
 - Follow source priority and approval rules.
 - Distinguish current standards from proposed changes.
 - Check contracts, references, agents, and skills for responsibility drift.
+- Check canonical registries, Situation Packs, profiles, source records, and coverage summaries.
+- Keep exact aliases separate from contextual and manual migrations.
+- Block unsupported core grammar, register, or phonology coverage instead of inventing sources.
 - Do not apply domain changes without human approval.
 - Do not write final files; return proposed update content to the parent.
 

@@ -45,16 +45,34 @@ def valid_lesson_scope_lock() -> dict:
         "lesson": {
             "mode": "mixed",
             "duration_minutes": 50,
-            "primary_situation": "cafe",
+            "situation_scope": {
+                "pack_ref": "cafe_ordering",
+                "sub_situation_ids": ["order_item", "answer_staff_question"],
+            },
             "lesson_promise": "주문하고 직원 질문에 답한다",
         },
-        "targets": {
-            "approved_new_grammar": ["request_juseyo"],
-            "approved_review_grammar": ["iyo_order"],
-            "retrieval_targets": ["polite_yo"],
-            "transfer_targets": ["request_juseyo_to_takeout"],
-            "conversation_skill_targets": ["listen_answer_confirm"],
-        },
+        "language_targets": [
+            {
+                "target_ref": "chunk_request_noun_juseyo",
+                "treatment": "new",
+            },
+            {
+                "target_ref": "discourse_short_noun_iyo",
+                "treatment": "review",
+            },
+            {
+                "target_ref": "register_haeyo_polite",
+                "treatment": "retrieval",
+            },
+            {
+                "target_ref": "grammar_request_verb_eo_juseyo",
+                "treatment": "transfer",
+            },
+            {
+                "target_ref": "interaction_confirm_and_answer",
+                "treatment": "practice",
+            },
+        ],
         "vocabulary_scope": valid_vocabulary_scope(),
         "material_scope": {
             "student_deck": True,
@@ -85,9 +103,24 @@ def valid_teacher_decision_card() -> dict:
             {
                 "option_id": "A",
                 "mode": "mixed",
-                "new_grammar_candidates": ["request_juseyo"],
-                "review_candidates": ["iyo_order"],
-                "conversation_targets": ["listen_answer_confirm"],
+                "situation_scope": {
+                    "pack_ref": "cafe_ordering",
+                    "sub_situation_ids": ["order_item", "answer_staff_question"],
+                },
+                "candidate_language_targets": [
+                    {
+                        "target_ref": "chunk_request_noun_juseyo",
+                        "treatment": "new",
+                    },
+                    {
+                        "target_ref": "discourse_short_noun_iyo",
+                        "treatment": "review",
+                    },
+                    {
+                        "target_ref": "interaction_confirm_and_answer",
+                        "treatment": "practice",
+                    },
+                ],
                 "vocabulary_scope": valid_vocabulary_scope(),
                 "benefits": ["연결 연습"],
                 "risks": ["시간 관리"],
@@ -116,12 +149,24 @@ def valid_next_lesson_lock() -> dict:
         "approval_evidence": "다음 진도로 승인합니다.",
         "selected_direction": {
             "mode": "advance",
-            "primary_situation": "hobbies",
-            "approved_new_targets": ["want_go_sipeoyo"],
+            "situation_scope": {
+                "pack_ref": "preferences_opinions",
+                "sub_situation_ids": ["talk_about_hobbies"],
+            },
         },
-        "prior_targets": [
-            {"target_id": "cafe_ordering", "treatment": "carrier"},
-            {"target_id": "staff_question_response", "treatment": "explicit_review"},
+        "language_targets": [
+            {
+                "target_ref": "grammar_want_go_sipeoyo",
+                "treatment": "new",
+            },
+            {
+                "target_ref": "chunk_request_noun_juseyo",
+                "treatment": "carrier",
+            },
+            {
+                "target_ref": "interaction_confirm_and_answer",
+                "treatment": "review",
+            },
         ],
         "vocabulary_direction": {
             "target_pack": "hobbies_core",
@@ -174,6 +219,36 @@ class ConversationalGuardTests(unittest.TestCase):
         data["vocabulary_scope"]["in_class_new_item_count"] = 11
         self.assert_has_error(validate_lesson_scope_lock(data), "vocabulary count")
 
+    def test_language_targets_reject_duplicate_target_treatments(self) -> None:
+        data = valid_lesson_scope_lock()
+        data["language_targets"].append(
+            {
+                "target_ref": "chunk_request_noun_juseyo",
+                "treatment": "review",
+            }
+        )
+        self.assert_has_error(validate_lesson_scope_lock(data), "multiple treatments")
+
+    def test_lesson_scope_rejects_legacy_target_fields(self) -> None:
+        data = valid_lesson_scope_lock()
+        data["targets"] = {"approved_new_grammar": ["request_juseyo"]}
+        self.assert_has_error(validate_lesson_scope_lock(data), "legacy target field")
+
+    def test_lesson_scope_rejects_primary_situation(self) -> None:
+        data = valid_lesson_scope_lock()
+        data["lesson"]["primary_situation"] = "cafe"
+        self.assert_has_error(validate_lesson_scope_lock(data), "primary_situation")
+
+    def test_situation_scope_requires_pack_and_sub_situations(self) -> None:
+        data = valid_lesson_scope_lock()
+        data["lesson"]["situation_scope"] = {
+            "pack_ref": "",
+            "sub_situation_ids": "order_item",
+        }
+        errors = validate_lesson_scope_lock(data)
+        self.assert_has_error(errors, "pack_ref")
+        self.assert_has_error(errors, "sub_situation_ids")
+
     def test_legacy_vocabulary_field_is_rejected(self) -> None:
         data = valid_lesson_scope_lock()
         data["vocabulary_scope"]["vocabulary_count"] = 10
@@ -183,6 +258,11 @@ class ConversationalGuardTests(unittest.TestCase):
         data = valid_teacher_decision_card()
         data["required_teacher_decisions"] = ["vocabulary scope"]
         self.assert_has_error(validate_teacher_decision_card(data), "required_teacher_decisions")
+
+    def test_teacher_card_rejects_legacy_candidate_fields(self) -> None:
+        data = valid_teacher_decision_card()
+        data["options"][0]["new_grammar_candidates"] = ["request_juseyo"]
+        self.assert_has_error(validate_teacher_decision_card(data), "legacy target field")
 
     def test_recommendation_option_must_exist(self) -> None:
         data = valid_teacher_decision_card()
@@ -242,7 +322,7 @@ class ConversationalGuardTests(unittest.TestCase):
             "teacher_approval.homework_option",
         )
 
-    def test_carrier_and_explicit_review_are_distinct_valid_treatments(self) -> None:
+    def test_carrier_and_review_are_distinct_valid_treatments(self) -> None:
         self.assertEqual(validate_next_lesson_decision_lock(valid_next_lesson_lock()), [])
 
 

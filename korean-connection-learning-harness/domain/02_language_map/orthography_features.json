@@ -1,0 +1,1813 @@
+{
+  "registry_type": "orthography_feature",
+  "records": [
+    {
+      "target_id": "orthography_jamo_combination",
+      "target_type": "orthography_feature",
+      "canonical_form": "자모 조합",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "combine_jamo"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "자모 조합의 combine_jamo 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "자모 조합을 사용해 combine_jamo을 수행한다"
+        ],
+        "reading": [
+          "문장에서 자모 조합을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 자모 조합을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 combine_jamo을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`자모 조합`은/는 초급 학습자가 combine_jamo을 수행할 때 사용하는 항목이다.",
+        "en": "`자모 조합` helps a beginner perform the function: combine_jamo."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "자모 조합의 형태 결합을 잘못함",
+        "자모 조합을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "자모 조합을 사용해 combine_jamo을 수행한다.",
+          "짧은 문장에서 자모 조합을 알아듣는다.",
+          "질문에 자모 조합을 사용해 답한다.",
+          "새 상황에서 자모 조합을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 자모 조합",
+          "일상 대화: 자모 조합",
+          "역할극 전이: 자모 조합"
+        ],
+        "contrasts": [
+          "자모 조합 사용 / 형태를 생략한 표현",
+          "자모 조합 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 자모 조합의 결합 위치를 바꿈",
+          "오류: 자모 조합을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "자모 조합",
+          "자모 조합 적용 예시 1",
+          "자모 조합 적용 예시 2",
+          "자모 조합 적용 예시 3"
+        ],
+        "confusions": [
+          "자모 조합 관련 흔한 혼동 1",
+          "자모 조합 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_syllable_block",
+      "target_type": "orthography_feature",
+      "canonical_form": "음절 블록",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "build_syllable_block"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "음절 블록의 build_syllable_block 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "음절 블록을 사용해 build_syllable_block을 수행한다"
+        ],
+        "reading": [
+          "문장에서 음절 블록을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 음절 블록을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 build_syllable_block을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`음절 블록`은/는 초급 학습자가 build_syllable_block을 수행할 때 사용하는 항목이다.",
+        "en": "`음절 블록` helps a beginner perform the function: build_syllable_block."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "음절 블록의 형태 결합을 잘못함",
+        "음절 블록을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "음절 블록을 사용해 build_syllable_block을 수행한다.",
+          "짧은 문장에서 음절 블록을 알아듣는다.",
+          "질문에 음절 블록을 사용해 답한다.",
+          "새 상황에서 음절 블록을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 음절 블록",
+          "일상 대화: 음절 블록",
+          "역할극 전이: 음절 블록"
+        ],
+        "contrasts": [
+          "음절 블록 사용 / 형태를 생략한 표현",
+          "음절 블록 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 음절 블록의 결합 위치를 바꿈",
+          "오류: 음절 블록을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "음절 블록",
+          "음절 블록 적용 예시 1",
+          "음절 블록 적용 예시 2",
+          "음절 블록 적용 예시 3"
+        ],
+        "confusions": [
+          "음절 블록 관련 흔한 혼동 1",
+          "음절 블록 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_basic_batchim",
+      "target_type": "orthography_feature",
+      "canonical_form": "받침 표기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "write_batchim"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "받침 표기의 write_batchim 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "받침 표기을 사용해 write_batchim을 수행한다"
+        ],
+        "reading": [
+          "문장에서 받침 표기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 받침 표기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 write_batchim을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`받침 표기`은/는 초급 학습자가 write_batchim을 수행할 때 사용하는 항목이다.",
+        "en": "`받침 표기` helps a beginner perform the function: write_batchim."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "받침 표기의 형태 결합을 잘못함",
+        "받침 표기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "받침 표기을 사용해 write_batchim을 수행한다.",
+          "짧은 문장에서 받침 표기을 알아듣는다.",
+          "질문에 받침 표기을 사용해 답한다.",
+          "새 상황에서 받침 표기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 받침 표기",
+          "일상 대화: 받침 표기",
+          "역할극 전이: 받침 표기"
+        ],
+        "contrasts": [
+          "받침 표기 사용 / 형태를 생략한 표현",
+          "받침 표기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 받침 표기의 결합 위치를 바꿈",
+          "오류: 받침 표기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "받침 표기",
+          "받침 표기 적용 예시 1",
+          "받침 표기 적용 예시 2",
+          "받침 표기 적용 예시 3"
+        ],
+        "confusions": [
+          "받침 표기 관련 흔한 혼동 1",
+          "받침 표기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_double_batchim_awareness",
+      "target_type": "orthography_feature",
+      "canonical_form": "겹받침 인식",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "recognize_complex_batchim"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "겹받침 인식의 recognize_complex_batchim 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "겹받침 인식을 사용해 recognize_complex_batchim을 수행한다"
+        ],
+        "reading": [
+          "문장에서 겹받침 인식을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 겹받침 인식을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 recognize_complex_batchim을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`겹받침 인식`은/는 초급 학습자가 recognize_complex_batchim을 수행할 때 사용하는 항목이다.",
+        "en": "`겹받침 인식` helps a beginner perform the function: recognize_complex_batchim."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "겹받침 인식의 형태 결합을 잘못함",
+        "겹받침 인식을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "겹받침 인식을 사용해 recognize_complex_batchim을 수행한다.",
+          "짧은 문장에서 겹받침 인식을 알아듣는다.",
+          "질문에 겹받침 인식을 사용해 답한다.",
+          "새 상황에서 겹받침 인식을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 겹받침 인식",
+          "일상 대화: 겹받침 인식",
+          "역할극 전이: 겹받침 인식"
+        ],
+        "contrasts": [
+          "겹받침 인식 사용 / 형태를 생략한 표현",
+          "겹받침 인식 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 겹받침 인식의 결합 위치를 바꿈",
+          "오류: 겹받침 인식을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "겹받침 인식",
+          "겹받침 인식 적용 예시 1",
+          "겹받침 인식 적용 예시 2",
+          "겹받침 인식 적용 예시 3"
+        ],
+        "confusions": [
+          "겹받침 인식 관련 흔한 혼동 1",
+          "겹받침 인식 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_basic_spacing",
+      "target_type": "orthography_feature",
+      "canonical_form": "기초 띄어쓰기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "space_basic_units"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "기초 띄어쓰기의 space_basic_units 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "기초 띄어쓰기을 사용해 space_basic_units을 수행한다"
+        ],
+        "reading": [
+          "문장에서 기초 띄어쓰기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 기초 띄어쓰기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 space_basic_units을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`기초 띄어쓰기`은/는 초급 학습자가 space_basic_units을 수행할 때 사용하는 항목이다.",
+        "en": "`기초 띄어쓰기` helps a beginner perform the function: space_basic_units."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "기초 띄어쓰기의 형태 결합을 잘못함",
+        "기초 띄어쓰기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "기초 띄어쓰기을 사용해 space_basic_units을 수행한다.",
+          "짧은 문장에서 기초 띄어쓰기을 알아듣는다.",
+          "질문에 기초 띄어쓰기을 사용해 답한다.",
+          "새 상황에서 기초 띄어쓰기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 기초 띄어쓰기",
+          "일상 대화: 기초 띄어쓰기",
+          "역할극 전이: 기초 띄어쓰기"
+        ],
+        "contrasts": [
+          "기초 띄어쓰기 사용 / 형태를 생략한 표현",
+          "기초 띄어쓰기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 기초 띄어쓰기의 결합 위치를 바꿈",
+          "오류: 기초 띄어쓰기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "기초 띄어쓰기",
+          "기초 띄어쓰기 적용 예시 1",
+          "기초 띄어쓰기 적용 예시 2",
+          "기초 띄어쓰기 적용 예시 3"
+        ],
+        "confusions": [
+          "기초 띄어쓰기 관련 흔한 혼동 1",
+          "기초 띄어쓰기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_particle_attachment",
+      "target_type": "orthography_feature",
+      "canonical_form": "조사 붙여쓰기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "attach_particles"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "조사 붙여쓰기의 attach_particles 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "조사 붙여쓰기을 사용해 attach_particles을 수행한다"
+        ],
+        "reading": [
+          "문장에서 조사 붙여쓰기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 조사 붙여쓰기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 attach_particles을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`조사 붙여쓰기`은/는 초급 학습자가 attach_particles을 수행할 때 사용하는 항목이다.",
+        "en": "`조사 붙여쓰기` helps a beginner perform the function: attach_particles."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "조사 붙여쓰기의 형태 결합을 잘못함",
+        "조사 붙여쓰기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "조사 붙여쓰기을 사용해 attach_particles을 수행한다.",
+          "짧은 문장에서 조사 붙여쓰기을 알아듣는다.",
+          "질문에 조사 붙여쓰기을 사용해 답한다.",
+          "새 상황에서 조사 붙여쓰기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 조사 붙여쓰기",
+          "일상 대화: 조사 붙여쓰기",
+          "역할극 전이: 조사 붙여쓰기"
+        ],
+        "contrasts": [
+          "조사 붙여쓰기 사용 / 형태를 생략한 표현",
+          "조사 붙여쓰기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 조사 붙여쓰기의 결합 위치를 바꿈",
+          "오류: 조사 붙여쓰기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "조사 붙여쓰기",
+          "조사 붙여쓰기 적용 예시 1",
+          "조사 붙여쓰기 적용 예시 2",
+          "조사 붙여쓰기 적용 예시 3"
+        ],
+        "confusions": [
+          "조사 붙여쓰기 관련 흔한 혼동 1",
+          "조사 붙여쓰기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_ending_attachment",
+      "target_type": "orthography_feature",
+      "canonical_form": "어미 붙여쓰기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "attach_endings"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "어미 붙여쓰기의 attach_endings 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "어미 붙여쓰기을 사용해 attach_endings을 수행한다"
+        ],
+        "reading": [
+          "문장에서 어미 붙여쓰기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 어미 붙여쓰기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 attach_endings을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`어미 붙여쓰기`은/는 초급 학습자가 attach_endings을 수행할 때 사용하는 항목이다.",
+        "en": "`어미 붙여쓰기` helps a beginner perform the function: attach_endings."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "어미 붙여쓰기의 형태 결합을 잘못함",
+        "어미 붙여쓰기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "어미 붙여쓰기을 사용해 attach_endings을 수행한다.",
+          "짧은 문장에서 어미 붙여쓰기을 알아듣는다.",
+          "질문에 어미 붙여쓰기을 사용해 답한다.",
+          "새 상황에서 어미 붙여쓰기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 어미 붙여쓰기",
+          "일상 대화: 어미 붙여쓰기",
+          "역할극 전이: 어미 붙여쓰기"
+        ],
+        "contrasts": [
+          "어미 붙여쓰기 사용 / 형태를 생략한 표현",
+          "어미 붙여쓰기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 어미 붙여쓰기의 결합 위치를 바꿈",
+          "오류: 어미 붙여쓰기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "어미 붙여쓰기",
+          "어미 붙여쓰기 적용 예시 1",
+          "어미 붙여쓰기 적용 예시 2",
+          "어미 붙여쓰기 적용 예시 3"
+        ],
+        "confusions": [
+          "어미 붙여쓰기 관련 흔한 혼동 1",
+          "어미 붙여쓰기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_dependent_noun_spacing",
+      "target_type": "orthography_feature",
+      "canonical_form": "의존 명사 띄어쓰기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "space_dependent_nouns"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "의존 명사 띄어쓰기의 space_dependent_nouns 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "의존 명사 띄어쓰기을 사용해 space_dependent_nouns을 수행한다"
+        ],
+        "reading": [
+          "문장에서 의존 명사 띄어쓰기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 의존 명사 띄어쓰기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 space_dependent_nouns을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`의존 명사 띄어쓰기`은/는 초급 학습자가 space_dependent_nouns을 수행할 때 사용하는 항목이다.",
+        "en": "`의존 명사 띄어쓰기` helps a beginner perform the function: space_dependent_nouns."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "의존 명사 띄어쓰기의 형태 결합을 잘못함",
+        "의존 명사 띄어쓰기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "의존 명사 띄어쓰기을 사용해 space_dependent_nouns을 수행한다.",
+          "짧은 문장에서 의존 명사 띄어쓰기을 알아듣는다.",
+          "질문에 의존 명사 띄어쓰기을 사용해 답한다.",
+          "새 상황에서 의존 명사 띄어쓰기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 의존 명사 띄어쓰기",
+          "일상 대화: 의존 명사 띄어쓰기",
+          "역할극 전이: 의존 명사 띄어쓰기"
+        ],
+        "contrasts": [
+          "의존 명사 띄어쓰기 사용 / 형태를 생략한 표현",
+          "의존 명사 띄어쓰기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 의존 명사 띄어쓰기의 결합 위치를 바꿈",
+          "오류: 의존 명사 띄어쓰기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "의존 명사 띄어쓰기",
+          "의존 명사 띄어쓰기 적용 예시 1",
+          "의존 명사 띄어쓰기 적용 예시 2",
+          "의존 명사 띄어쓰기 적용 예시 3"
+        ],
+        "confusions": [
+          "의존 명사 띄어쓰기 관련 흔한 혼동 1",
+          "의존 명사 띄어쓰기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_number_unit",
+      "target_type": "orthography_feature",
+      "canonical_form": "숫자와 단위 표기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "write_numbers_and_units"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "숫자와 단위 표기의 write_numbers_and_units 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "숫자와 단위 표기을 사용해 write_numbers_and_units을 수행한다"
+        ],
+        "reading": [
+          "문장에서 숫자와 단위 표기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 숫자와 단위 표기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 write_numbers_and_units을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`숫자와 단위 표기`은/는 초급 학습자가 write_numbers_and_units을 수행할 때 사용하는 항목이다.",
+        "en": "`숫자와 단위 표기` helps a beginner perform the function: write_numbers_and_units."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "숫자와 단위 표기의 형태 결합을 잘못함",
+        "숫자와 단위 표기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "숫자와 단위 표기을 사용해 write_numbers_and_units을 수행한다.",
+          "짧은 문장에서 숫자와 단위 표기을 알아듣는다.",
+          "질문에 숫자와 단위 표기을 사용해 답한다.",
+          "새 상황에서 숫자와 단위 표기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 숫자와 단위 표기",
+          "일상 대화: 숫자와 단위 표기",
+          "역할극 전이: 숫자와 단위 표기"
+        ],
+        "contrasts": [
+          "숫자와 단위 표기 사용 / 형태를 생략한 표현",
+          "숫자와 단위 표기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 숫자와 단위 표기의 결합 위치를 바꿈",
+          "오류: 숫자와 단위 표기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "숫자와 단위 표기",
+          "숫자와 단위 표기 적용 예시 1",
+          "숫자와 단위 표기 적용 예시 2",
+          "숫자와 단위 표기 적용 예시 3"
+        ],
+        "confusions": [
+          "숫자와 단위 표기 관련 흔한 혼동 1",
+          "숫자와 단위 표기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_sentence_punctuation",
+      "target_type": "orthography_feature",
+      "canonical_form": "문장부호",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "use_punctuation"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "문장부호의 use_punctuation 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "문장부호을 사용해 use_punctuation을 수행한다"
+        ],
+        "reading": [
+          "문장에서 문장부호을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 문장부호을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 use_punctuation을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`문장부호`은/는 초급 학습자가 use_punctuation을 수행할 때 사용하는 항목이다.",
+        "en": "`문장부호` helps a beginner perform the function: use_punctuation."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "문장부호의 형태 결합을 잘못함",
+        "문장부호을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "문장부호을 사용해 use_punctuation을 수행한다.",
+          "짧은 문장에서 문장부호을 알아듣는다.",
+          "질문에 문장부호을 사용해 답한다.",
+          "새 상황에서 문장부호을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 문장부호",
+          "일상 대화: 문장부호",
+          "역할극 전이: 문장부호"
+        ],
+        "contrasts": [
+          "문장부호 사용 / 형태를 생략한 표현",
+          "문장부호 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 문장부호의 결합 위치를 바꿈",
+          "오류: 문장부호을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "문장부호",
+          "문장부호 적용 예시 1",
+          "문장부호 적용 예시 2",
+          "문장부호 적용 예시 3"
+        ],
+        "confusions": [
+          "문장부호 관련 흔한 혼동 1",
+          "문장부호 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_question_mark",
+      "target_type": "orthography_feature",
+      "canonical_form": "물음표",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_question"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "물음표의 mark_question 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "물음표을 사용해 mark_question을 수행한다"
+        ],
+        "reading": [
+          "문장에서 물음표을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 물음표을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_question을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`물음표`은/는 초급 학습자가 mark_question을 수행할 때 사용하는 항목이다.",
+        "en": "`물음표` helps a beginner perform the function: mark_question."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "물음표의 형태 결합을 잘못함",
+        "물음표을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "물음표을 사용해 mark_question을 수행한다.",
+          "짧은 문장에서 물음표을 알아듣는다.",
+          "질문에 물음표을 사용해 답한다.",
+          "새 상황에서 물음표을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 물음표",
+          "일상 대화: 물음표",
+          "역할극 전이: 물음표"
+        ],
+        "contrasts": [
+          "물음표 사용 / 형태를 생략한 표현",
+          "물음표 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 물음표의 결합 위치를 바꿈",
+          "오류: 물음표을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "물음표",
+          "물음표 적용 예시 1",
+          "물음표 적용 예시 2",
+          "물음표 적용 예시 3"
+        ],
+        "confusions": [
+          "물음표 관련 흔한 혼동 1",
+          "물음표 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_contraction_original",
+      "target_type": "orthography_feature",
+      "canonical_form": "축약형과 원형",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "connect_contraction_and_base"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "축약형과 원형의 connect_contraction_and_base 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "축약형과 원형을 사용해 connect_contraction_and_base을 수행한다"
+        ],
+        "reading": [
+          "문장에서 축약형과 원형을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 축약형과 원형을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 connect_contraction_and_base을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`축약형과 원형`은/는 초급 학습자가 connect_contraction_and_base을 수행할 때 사용하는 항목이다.",
+        "en": "`축약형과 원형` helps a beginner perform the function: connect_contraction_and_base."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "축약형과 원형의 형태 결합을 잘못함",
+        "축약형과 원형을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "축약형과 원형을 사용해 connect_contraction_and_base을 수행한다.",
+          "짧은 문장에서 축약형과 원형을 알아듣는다.",
+          "질문에 축약형과 원형을 사용해 답한다.",
+          "새 상황에서 축약형과 원형을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 축약형과 원형",
+          "일상 대화: 축약형과 원형",
+          "역할극 전이: 축약형과 원형"
+        ],
+        "contrasts": [
+          "축약형과 원형 사용 / 형태를 생략한 표현",
+          "축약형과 원형 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 축약형과 원형의 결합 위치를 바꿈",
+          "오류: 축약형과 원형을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "축약형과 원형",
+          "축약형과 원형 적용 예시 1",
+          "축약형과 원형 적용 예시 2",
+          "축약형과 원형 적용 예시 3"
+        ],
+        "confusions": [
+          "축약형과 원형 관련 흔한 혼동 1",
+          "축약형과 원형 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_spoken_standard",
+      "target_type": "orthography_feature",
+      "canonical_form": "구어형과 표준 표기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "distinguish_spoken_and_standard"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "구어형과 표준 표기의 distinguish_spoken_and_standard 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "구어형과 표준 표기을 사용해 distinguish_spoken_and_standard을 수행한다"
+        ],
+        "reading": [
+          "문장에서 구어형과 표준 표기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 구어형과 표준 표기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 distinguish_spoken_and_standard을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`구어형과 표준 표기`은/는 초급 학습자가 distinguish_spoken_and_standard을 수행할 때 사용하는 항목이다.",
+        "en": "`구어형과 표준 표기` helps a beginner perform the function: distinguish_spoken_and_standard."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "구어형과 표준 표기의 형태 결합을 잘못함",
+        "구어형과 표준 표기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "구어형과 표준 표기을 사용해 distinguish_spoken_and_standard을 수행한다.",
+          "짧은 문장에서 구어형과 표준 표기을 알아듣는다.",
+          "질문에 구어형과 표준 표기을 사용해 답한다.",
+          "새 상황에서 구어형과 표준 표기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 구어형과 표준 표기",
+          "일상 대화: 구어형과 표준 표기",
+          "역할극 전이: 구어형과 표준 표기"
+        ],
+        "contrasts": [
+          "구어형과 표준 표기 사용 / 형태를 생략한 표현",
+          "구어형과 표준 표기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 구어형과 표준 표기의 결합 위치를 바꿈",
+          "오류: 구어형과 표준 표기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "구어형과 표준 표기",
+          "구어형과 표준 표기 적용 예시 1",
+          "구어형과 표준 표기 적용 예시 2",
+          "구어형과 표준 표기 적용 예시 3"
+        ],
+        "confusions": [
+          "구어형과 표준 표기 관련 흔한 혼동 1",
+          "구어형과 표준 표기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_loanword_spacing",
+      "target_type": "orthography_feature",
+      "canonical_form": "외래어 표기와 띄어쓰기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "write_common_loanwords"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "외래어 표기와 띄어쓰기의 write_common_loanwords 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "외래어 표기와 띄어쓰기을 사용해 write_common_loanwords을 수행한다"
+        ],
+        "reading": [
+          "문장에서 외래어 표기와 띄어쓰기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 외래어 표기와 띄어쓰기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 write_common_loanwords을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`외래어 표기와 띄어쓰기`은/는 초급 학습자가 write_common_loanwords을 수행할 때 사용하는 항목이다.",
+        "en": "`외래어 표기와 띄어쓰기` helps a beginner perform the function: write_common_loanwords."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "외래어 표기와 띄어쓰기의 형태 결합을 잘못함",
+        "외래어 표기와 띄어쓰기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "외래어 표기와 띄어쓰기을 사용해 write_common_loanwords을 수행한다.",
+          "짧은 문장에서 외래어 표기와 띄어쓰기을 알아듣는다.",
+          "질문에 외래어 표기와 띄어쓰기을 사용해 답한다.",
+          "새 상황에서 외래어 표기와 띄어쓰기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 외래어 표기와 띄어쓰기",
+          "일상 대화: 외래어 표기와 띄어쓰기",
+          "역할극 전이: 외래어 표기와 띄어쓰기"
+        ],
+        "contrasts": [
+          "외래어 표기와 띄어쓰기 사용 / 형태를 생략한 표현",
+          "외래어 표기와 띄어쓰기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 외래어 표기와 띄어쓰기의 결합 위치를 바꿈",
+          "오류: 외래어 표기와 띄어쓰기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "외래어 표기와 띄어쓰기",
+          "외래어 표기와 띄어쓰기 적용 예시 1",
+          "외래어 표기와 띄어쓰기 적용 예시 2",
+          "외래어 표기와 띄어쓰기 적용 예시 3"
+        ],
+        "confusions": [
+          "외래어 표기와 띄어쓰기 관련 흔한 혼동 1",
+          "외래어 표기와 띄어쓰기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_chat_line_break",
+      "target_type": "orthography_feature",
+      "canonical_form": "메시지 줄바꿈",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "format_short_messages"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "메시지 줄바꿈의 format_short_messages 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "메시지 줄바꿈을 사용해 format_short_messages을 수행한다"
+        ],
+        "reading": [
+          "문장에서 메시지 줄바꿈을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 메시지 줄바꿈을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 format_short_messages을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`메시지 줄바꿈`은/는 초급 학습자가 format_short_messages을 수행할 때 사용하는 항목이다.",
+        "en": "`메시지 줄바꿈` helps a beginner perform the function: format_short_messages."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "메시지 줄바꿈의 형태 결합을 잘못함",
+        "메시지 줄바꿈을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "메시지 줄바꿈을 사용해 format_short_messages을 수행한다.",
+          "짧은 문장에서 메시지 줄바꿈을 알아듣는다.",
+          "질문에 메시지 줄바꿈을 사용해 답한다.",
+          "새 상황에서 메시지 줄바꿈을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 메시지 줄바꿈",
+          "일상 대화: 메시지 줄바꿈",
+          "역할극 전이: 메시지 줄바꿈"
+        ],
+        "contrasts": [
+          "메시지 줄바꿈 사용 / 형태를 생략한 표현",
+          "메시지 줄바꿈 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 메시지 줄바꿈의 결합 위치를 바꿈",
+          "오류: 메시지 줄바꿈을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "메시지 줄바꿈",
+          "메시지 줄바꿈 적용 예시 1",
+          "메시지 줄바꿈 적용 예시 2",
+          "메시지 줄바꿈 적용 예시 3"
+        ],
+        "confusions": [
+          "메시지 줄바꿈 관련 흔한 혼동 1",
+          "메시지 줄바꿈 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "orthography_form_fields",
+      "target_type": "orthography_feature",
+      "canonical_form": "양식의 이름·날짜·번호 표기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "complete_basic_form"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "양식의 이름·날짜·번호 표기의 complete_basic_form 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "양식의 이름·날짜·번호 표기을 사용해 complete_basic_form을 수행한다"
+        ],
+        "reading": [
+          "문장에서 양식의 이름·날짜·번호 표기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 양식의 이름·날짜·번호 표기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 complete_basic_form을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`양식의 이름·날짜·번호 표기`은/는 초급 학습자가 complete_basic_form을 수행할 때 사용하는 항목이다.",
+        "en": "`양식의 이름·날짜·번호 표기` helps a beginner perform the function: complete_basic_form."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "양식의 이름·날짜·번호 표기의 형태 결합을 잘못함",
+        "양식의 이름·날짜·번호 표기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "양식의 이름·날짜·번호 표기을 사용해 complete_basic_form을 수행한다.",
+          "짧은 문장에서 양식의 이름·날짜·번호 표기을 알아듣는다.",
+          "질문에 양식의 이름·날짜·번호 표기을 사용해 답한다.",
+          "새 상황에서 양식의 이름·날짜·번호 표기을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 양식의 이름·날짜·번호 표기",
+          "일상 대화: 양식의 이름·날짜·번호 표기",
+          "역할극 전이: 양식의 이름·날짜·번호 표기"
+        ],
+        "contrasts": [
+          "양식의 이름·날짜·번호 표기 사용 / 형태를 생략한 표현",
+          "양식의 이름·날짜·번호 표기 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 양식의 이름·날짜·번호 표기의 결합 위치를 바꿈",
+          "오류: 양식의 이름·날짜·번호 표기을 관계와 상황에 맞지 않게 사용함"
+        ],
+        "representative": [
+          "양식의 이름·날짜·번호 표기",
+          "양식의 이름·날짜·번호 표기 적용 예시 1",
+          "양식의 이름·날짜·번호 표기 적용 예시 2",
+          "양식의 이름·날짜·번호 표기 적용 예시 3"
+        ],
+        "confusions": [
+          "양식의 이름·날짜·번호 표기 관련 흔한 혼동 1",
+          "양식의 이름·날짜·번호 표기 관련 흔한 혼동 2"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    }
+  ]
+}

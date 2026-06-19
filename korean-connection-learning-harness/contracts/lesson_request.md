@@ -20,7 +20,9 @@ mode: "build_lesson | render_materials | post_lesson_followup | review_outputs |
 followup_scope: "homework_only | full_followup | null"
 learner_alias: "non-identifying handle"
 lesson_goal: "communicative goal"
-target_situation: "situation id or label"
+situation_scope:
+  pack_ref: "canonical situation pack id"
+  sub_situation_ids: []
 time_box_minutes: 30
 known_inputs:
   lesson_scope_lock: "path or null"

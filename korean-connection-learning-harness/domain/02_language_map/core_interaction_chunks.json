@@ -1,0 +1,3260 @@
+{
+  "registry_type": "core_interaction_chunk",
+  "records": [
+    {
+      "target_id": "chunk_request_noun_juseyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "N 주세요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_item"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "N 주세요의 request_item 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "N 주세요을 사용해 request_item을 수행한다"
+        ],
+        "reading": [
+          "문장에서 N 주세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 N 주세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_item을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`N 주세요`은/는 초급 학습자가 request_item을 수행할 때 사용하는 항목이다.",
+        "en": "`N 주세요` helps a beginner perform the function: request_item."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "N 주세요의 형태 결합을 잘못함",
+        "N 주세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 N 주세요",
+          "서비스 상황에서 N 주세요",
+          "관계 상황에서 N 주세요"
+        ],
+        "register_variants": [
+          "해요체: N 주세요",
+          "관계 거리를 확인한 변형: N 주세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_repeat_dasi_malsseumhae_juseyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "다시 말씀해 주세요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_repeat"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "다시 말씀해 주세요의 request_repeat 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "다시 말씀해 주세요을 사용해 request_repeat을 수행한다"
+        ],
+        "reading": [
+          "문장에서 다시 말씀해 주세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 다시 말씀해 주세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_repeat을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`다시 말씀해 주세요`은/는 초급 학습자가 request_repeat을 수행할 때 사용하는 항목이다.",
+        "en": "`다시 말씀해 주세요` helps a beginner perform the function: request_repeat."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "다시 말씀해 주세요의 형태 결합을 잘못함",
+        "다시 말씀해 주세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 다시 말씀해 주세요",
+          "서비스 상황에서 다시 말씀해 주세요",
+          "관계 상황에서 다시 말씀해 주세요"
+        ],
+        "register_variants": [
+          "해요체: 다시 말씀해 주세요",
+          "관계 거리를 확인한 변형: 다시 말씀해 주세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_slowly_cheoncheonhi",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "천천히 말씀해 주세요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_slow_speech"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "천천히 말씀해 주세요의 request_slow_speech 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "천천히 말씀해 주세요을 사용해 request_slow_speech을 수행한다"
+        ],
+        "reading": [
+          "문장에서 천천히 말씀해 주세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 천천히 말씀해 주세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_slow_speech을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`천천히 말씀해 주세요`은/는 초급 학습자가 request_slow_speech을 수행할 때 사용하는 항목이다.",
+        "en": "`천천히 말씀해 주세요` helps a beginner perform the function: request_slow_speech."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "천천히 말씀해 주세요의 형태 결합을 잘못함",
+        "천천히 말씀해 주세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 천천히 말씀해 주세요",
+          "서비스 상황에서 천천히 말씀해 주세요",
+          "관계 상황에서 천천히 말씀해 주세요"
+        ],
+        "register_variants": [
+          "해요체: 천천히 말씀해 주세요",
+          "관계 거리를 확인한 변형: 천천히 말씀해 주세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_dont_know_jal_moreugesseoyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "잘 모르겠어요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "signal_nonunderstanding"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "잘 모르겠어요의 signal_nonunderstanding 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "잘 모르겠어요을 사용해 signal_nonunderstanding을 수행한다"
+        ],
+        "reading": [
+          "문장에서 잘 모르겠어요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 잘 모르겠어요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 signal_nonunderstanding을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`잘 모르겠어요`은/는 초급 학습자가 signal_nonunderstanding을 수행할 때 사용하는 항목이다.",
+        "en": "`잘 모르겠어요` helps a beginner perform the function: signal_nonunderstanding."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "잘 모르겠어요의 형태 결합을 잘못함",
+        "잘 모르겠어요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 잘 모르겠어요",
+          "서비스 상황에서 잘 모르겠어요",
+          "관계 상황에서 잘 모르겠어요"
+        ],
+        "register_variants": [
+          "해요체: 잘 모르겠어요",
+          "관계 거리를 확인한 변형: 잘 모르겠어요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_one_moment_jamsimanyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "잠시만요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "buy_time"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "잠시만요의 buy_time 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "잠시만요을 사용해 buy_time을 수행한다"
+        ],
+        "reading": [
+          "문장에서 잠시만요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 잠시만요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 buy_time을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`잠시만요`은/는 초급 학습자가 buy_time을 수행할 때 사용하는 항목이다.",
+        "en": "`잠시만요` helps a beginner perform the function: buy_time."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "잠시만요의 형태 결합을 잘못함",
+        "잠시만요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 잠시만요",
+          "서비스 상황에서 잠시만요",
+          "관계 상황에서 잠시만요"
+        ],
+        "register_variants": [
+          "해요체: 잠시만요",
+          "관계 거리를 확인한 변형: 잠시만요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_gwaenchanayo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "괜찮아요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "accept_or_decline"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "괜찮아요의 accept_or_decline 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "괜찮아요을 사용해 accept_or_decline을 수행한다"
+        ],
+        "reading": [
+          "문장에서 괜찮아요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 괜찮아요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 accept_or_decline을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`괜찮아요`은/는 초급 학습자가 accept_or_decline을 수행할 때 사용하는 항목이다.",
+        "en": "`괜찮아요` helps a beginner perform the function: accept_or_decline."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "괜찮아요의 형태 결합을 잘못함",
+        "괜찮아요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 괜찮아요",
+          "서비스 상황에서 괜찮아요",
+          "관계 상황에서 괜찮아요"
+        ],
+        "register_variants": [
+          "해요체: 괜찮아요",
+          "관계 거리를 확인한 변형: 괜찮아요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_check_majayo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "맞아요?",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "check_correctness"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "맞아요?의 check_correctness 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "맞아요?을 사용해 check_correctness을 수행한다"
+        ],
+        "reading": [
+          "문장에서 맞아요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 맞아요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 check_correctness을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`맞아요?`은/는 초급 학습자가 check_correctness을 수행할 때 사용하는 항목이다.",
+        "en": "`맞아요?` helps a beginner perform the function: check_correctness."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "맞아요?의 형태 결합을 잘못함",
+        "맞아요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 맞아요?",
+          "서비스 상황에서 맞아요?",
+          "관계 상황에서 맞아요?"
+        ],
+        "register_variants": [
+          "해요체: 맞아요?",
+          "관계 거리를 확인한 변형: 맞아요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_what_is_this",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "이게 뭐예요?",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_item_identity"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "이게 뭐예요?의 ask_item_identity 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "이게 뭐예요?을 사용해 ask_item_identity을 수행한다"
+        ],
+        "reading": [
+          "문장에서 이게 뭐예요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 이게 뭐예요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_item_identity을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`이게 뭐예요?`은/는 초급 학습자가 ask_item_identity을 수행할 때 사용하는 항목이다.",
+        "en": "`이게 뭐예요?` helps a beginner perform the function: ask_item_identity."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "이게 뭐예요?의 형태 결합을 잘못함",
+        "이게 뭐예요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 이게 뭐예요?",
+          "서비스 상황에서 이게 뭐예요?",
+          "관계 상황에서 이게 뭐예요?"
+        ],
+        "register_variants": [
+          "해요체: 이게 뭐예요?",
+          "관계 거리를 확인한 변형: 이게 뭐예요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_how_say",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "어떻게 말해요?",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "ask_expression"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "어떻게 말해요?의 ask_expression 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "어떻게 말해요?을 사용해 ask_expression을 수행한다"
+        ],
+        "reading": [
+          "문장에서 어떻게 말해요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 어떻게 말해요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_expression을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`어떻게 말해요?`은/는 초급 학습자가 ask_expression을 수행할 때 사용하는 항목이다.",
+        "en": "`어떻게 말해요?` helps a beginner perform the function: ask_expression."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "어떻게 말해요?의 형태 결합을 잘못함",
+        "어떻게 말해요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 어떻게 말해요?",
+          "서비스 상황에서 어떻게 말해요?",
+          "관계 상황에서 어떻게 말해요?"
+        ],
+        "register_variants": [
+          "해요체: 어떻게 말해요?",
+          "관계 거리를 확인한 변형: 어떻게 말해요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_self_repair",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "제가 잘못 말했어요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "repair_own_speech"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "제가 잘못 말했어요의 repair_own_speech 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "제가 잘못 말했어요을 사용해 repair_own_speech을 수행한다"
+        ],
+        "reading": [
+          "문장에서 제가 잘못 말했어요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 제가 잘못 말했어요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 repair_own_speech을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`제가 잘못 말했어요`은/는 초급 학습자가 repair_own_speech을 수행할 때 사용하는 항목이다.",
+        "en": "`제가 잘못 말했어요` helps a beginner perform the function: repair_own_speech."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "제가 잘못 말했어요의 형태 결합을 잘못함",
+        "제가 잘못 말했어요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 제가 잘못 말했어요",
+          "서비스 상황에서 제가 잘못 말했어요",
+          "관계 상황에서 제가 잘못 말했어요"
+        ],
+        "register_variants": [
+          "해요체: 제가 잘못 말했어요",
+          "관계 거리를 확인한 변형: 제가 잘못 말했어요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_not_that",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "그게 아니라요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "correct_misunderstanding"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "그게 아니라요의 correct_misunderstanding 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "그게 아니라요을 사용해 correct_misunderstanding을 수행한다"
+        ],
+        "reading": [
+          "문장에서 그게 아니라요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 그게 아니라요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 correct_misunderstanding을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`그게 아니라요`은/는 초급 학습자가 correct_misunderstanding을 수행할 때 사용하는 항목이다.",
+        "en": "`그게 아니라요` helps a beginner perform the function: correct_misunderstanding."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "그게 아니라요의 형태 결합을 잘못함",
+        "그게 아니라요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 그게 아니라요",
+          "서비스 상황에서 그게 아니라요",
+          "관계 상황에서 그게 아니라요"
+        ],
+        "register_variants": [
+          "해요체: 그게 아니라요",
+          "관계 거리를 확인한 변형: 그게 아니라요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_hello_annyeonghaseyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "안녕하세요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "greet"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "안녕하세요의 greet 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "안녕하세요을 사용해 greet을 수행한다"
+        ],
+        "reading": [
+          "문장에서 안녕하세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 안녕하세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 greet을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`안녕하세요`은/는 초급 학습자가 greet을 수행할 때 사용하는 항목이다.",
+        "en": "`안녕하세요` helps a beginner perform the function: greet."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "안녕하세요의 형태 결합을 잘못함",
+        "안녕하세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 안녕하세요",
+          "서비스 상황에서 안녕하세요",
+          "관계 상황에서 안녕하세요"
+        ],
+        "register_variants": [
+          "해요체: 안녕하세요",
+          "관계 거리를 확인한 변형: 안녕하세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_thanks_gamsahamnida",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "감사합니다",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "thank"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "감사합니다의 thank 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "감사합니다을 사용해 thank을 수행한다"
+        ],
+        "reading": [
+          "문장에서 감사합니다을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 감사합니다을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 thank을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`감사합니다`은/는 초급 학습자가 thank을 수행할 때 사용하는 항목이다.",
+        "en": "`감사합니다` helps a beginner perform the function: thank."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "감사합니다의 형태 결합을 잘못함",
+        "감사합니다을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 감사합니다",
+          "서비스 상황에서 감사합니다",
+          "관계 상황에서 감사합니다"
+        ],
+        "register_variants": [
+          "해요체: 감사합니다",
+          "관계 거리를 확인한 변형: 감사합니다"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_sorry_joesonghamnida",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "죄송합니다",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "apologize"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "죄송합니다의 apologize 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "죄송합니다을 사용해 apologize을 수행한다"
+        ],
+        "reading": [
+          "문장에서 죄송합니다을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 죄송합니다을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 apologize을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`죄송합니다`은/는 초급 학습자가 apologize을 수행할 때 사용하는 항목이다.",
+        "en": "`죄송합니다` helps a beginner perform the function: apologize."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "죄송합니다의 형태 결합을 잘못함",
+        "죄송합니다을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 죄송합니다",
+          "서비스 상황에서 죄송합니다",
+          "관계 상황에서 죄송합니다"
+        ],
+        "register_variants": [
+          "해요체: 죄송합니다",
+          "관계 거리를 확인한 변형: 죄송합니다"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_yes_ne",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "네",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "confirm"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "네의 confirm 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "네을 사용해 confirm을 수행한다"
+        ],
+        "reading": [
+          "문장에서 네을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 네을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 confirm을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`네`은/는 초급 학습자가 confirm을 수행할 때 사용하는 항목이다.",
+        "en": "`네` helps a beginner perform the function: confirm."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "네의 형태 결합을 잘못함",
+        "네을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 네",
+          "서비스 상황에서 네",
+          "관계 상황에서 네"
+        ],
+        "register_variants": [
+          "해요체: 네",
+          "관계 거리를 확인한 변형: 네"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_no_aniyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "아니요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "negate"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "아니요의 negate 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "아니요을 사용해 negate을 수행한다"
+        ],
+        "reading": [
+          "문장에서 아니요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 아니요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 negate을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`아니요`은/는 초급 학습자가 negate을 수행할 때 사용하는 항목이다.",
+        "en": "`아니요` helps a beginner perform the function: negate."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "아니요의 형태 결합을 잘못함",
+        "아니요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 아니요",
+          "서비스 상황에서 아니요",
+          "관계 상황에서 아니요"
+        ],
+        "register_variants": [
+          "해요체: 아니요",
+          "관계 거리를 확인한 변형: 아니요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_here_isseoyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "여기 있어요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "indicate_location"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "여기 있어요의 indicate_location 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "여기 있어요을 사용해 indicate_location을 수행한다"
+        ],
+        "reading": [
+          "문장에서 여기 있어요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 여기 있어요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 indicate_location을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`여기 있어요`은/는 초급 학습자가 indicate_location을 수행할 때 사용하는 항목이다.",
+        "en": "`여기 있어요` helps a beginner perform the function: indicate_location."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "여기 있어요의 형태 결합을 잘못함",
+        "여기 있어요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 여기 있어요",
+          "서비스 상황에서 여기 있어요",
+          "관계 상황에서 여기 있어요"
+        ],
+        "register_variants": [
+          "해요체: 여기 있어요",
+          "관계 거리를 확인한 변형: 여기 있어요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_none_eopseoyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "없어요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "state_absence"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "없어요의 state_absence 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "없어요을 사용해 state_absence을 수행한다"
+        ],
+        "reading": [
+          "문장에서 없어요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 없어요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 state_absence을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`없어요`은/는 초급 학습자가 state_absence을 수행할 때 사용하는 항목이다.",
+        "en": "`없어요` helps a beginner perform the function: state_absence."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "없어요의 형태 결합을 잘못함",
+        "없어요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 없어요",
+          "서비스 상황에서 없어요",
+          "관계 상황에서 없어요"
+        ],
+        "register_variants": [
+          "해요체: 없어요",
+          "관계 거리를 확인한 변형: 없어요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_where_eodiyeyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "어디예요?",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_location"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "어디예요?의 ask_location 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "어디예요?을 사용해 ask_location을 수행한다"
+        ],
+        "reading": [
+          "문장에서 어디예요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 어디예요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_location을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`어디예요?`은/는 초급 학습자가 ask_location을 수행할 때 사용하는 항목이다.",
+        "en": "`어디예요?` helps a beginner perform the function: ask_location."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "어디예요?의 형태 결합을 잘못함",
+        "어디예요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 어디예요?",
+          "서비스 상황에서 어디예요?",
+          "관계 상황에서 어디예요?"
+        ],
+        "register_variants": [
+          "해요체: 어디예요?",
+          "관계 거리를 확인한 변형: 어디예요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_how_much_eolmayeyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "얼마예요?",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_price"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "얼마예요?의 ask_price 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "얼마예요?을 사용해 ask_price을 수행한다"
+        ],
+        "reading": [
+          "문장에서 얼마예요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 얼마예요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_price을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`얼마예요?`은/는 초급 학습자가 ask_price을 수행할 때 사용하는 항목이다.",
+        "en": "`얼마예요?` helps a beginner perform the function: ask_price."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "얼마예요?의 형태 결합을 잘못함",
+        "얼마예요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 얼마예요?",
+          "서비스 상황에서 얼마예요?",
+          "관계 상황에서 얼마예요?"
+        ],
+        "register_variants": [
+          "해요체: 얼마예요?",
+          "관계 거리를 확인한 변형: 얼마예요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_takeout_pojangieyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "포장이에요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "state_takeout"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "포장이에요의 state_takeout 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "포장이에요을 사용해 state_takeout을 수행한다"
+        ],
+        "reading": [
+          "문장에서 포장이에요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 포장이에요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 state_takeout을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`포장이에요`은/는 초급 학습자가 state_takeout을 수행할 때 사용하는 항목이다.",
+        "en": "`포장이에요` helps a beginner perform the function: state_takeout."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "포장이에요의 형태 결합을 잘못함",
+        "포장이에요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 포장이에요",
+          "서비스 상황에서 포장이에요",
+          "관계 상황에서 포장이에요"
+        ],
+        "register_variants": [
+          "해요체: 포장이에요",
+          "관계 거리를 확인한 변형: 포장이에요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_dine_in_meokgo_gayo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "먹고 갈게요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "state_dine_in"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "먹고 갈게요의 state_dine_in 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "먹고 갈게요을 사용해 state_dine_in을 수행한다"
+        ],
+        "reading": [
+          "문장에서 먹고 갈게요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 먹고 갈게요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 state_dine_in을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`먹고 갈게요`은/는 초급 학습자가 state_dine_in을 수행할 때 사용하는 항목이다.",
+        "en": "`먹고 갈게요` helps a beginner perform the function: state_dine_in."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "먹고 갈게요의 형태 결합을 잘못함",
+        "먹고 갈게요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 먹고 갈게요",
+          "서비스 상황에서 먹고 갈게요",
+          "관계 상황에서 먹고 갈게요"
+        ],
+        "register_variants": [
+          "해요체: 먹고 갈게요",
+          "관계 거리를 확인한 변형: 먹고 갈게요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_card_payment",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "카드로 할게요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "select_payment"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "카드로 할게요의 select_payment 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "카드로 할게요을 사용해 select_payment을 수행한다"
+        ],
+        "reading": [
+          "문장에서 카드로 할게요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 카드로 할게요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 select_payment을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`카드로 할게요`은/는 초급 학습자가 select_payment을 수행할 때 사용하는 항목이다.",
+        "en": "`카드로 할게요` helps a beginner perform the function: select_payment."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "카드로 할게요의 형태 결합을 잘못함",
+        "카드로 할게요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 카드로 할게요",
+          "서비스 상황에서 카드로 할게요",
+          "관계 상황에서 카드로 할게요"
+        ],
+        "register_variants": [
+          "해요체: 카드로 할게요",
+          "관계 거리를 확인한 변형: 카드로 할게요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_help_dowajuseyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "도와주세요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_help"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "도와주세요의 ask_help 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "도와주세요을 사용해 ask_help을 수행한다"
+        ],
+        "reading": [
+          "문장에서 도와주세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 도와주세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_help을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`도와주세요`은/는 초급 학습자가 ask_help을 수행할 때 사용하는 항목이다.",
+        "en": "`도와주세요` helps a beginner perform the function: ask_help."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "도와주세요의 형태 결합을 잘못함",
+        "도와주세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 도와주세요",
+          "서비스 상황에서 도와주세요",
+          "관계 상황에서 도와주세요"
+        ],
+        "register_variants": [
+          "해요체: 도와주세요",
+          "관계 거리를 확인한 변형: 도와주세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_hurts_apayo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "아파요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "state_pain"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "아파요의 state_pain 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "아파요을 사용해 state_pain을 수행한다"
+        ],
+        "reading": [
+          "문장에서 아파요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 아파요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 state_pain을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`아파요`은/는 초급 학습자가 state_pain을 수행할 때 사용하는 항목이다.",
+        "en": "`아파요` helps a beginner perform the function: state_pain."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "아파요의 형태 결합을 잘못함",
+        "아파요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 아파요",
+          "서비스 상황에서 아파요",
+          "관계 상황에서 아파요"
+        ],
+        "register_variants": [
+          "해요체: 아파요",
+          "관계 거리를 확인한 변형: 아파요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_since_eojebuteoyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "어제부터요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "state_duration_start"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "어제부터요의 state_duration_start 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "어제부터요을 사용해 state_duration_start을 수행한다"
+        ],
+        "reading": [
+          "문장에서 어제부터요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 어제부터요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 state_duration_start을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`어제부터요`은/는 초급 학습자가 state_duration_start을 수행할 때 사용하는 항목이다.",
+        "en": "`어제부터요` helps a beginner perform the function: state_duration_start."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "어제부터요의 형태 결합을 잘못함",
+        "어제부터요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 어제부터요",
+          "서비스 상황에서 어제부터요",
+          "관계 상황에서 어제부터요"
+        ],
+        "register_variants": [
+          "해요체: 어제부터요",
+          "관계 거리를 확인한 변형: 어제부터요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_can_i_eodo_dwaeyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "이거 해도 돼요?",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "ask_permission"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "이거 해도 돼요?의 ask_permission 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "이거 해도 돼요?을 사용해 ask_permission을 수행한다"
+        ],
+        "reading": [
+          "문장에서 이거 해도 돼요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 이거 해도 돼요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_permission을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`이거 해도 돼요?`은/는 초급 학습자가 ask_permission을 수행할 때 사용하는 항목이다.",
+        "en": "`이거 해도 돼요?` helps a beginner perform the function: ask_permission."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "이거 해도 돼요?의 형태 결합을 잘못함",
+        "이거 해도 돼요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 이거 해도 돼요?",
+          "서비스 상황에서 이거 해도 돼요?",
+          "관계 상황에서 이거 해도 돼요?"
+        ],
+        "register_variants": [
+          "해요체: 이거 해도 돼요?",
+          "관계 거리를 확인한 변형: 이거 해도 돼요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_no_problem_munje_eopseoyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "문제없어요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "confirm_no_problem"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "문제없어요의 confirm_no_problem 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "문제없어요을 사용해 confirm_no_problem을 수행한다"
+        ],
+        "reading": [
+          "문장에서 문제없어요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 문제없어요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 confirm_no_problem을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`문제없어요`은/는 초급 학습자가 confirm_no_problem을 수행할 때 사용하는 항목이다.",
+        "en": "`문제없어요` helps a beginner perform the function: confirm_no_problem."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "문제없어요의 형태 결합을 잘못함",
+        "문제없어요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 문제없어요",
+          "서비스 상황에서 문제없어요",
+          "관계 상황에서 문제없어요"
+        ],
+        "register_variants": [
+          "해요체: 문제없어요",
+          "관계 거리를 확인한 변형: 문제없어요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_wait_gidaryeo_juseyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "기다려 주세요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_wait"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "기다려 주세요의 request_wait 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "기다려 주세요을 사용해 request_wait을 수행한다"
+        ],
+        "reading": [
+          "문장에서 기다려 주세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 기다려 주세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_wait을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`기다려 주세요`은/는 초급 학습자가 request_wait을 수행할 때 사용하는 항목이다.",
+        "en": "`기다려 주세요` helps a beginner perform the function: request_wait."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "기다려 주세요의 형태 결합을 잘못함",
+        "기다려 주세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 기다려 주세요",
+          "서비스 상황에서 기다려 주세요",
+          "관계 상황에서 기다려 주세요"
+        ],
+        "register_variants": [
+          "해요체: 기다려 주세요",
+          "관계 거리를 확인한 변형: 기다려 주세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_stop_meomchwo_juseyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "멈춰 주세요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_stop"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "멈춰 주세요의 request_stop 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "멈춰 주세요을 사용해 request_stop을 수행한다"
+        ],
+        "reading": [
+          "문장에서 멈춰 주세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 멈춰 주세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_stop을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`멈춰 주세요`은/는 초급 학습자가 request_stop을 수행할 때 사용하는 항목이다.",
+        "en": "`멈춰 주세요` helps a beginner perform the function: request_stop."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "멈춰 주세요의 형태 결합을 잘못함",
+        "멈춰 주세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 멈춰 주세요",
+          "서비스 상황에서 멈춰 주세요",
+          "관계 상황에서 멈춰 주세요"
+        ],
+        "register_variants": [
+          "해요체: 멈춰 주세요",
+          "관계 거리를 확인한 변형: 멈춰 주세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_little_more_jom_deo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "조금 더요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_more"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "조금 더요의 request_more 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "조금 더요을 사용해 request_more을 수행한다"
+        ],
+        "reading": [
+          "문장에서 조금 더요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 조금 더요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_more을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`조금 더요`은/는 초급 학습자가 request_more을 수행할 때 사용하는 항목이다.",
+        "en": "`조금 더요` helps a beginner perform the function: request_more."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "조금 더요의 형태 결합을 잘못함",
+        "조금 더요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 조금 더요",
+          "서비스 상황에서 조금 더요",
+          "관계 상황에서 조금 더요"
+        ],
+        "register_variants": [
+          "해요체: 조금 더요",
+          "관계 거리를 확인한 변형: 조금 더요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_little_less_jom_deol",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "조금 덜요",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_less"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "조금 덜요의 request_less 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "조금 덜요을 사용해 request_less을 수행한다"
+        ],
+        "reading": [
+          "문장에서 조금 덜요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 조금 덜요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_less을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`조금 덜요`은/는 초급 학습자가 request_less을 수행할 때 사용하는 항목이다.",
+        "en": "`조금 덜요` helps a beginner perform the function: request_less."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "조금 덜요의 형태 결합을 잘못함",
+        "조금 덜요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 조금 덜요",
+          "서비스 상황에서 조금 덜요",
+          "관계 상황에서 조금 덜요"
+        ],
+        "register_variants": [
+          "해요체: 조금 덜요",
+          "관계 거리를 확인한 변형: 조금 덜요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_when_eonjeyeyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "언제예요?",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_time"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "언제예요?의 ask_time 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "언제예요?을 사용해 ask_time을 수행한다"
+        ],
+        "reading": [
+          "문장에서 언제예요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 언제예요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_time을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`언제예요?`은/는 초급 학습자가 ask_time을 수행할 때 사용하는 항목이다.",
+        "en": "`언제예요?` helps a beginner perform the function: ask_time."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "언제예요?의 형태 결합을 잘못함",
+        "언제예요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 언제예요?",
+          "서비스 상황에서 언제예요?",
+          "관계 상황에서 언제예요?"
+        ],
+        "register_variants": [
+          "해요체: 언제예요?",
+          "관계 거리를 확인한 변형: 언제예요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_available_ganeunghaeyo",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "가능해요?",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "ask_availability"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "가능해요?의 ask_availability 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "가능해요?을 사용해 ask_availability을 수행한다"
+        ],
+        "reading": [
+          "문장에서 가능해요?을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 가능해요?을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_availability을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`가능해요?`은/는 초급 학습자가 ask_availability을 수행할 때 사용하는 항목이다.",
+        "en": "`가능해요?` helps a beginner perform the function: ask_availability."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "가능해요?의 형태 결합을 잘못함",
+        "가능해요?을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 가능해요?",
+          "서비스 상황에서 가능해요?",
+          "관계 상황에서 가능해요?"
+        ],
+        "register_variants": [
+          "해요체: 가능해요?",
+          "관계 거리를 확인한 변형: 가능해요?"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "chunk_goodbye_annyeonghi",
+      "target_type": "core_interaction_chunk",
+      "canonical_form": "안녕히 가세요",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "close_exchange"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "안녕히 가세요의 close_exchange 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "안녕히 가세요을 사용해 close_exchange을 수행한다"
+        ],
+        "reading": [
+          "문장에서 안녕히 가세요을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 안녕히 가세요을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 close_exchange을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`안녕히 가세요`은/는 초급 학습자가 close_exchange을 수행할 때 사용하는 항목이다.",
+        "en": "`안녕히 가세요` helps a beginner perform the function: close_exchange."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "안녕히 가세요의 형태 결합을 잘못함",
+        "안녕히 가세요을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 안녕히 가세요",
+          "서비스 상황에서 안녕히 가세요",
+          "관계 상황에서 안녕히 가세요"
+        ],
+        "register_variants": [
+          "해요체: 안녕히 가세요",
+          "관계 거리를 확인한 변형: 안녕히 가세요"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    }
+  ]
+}

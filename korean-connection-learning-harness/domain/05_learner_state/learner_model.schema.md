@@ -17,8 +17,8 @@ known_constraints:
   time_per_week: "optional"
   preferred_material_style: "optional"
   accessibility_needs: "optional"
-grammar_mastery_refs:
-  - "grammar target id"
+language_target_mastery_refs:
+  - "canonical language target id"
 conversation_mastery_refs:
   - "conversation skill id"
 mission_history_refs:

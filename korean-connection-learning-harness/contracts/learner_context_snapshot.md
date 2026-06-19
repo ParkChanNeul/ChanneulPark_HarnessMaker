@@ -20,7 +20,7 @@ learner_alias: "non-identifying handle"
 level_band: "A0 | A1 | A2 | B1 | B2 | unknown"
 goals: []
 active_situations: []
-grammar_status:
+language_target_status:
   stable: []
   active_review: []
   needs_repair: []

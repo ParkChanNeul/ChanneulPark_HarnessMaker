@@ -5,20 +5,36 @@
   "lesson_result_id": "cafe-result-001",
   "lesson_id": "cafe-blueprint-001",
   "learner_alias": "synthetic_cafe_learner",
-  "planned_targets": {
-    "new": [
-      "request_juseyo"
-    ],
-    "review": [
-      "iyo_order"
-    ],
-    "retrieval": [
-      "polite_yo"
-    ],
-    "transfer": [
-      "request_juseyo_to_takeout"
+  "situation_scope": {
+    "pack_ref": "cafe_ordering",
+    "sub_situation_ids": [
+      "order_item",
+      "answer_staff_question",
+      "request_takeout"
     ]
   },
+  "language_targets": [
+    {
+      "target_ref": "chunk_request_noun_juseyo",
+      "treatment": "new"
+    },
+    {
+      "target_ref": "discourse_short_noun_iyo",
+      "treatment": "review"
+    },
+    {
+      "target_ref": "register_haeyo_polite",
+      "treatment": "retrieval"
+    },
+    {
+      "target_ref": "grammar_request_verb_eo_juseyo",
+      "treatment": "transfer"
+    },
+    {
+      "target_ref": "interaction_confirm_and_answer",
+      "treatment": "practice"
+    }
+  ],
   "observed_evidence": {
     "successful": [
       "10개 중 7개 독립 생산",

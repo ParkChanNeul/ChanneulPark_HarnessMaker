@@ -1,0 +1,1547 @@
+{
+  "packs": [
+    {
+      "pack_id": "survival_basics",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "survival basics",
+      "title_en": "Survival Basics",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "ask_help",
+        "signal_nonunderstanding",
+        "request_repeat",
+        "close_safely"
+      ],
+      "interactional_function_refs": [
+        "interaction_ask_help"
+      ],
+      "recommended_language_target_refs": [
+        "chunk_dont_know_jal_moreugesseoyo",
+        "chunk_repeat_dasi_malsseumhae_juseyo",
+        "interaction_ask_help"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "survival_basics communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "self_introduction",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "self introduction",
+      "title_en": "Self Introduction",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "greet",
+        "say_name",
+        "say_role",
+        "ask_back"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "self_introduction communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "daily_routine",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "daily routine",
+      "title_en": "Daily Routine",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "morning",
+        "work_or_study",
+        "meal",
+        "evening"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "daily_routine communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "shopping_checkout",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "shopping checkout",
+      "title_en": "Shopping Checkout",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "find_item",
+        "ask_price",
+        "select_quantity",
+        "pay_or_decline"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "shopping_checkout communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "cafe_ordering",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "cafe ordering",
+      "title_en": "Cafe Ordering",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "order_item",
+        "answer_staff_question",
+        "request_takeout",
+        "correct_order"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "chunk_request_noun_juseyo",
+        "discourse_short_noun_iyo",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [
+        "grammar_request_verb_eo_juseyo"
+      ],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "cafe_ordering communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "restaurant_ordering",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "restaurant ordering",
+      "title_en": "Restaurant Ordering",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "get_seated",
+        "ask_menu",
+        "order",
+        "request_extra",
+        "pay"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "restaurant_ordering communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "transport_navigation",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "transport navigation",
+      "title_en": "Transport Navigation",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "select_route",
+        "buy_or_pay",
+        "board",
+        "transfer",
+        "exit"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "transport_navigation communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "directions_location",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "directions location",
+      "title_en": "Directions Location",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "approach",
+        "ask_location",
+        "follow_steps",
+        "confirm_landmark"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "directions_location communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "housing_home",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "housing home",
+      "title_en": "Housing Home",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "describe_home",
+        "ask_location",
+        "report_issue",
+        "request_service"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "housing_home communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "clinic_pharmacy",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "clinic pharmacy",
+      "title_en": "Clinic Pharmacy",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "state_symptom",
+        "state_duration",
+        "confirm_instruction",
+        "ask_next_step"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "clinic_pharmacy communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "appointments_scheduling",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "appointments scheduling",
+      "title_en": "Appointments Scheduling",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "request_slot",
+        "confirm_time",
+        "reschedule",
+        "cancel"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "appointments_scheduling communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "emergency_problem_reporting",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "emergency problem reporting",
+      "title_en": "Emergency Problem Reporting",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "get_attention",
+        "state_problem",
+        "state_location",
+        "follow_instruction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "emergency_problem_reporting communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "making_friends",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "making friends",
+      "title_en": "Making Friends",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "answer",
+        "react",
+        "ask_back",
+        "find_shared_interest"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "making_friends communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "small_talk",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "small talk",
+      "title_en": "Small Talk",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_topic",
+        "react",
+        "follow_up",
+        "close_topic"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "small_talk communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "preferences_opinions",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "preferences opinions",
+      "title_en": "Preferences Opinions",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "state_preference",
+        "ask_opinion",
+        "give_reason",
+        "talk_about_hobbies"
+      ],
+      "interactional_function_refs": [
+        "interaction_state_opinion",
+        "interaction_ask_back"
+      ],
+      "recommended_language_target_refs": [
+        "grammar_want_go_sipeoyo",
+        "interaction_state_opinion",
+        "interaction_ask_back"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "preferences_opinions communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "invitations_plans",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "invitations plans",
+      "title_en": "Invitations Plans",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "invite",
+        "check_availability",
+        "accept_or_decline",
+        "confirm_plan"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "invitations_plans communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "family_relationships",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "family relationships",
+      "title_en": "Family Relationships",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "identify_relation",
+        "describe_person",
+        "state_contact",
+        "manage_privacy"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "family_relationships communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "messaging_calls",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "messaging calls",
+      "title_en": "Messaging Calls",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open",
+        "identify",
+        "request",
+        "repair_delay",
+        "close"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "messaging_calls communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "conflict_repair",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "conflict repair",
+      "title_en": "Conflict Repair",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "signal_problem",
+        "clarify_intent",
+        "apologize",
+        "agree_next_step"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "conflict_repair communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "delivery_pickup",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "delivery pickup",
+      "title_en": "Delivery Pickup",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "identify_order",
+        "check_status",
+        "receive_item",
+        "report_missing_item"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "delivery_pickup communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "banking_payment",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "banking payment",
+      "title_en": "Banking Payment",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "state_purpose",
+        "choose_method",
+        "confirm_amount",
+        "report_problem"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "banking_payment communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "public_services",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "public services",
+      "title_en": "Public Services",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "identify_service",
+        "ask_process",
+        "complete_form",
+        "confirm_next_step"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "public_services communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "mobile_internet",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "mobile internet",
+      "title_en": "Mobile Internet",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "choose_plan",
+        "report_issue",
+        "follow_setup",
+        "confirm_service"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "mobile_internet communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "neighborhood_life",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "neighborhood life",
+      "title_en": "Neighborhood Life",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "greet_neighbor",
+        "ask_local_info",
+        "manage_noise",
+        "request_help"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "neighborhood_life communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "workplace_core",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "workplace core",
+      "title_en": "Workplace Core",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "greet_colleague",
+        "receive_task",
+        "ask_clarification",
+        "report_status"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "workplace_core communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "office_work",
+      "status": "active",
+      "runtime_selectable": true,
+      "title_ko": "office work",
+      "title_en": "Office Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "join_meeting",
+        "coordinate_task",
+        "send_message",
+        "receive_feedback"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "office_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    }
+  ]
+}

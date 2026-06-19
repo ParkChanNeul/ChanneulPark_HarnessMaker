@@ -24,11 +24,12 @@ approved_by_teacher: false
 approval_evidence: ""
 selected_direction:
   mode: "advance | review | mixed | transfer | vocabulary_focus | listening_repair | conversation_repair"
-  primary_situation: ""
-  approved_new_targets: []
-prior_targets:
-  - target_id: "id"
-    treatment: "explicit_review | retrieval | carrier | transfer | defer"
+  situation_scope:
+    pack_ref: "canonical situation pack id"
+    sub_situation_ids: []
+language_targets:
+  - target_ref: "canonical language target id"
+    treatment: "new | review | retrieval | transfer | practice | carrier | defer"
 vocabulary_direction:
   target_pack: ""
   lesson_vocabulary_set_ref: null
@@ -49,4 +50,4 @@ unresolved_blockers: []
 
 ## Validation
 
-A locked decision requires teacher approval evidence and no blockers. Vocabulary counts must be non-negative integers and internally consistent. `carrier` is natural reuse, not explicit review, and one prior target cannot have both treatments. Changes require a revision or superseding lock.
+A locked decision requires teacher approval evidence and no blockers. `situation_scope` and `language_targets` are canonical. Vocabulary counts must be non-negative integers and internally consistent. `carrier` is natural reuse, not explicit review, and one target cannot have multiple treatments. Changes require a revision or superseding lock.

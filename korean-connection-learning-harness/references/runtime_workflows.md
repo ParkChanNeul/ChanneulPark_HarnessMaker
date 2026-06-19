@@ -78,14 +78,15 @@ Review lock consistency when lesson or follow-up artifacts are present.
 ## Mode: `research_to_domain`
 
 ```text
-research note
+verified source catalog entry or research note
 -> kc_research_synthesizer
+-> language-map coverage and migration assessment
 -> kc_domain_curator
 -> human approval gate
 -> parent applies approved changes only when requested
 ```
 
-Research may propose. It does not silently rewrite approved domain knowledge.
+Research may propose. It does not silently rewrite approved domain knowledge. Language-map work must preserve the common target interface, canonical situation scope, registry IDs, source verification status, and the alias-versus-migration boundary.
 
 ## Mode: `audit_domain`
 
@@ -123,6 +124,8 @@ A lock change creates a revision or superseding lock. Do not silently mutate app
 
 ```text
 validate_structure
+-> validate_language_map
+-> render_language_map_coverage --check
 -> validate_contracts
 -> validate_agent_boundaries
 -> validate_semantic_contracts

@@ -26,9 +26,12 @@ teaching_problem:
 options:
   - option_id: "A"
     mode: "advance | review | mixed | vocabulary_focus | listening_focus | conversation_focus | diagnostic"
-    new_grammar_candidates: []
-    review_candidates: []
-    conversation_targets: []
+    situation_scope:
+      pack_ref: "canonical situation pack id"
+      sub_situation_ids: []
+    candidate_language_targets:
+      - target_ref: "canonical language target id"
+        treatment: "new | review | retrieval | transfer | practice | carrier | defer"
     vocabulary_scope:
       target_pack: ""
       lesson_vocabulary_set_ref: null
@@ -51,4 +54,4 @@ advisory_inputs: []
 
 ## Validation
 
-A recommendation is not approval. Advisory specialist output cannot set `scope_status` to `locked` or dispatch `build_lesson`. Vocabulary counts must be non-negative integers, and `in_class_new_item_count` must equal `productive_core_count + receptive_support_count`.
+A recommendation is not approval. Advisory specialist output cannot set `scope_status` to `locked` or dispatch `build_lesson`. Each option uses one canonical `situation_scope` and one `candidate_language_targets` array; legacy split target fields are forbidden. Vocabulary counts must be non-negative integers, and `in_class_new_item_count` must equal `productive_core_count + receptive_support_count`.

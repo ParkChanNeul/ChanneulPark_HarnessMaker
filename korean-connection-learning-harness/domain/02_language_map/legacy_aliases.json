@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "aliases": {
+    "polite_yo": "register_haeyo_polite",
+    "iyo_order": "discourse_short_noun_iyo",
+    "listen_answer_confirm": "interaction_confirm_and_answer",
+    "want_go_sipeoyo": "grammar_want_go_sipeoyo"
+  }
+}

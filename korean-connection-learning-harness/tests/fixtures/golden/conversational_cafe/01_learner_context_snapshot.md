@@ -9,14 +9,14 @@
     "카페 주문과 후속 질문 대응"
   ],
   "active_situations": [
-    "cafe"
+    "cafe_ordering"
   ],
-  "grammar_status": {
+  "language_target_status": {
     "stable": [
-      "polite_yo"
+      "register_haeyo_polite"
     ],
     "active_review": [
-      "iyo_order"
+      "discourse_short_noun_iyo"
     ],
     "needs_repair": []
   },
@@ -25,7 +25,7 @@
       "modeled ordering"
     ],
     "needs_practice": [
-      "listen_answer_confirm"
+      "interaction_confirm_and_answer"
     ]
   },
   "mission_history_summary": [],

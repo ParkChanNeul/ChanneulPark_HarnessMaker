@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "migrations": [
+    {
+      "legacy_id": "request_juseyo",
+      "migration_type": "contextual_split",
+      "automatic_without_context": false,
+      "context_rules": {
+        "noun_item_request": ["chunk_request_noun_juseyo"],
+        "verb_action_request": ["grammar_request_verb_eo_juseyo"],
+        "mixed_usage": [
+          "chunk_request_noun_juseyo",
+          "grammar_request_verb_eo_juseyo"
+        ]
+      },
+      "manual_review_conditions": [
+        "surface form is absent",
+        "noun and verb uses cannot be distinguished",
+        "the artifact uses the ID only as a broad lesson label"
+      ]
+    },
+    {
+      "legacy_id": "request_juseyo_to_takeout",
+      "migration_type": "contextual",
+      "automatic_without_context": false,
+      "context_rules": {
+        "verb_action_request": ["grammar_request_verb_eo_juseyo"],
+        "noun_item_request": ["chunk_request_noun_juseyo"]
+      },
+      "manual_review_conditions": [
+        "no surface example is available"
+      ]
+    }
+  ]
+}

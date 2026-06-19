@@ -1,0 +1,1356 @@
+{
+  "registry_type": "register_feature",
+  "records": [
+    {
+      "target_id": "register_haeyo_polite",
+      "target_type": "register_feature",
+      "canonical_form": "해요체",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "safe_politeness"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "해요체의 safe_politeness 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "해요체을 사용해 safe_politeness을 수행한다"
+        ],
+        "reading": [
+          "문장에서 해요체을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 해요체을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 safe_politeness을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`해요체`은/는 초급 학습자가 safe_politeness을 수행할 때 사용하는 항목이다.",
+        "en": "`해요체` helps a beginner perform the function: safe_politeness."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "해요체의 형태 결합을 잘못함",
+        "해요체을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "해요체을 사용해 safe_politeness을 수행한다.",
+          "짧은 문장에서 해요체을 알아듣는다.",
+          "질문에 해요체을 사용해 답한다.",
+          "새 상황에서 해요체을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 해요체",
+          "일상 대화: 해요체",
+          "역할극 전이: 해요체"
+        ],
+        "contrasts": [
+          "해요체 사용 / 형태를 생략한 표현",
+          "해요체 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 해요체의 결합 위치를 바꿈",
+          "오류: 해요체을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_hamnida_formal",
+      "target_type": "register_feature",
+      "canonical_form": "합니다체",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "formal_politeness"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "합니다체의 formal_politeness 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "합니다체을 사용해 formal_politeness을 수행한다"
+        ],
+        "reading": [
+          "문장에서 합니다체을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 합니다체을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 formal_politeness을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`합니다체`은/는 초급 학습자가 formal_politeness을 수행할 때 사용하는 항목이다.",
+        "en": "`합니다체` helps a beginner perform the function: formal_politeness."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "합니다체의 형태 결합을 잘못함",
+        "합니다체을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "합니다체을 사용해 formal_politeness을 수행한다.",
+          "짧은 문장에서 합니다체을 알아듣는다.",
+          "질문에 합니다체을 사용해 답한다.",
+          "새 상황에서 합니다체을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 합니다체",
+          "일상 대화: 합니다체",
+          "역할극 전이: 합니다체"
+        ],
+        "contrasts": [
+          "합니다체 사용 / 형태를 생략한 표현",
+          "합니다체 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 합니다체의 결합 위치를 바꿈",
+          "오류: 합니다체을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_hae_casual",
+      "target_type": "register_feature",
+      "canonical_form": "해체",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "casual_peer_speech"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "해체의 casual_peer_speech 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "해체을 사용해 casual_peer_speech을 수행한다"
+        ],
+        "reading": [
+          "문장에서 해체을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 해체을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 casual_peer_speech을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`해체`은/는 초급 학습자가 casual_peer_speech을 수행할 때 사용하는 항목이다.",
+        "en": "`해체` helps a beginner perform the function: casual_peer_speech."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "해체의 형태 결합을 잘못함",
+        "해체을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "해체을 사용해 casual_peer_speech을 수행한다.",
+          "짧은 문장에서 해체을 알아듣는다.",
+          "질문에 해체을 사용해 답한다.",
+          "새 상황에서 해체을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 해체",
+          "일상 대화: 해체",
+          "역할극 전이: 해체"
+        ],
+        "contrasts": [
+          "해체 사용 / 형태를 생략한 표현",
+          "해체 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 해체의 결합 위치를 바꿈",
+          "오류: 해체을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_honorific_si",
+      "target_type": "register_feature",
+      "canonical_form": "높임 선어말 -(으)시-",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "honor_subject"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "높임 선어말 -(으)시-의 honor_subject 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "높임 선어말 -(으)시-을 사용해 honor_subject을 수행한다"
+        ],
+        "reading": [
+          "문장에서 높임 선어말 -(으)시-을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 높임 선어말 -(으)시-을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 honor_subject을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`높임 선어말 -(으)시-`은/는 초급 학습자가 honor_subject을 수행할 때 사용하는 항목이다.",
+        "en": "`높임 선어말 -(으)시-` helps a beginner perform the function: honor_subject."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "높임 선어말 -(으)시-의 형태 결합을 잘못함",
+        "높임 선어말 -(으)시-을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "높임 선어말 -(으)시-을 사용해 honor_subject을 수행한다.",
+          "짧은 문장에서 높임 선어말 -(으)시-을 알아듣는다.",
+          "질문에 높임 선어말 -(으)시-을 사용해 답한다.",
+          "새 상황에서 높임 선어말 -(으)시-을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 높임 선어말 -(으)시-",
+          "일상 대화: 높임 선어말 -(으)시-",
+          "역할극 전이: 높임 선어말 -(으)시-"
+        ],
+        "contrasts": [
+          "높임 선어말 -(으)시- 사용 / 형태를 생략한 표현",
+          "높임 선어말 -(으)시- 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 높임 선어말 -(으)시-의 결합 위치를 바꿈",
+          "오류: 높임 선어말 -(으)시-을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_service_brief_polite",
+      "target_type": "register_feature",
+      "canonical_form": "서비스 상황의 짧은 존댓말",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "brief_service_politeness"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "서비스 상황의 짧은 존댓말의 brief_service_politeness 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "서비스 상황의 짧은 존댓말을 사용해 brief_service_politeness을 수행한다"
+        ],
+        "reading": [
+          "문장에서 서비스 상황의 짧은 존댓말을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 서비스 상황의 짧은 존댓말을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 brief_service_politeness을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`서비스 상황의 짧은 존댓말`은/는 초급 학습자가 brief_service_politeness을 수행할 때 사용하는 항목이다.",
+        "en": "`서비스 상황의 짧은 존댓말` helps a beginner perform the function: brief_service_politeness."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "서비스 상황의 짧은 존댓말의 형태 결합을 잘못함",
+        "서비스 상황의 짧은 존댓말을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "서비스 상황의 짧은 존댓말을 사용해 brief_service_politeness을 수행한다.",
+          "짧은 문장에서 서비스 상황의 짧은 존댓말을 알아듣는다.",
+          "질문에 서비스 상황의 짧은 존댓말을 사용해 답한다.",
+          "새 상황에서 서비스 상황의 짧은 존댓말을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 서비스 상황의 짧은 존댓말",
+          "일상 대화: 서비스 상황의 짧은 존댓말",
+          "역할극 전이: 서비스 상황의 짧은 존댓말"
+        ],
+        "contrasts": [
+          "서비스 상황의 짧은 존댓말 사용 / 형태를 생략한 표현",
+          "서비스 상황의 짧은 존댓말 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 서비스 상황의 짧은 존댓말의 결합 위치를 바꿈",
+          "오류: 서비스 상황의 짧은 존댓말을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_address_role_title",
+      "target_type": "register_feature",
+      "canonical_form": "역할·직함 호칭",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "select_address_term"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "역할·직함 호칭의 select_address_term 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "역할·직함 호칭을 사용해 select_address_term을 수행한다"
+        ],
+        "reading": [
+          "문장에서 역할·직함 호칭을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 역할·직함 호칭을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 select_address_term을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`역할·직함 호칭`은/는 초급 학습자가 select_address_term을 수행할 때 사용하는 항목이다.",
+        "en": "`역할·직함 호칭` helps a beginner perform the function: select_address_term."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "역할·직함 호칭의 형태 결합을 잘못함",
+        "역할·직함 호칭을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "역할·직함 호칭을 사용해 select_address_term을 수행한다.",
+          "짧은 문장에서 역할·직함 호칭을 알아듣는다.",
+          "질문에 역할·직함 호칭을 사용해 답한다.",
+          "새 상황에서 역할·직함 호칭을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 역할·직함 호칭",
+          "일상 대화: 역할·직함 호칭",
+          "역할극 전이: 역할·직함 호칭"
+        ],
+        "contrasts": [
+          "역할·직함 호칭 사용 / 형태를 생략한 표현",
+          "역할·직함 호칭 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 역할·직함 호칭의 결합 위치를 바꿈",
+          "오류: 역할·직함 호칭을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_omit_second_person",
+      "target_type": "register_feature",
+      "canonical_form": "2인칭 대명사 생략",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "avoid_direct_second_person"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "2인칭 대명사 생략의 avoid_direct_second_person 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "2인칭 대명사 생략을 사용해 avoid_direct_second_person을 수행한다"
+        ],
+        "reading": [
+          "문장에서 2인칭 대명사 생략을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 2인칭 대명사 생략을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 avoid_direct_second_person을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`2인칭 대명사 생략`은/는 초급 학습자가 avoid_direct_second_person을 수행할 때 사용하는 항목이다.",
+        "en": "`2인칭 대명사 생략` helps a beginner perform the function: avoid_direct_second_person."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "2인칭 대명사 생략의 형태 결합을 잘못함",
+        "2인칭 대명사 생략을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "2인칭 대명사 생략을 사용해 avoid_direct_second_person을 수행한다.",
+          "짧은 문장에서 2인칭 대명사 생략을 알아듣는다.",
+          "질문에 2인칭 대명사 생략을 사용해 답한다.",
+          "새 상황에서 2인칭 대명사 생략을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 2인칭 대명사 생략",
+          "일상 대화: 2인칭 대명사 생략",
+          "역할극 전이: 2인칭 대명사 생략"
+        ],
+        "contrasts": [
+          "2인칭 대명사 생략 사용 / 형태를 생략한 표현",
+          "2인칭 대명사 생략 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 2인칭 대명사 생략의 결합 위치를 바꿈",
+          "오류: 2인칭 대명사 생략을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_softener_jom",
+      "target_type": "register_feature",
+      "canonical_form": "좀",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "soften_request"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "좀의 soften_request 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "좀을 사용해 soften_request을 수행한다"
+        ],
+        "reading": [
+          "문장에서 좀을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 좀을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 soften_request을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`좀`은/는 초급 학습자가 soften_request을 수행할 때 사용하는 항목이다.",
+        "en": "`좀` helps a beginner perform the function: soften_request."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "좀의 형태 결합을 잘못함",
+        "좀을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "좀을 사용해 soften_request을 수행한다.",
+          "짧은 문장에서 좀을 알아듣는다.",
+          "질문에 좀을 사용해 답한다.",
+          "새 상황에서 좀을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 좀",
+          "일상 대화: 좀",
+          "역할극 전이: 좀"
+        ],
+        "contrasts": [
+          "좀 사용 / 형태를 생략한 표현",
+          "좀 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 좀의 결합 위치를 바꿈",
+          "오류: 좀을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_indirect_refusal",
+      "target_type": "register_feature",
+      "canonical_form": "완곡한 거절",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "soften_refusal"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "완곡한 거절의 soften_refusal 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "완곡한 거절을 사용해 soften_refusal을 수행한다"
+        ],
+        "reading": [
+          "문장에서 완곡한 거절을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 완곡한 거절을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 soften_refusal을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`완곡한 거절`은/는 초급 학습자가 soften_refusal을 수행할 때 사용하는 항목이다.",
+        "en": "`완곡한 거절` helps a beginner perform the function: soften_refusal."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "완곡한 거절의 형태 결합을 잘못함",
+        "완곡한 거절을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "완곡한 거절을 사용해 soften_refusal을 수행한다.",
+          "짧은 문장에서 완곡한 거절을 알아듣는다.",
+          "질문에 완곡한 거절을 사용해 답한다.",
+          "새 상황에서 완곡한 거절을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 완곡한 거절",
+          "일상 대화: 완곡한 거절",
+          "역할극 전이: 완곡한 거절"
+        ],
+        "contrasts": [
+          "완곡한 거절 사용 / 형태를 생략한 표현",
+          "완곡한 거절 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 완곡한 거절의 결합 위치를 바꿈",
+          "오류: 완곡한 거절을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_sentence_ending_choice",
+      "target_type": "register_feature",
+      "canonical_form": "문장 종결 선택",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "manage_relationship_distance"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "문장 종결 선택의 manage_relationship_distance 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "문장 종결 선택을 사용해 manage_relationship_distance을 수행한다"
+        ],
+        "reading": [
+          "문장에서 문장 종결 선택을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 문장 종결 선택을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 manage_relationship_distance을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`문장 종결 선택`은/는 초급 학습자가 manage_relationship_distance을 수행할 때 사용하는 항목이다.",
+        "en": "`문장 종결 선택` helps a beginner perform the function: manage_relationship_distance."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "문장 종결 선택의 형태 결합을 잘못함",
+        "문장 종결 선택을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "문장 종결 선택을 사용해 manage_relationship_distance을 수행한다.",
+          "짧은 문장에서 문장 종결 선택을 알아듣는다.",
+          "질문에 문장 종결 선택을 사용해 답한다.",
+          "새 상황에서 문장 종결 선택을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 문장 종결 선택",
+          "일상 대화: 문장 종결 선택",
+          "역할극 전이: 문장 종결 선택"
+        ],
+        "contrasts": [
+          "문장 종결 선택 사용 / 형태를 생략한 표현",
+          "문장 종결 선택 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 문장 종결 선택의 결합 위치를 바꿈",
+          "오류: 문장 종결 선택을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_colloquial_contraction",
+      "target_type": "register_feature",
+      "canonical_form": "구어 축약",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "recognize_colloquial_form"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "구어 축약의 recognize_colloquial_form 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "구어 축약을 사용해 recognize_colloquial_form을 수행한다"
+        ],
+        "reading": [
+          "문장에서 구어 축약을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 구어 축약을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 recognize_colloquial_form을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`구어 축약`은/는 초급 학습자가 recognize_colloquial_form을 수행할 때 사용하는 항목이다.",
+        "en": "`구어 축약` helps a beginner perform the function: recognize_colloquial_form."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "구어 축약의 형태 결합을 잘못함",
+        "구어 축약을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "구어 축약을 사용해 recognize_colloquial_form을 수행한다.",
+          "짧은 문장에서 구어 축약을 알아듣는다.",
+          "질문에 구어 축약을 사용해 답한다.",
+          "새 상황에서 구어 축약을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 구어 축약",
+          "일상 대화: 구어 축약",
+          "역할극 전이: 구어 축약"
+        ],
+        "contrasts": [
+          "구어 축약 사용 / 형태를 생략한 표현",
+          "구어 축약 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 구어 축약의 결합 위치를 바꿈",
+          "오류: 구어 축약을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "register_online_neologism_boundary",
+      "target_type": "register_feature",
+      "canonical_form": "온라인 신조어 선택 경계",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "avoid_unapproved_neologism"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "온라인 신조어 선택 경계의 avoid_unapproved_neologism 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "온라인 신조어 선택 경계을 사용해 avoid_unapproved_neologism을 수행한다"
+        ],
+        "reading": [
+          "문장에서 온라인 신조어 선택 경계을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 온라인 신조어 선택 경계을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 avoid_unapproved_neologism을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "neologism"
+      ],
+      "explanations": {
+        "ko": "`온라인 신조어 선택 경계`은/는 초급 학습자가 avoid_unapproved_neologism을 수행할 때 사용하는 항목이다.",
+        "en": "`온라인 신조어 선택 경계` helps a beginner perform the function: avoid_unapproved_neologism."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "온라인 신조어 선택 경계의 형태 결합을 잘못함",
+        "온라인 신조어 선택 경계을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "온라인 신조어 선택 경계을 사용해 avoid_unapproved_neologism을 수행한다.",
+          "짧은 문장에서 온라인 신조어 선택 경계을 알아듣는다.",
+          "질문에 온라인 신조어 선택 경계을 사용해 답한다.",
+          "새 상황에서 온라인 신조어 선택 경계을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 온라인 신조어 선택 경계",
+          "일상 대화: 온라인 신조어 선택 경계",
+          "역할극 전이: 온라인 신조어 선택 경계"
+        ],
+        "contrasts": [
+          "온라인 신조어 선택 경계 사용 / 형태를 생략한 표현",
+          "온라인 신조어 선택 경계 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 온라인 신조어 선택 경계의 결합 위치를 바꿈",
+          "오류: 온라인 신조어 선택 경계을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active",
+      "usage_status": "active",
+      "volatility": "high",
+      "last_reviewed_at": "2026-06-19",
+      "age_group_affinity": [],
+      "platform_affinity": [],
+      "default_selection_allowed": false
+    },
+    {
+      "target_id": "register_slang_peer_boundary",
+      "target_type": "register_feature",
+      "canonical_form": "친밀한 또래 속어 선택 경계",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "avoid_unapproved_slang"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "친밀한 또래 속어 선택 경계의 avoid_unapproved_slang 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "친밀한 또래 속어 선택 경계을 사용해 avoid_unapproved_slang을 수행한다"
+        ],
+        "reading": [
+          "문장에서 친밀한 또래 속어 선택 경계을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 친밀한 또래 속어 선택 경계을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 avoid_unapproved_slang을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "slang"
+      ],
+      "explanations": {
+        "ko": "`친밀한 또래 속어 선택 경계`은/는 초급 학습자가 avoid_unapproved_slang을 수행할 때 사용하는 항목이다.",
+        "en": "`친밀한 또래 속어 선택 경계` helps a beginner perform the function: avoid_unapproved_slang."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "친밀한 또래 속어 선택 경계의 형태 결합을 잘못함",
+        "친밀한 또래 속어 선택 경계을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "친밀한 또래 속어 선택 경계을 사용해 avoid_unapproved_slang을 수행한다.",
+          "짧은 문장에서 친밀한 또래 속어 선택 경계을 알아듣는다.",
+          "질문에 친밀한 또래 속어 선택 경계을 사용해 답한다.",
+          "새 상황에서 친밀한 또래 속어 선택 경계을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 친밀한 또래 속어 선택 경계",
+          "일상 대화: 친밀한 또래 속어 선택 경계",
+          "역할극 전이: 친밀한 또래 속어 선택 경계"
+        ],
+        "contrasts": [
+          "친밀한 또래 속어 선택 경계 사용 / 형태를 생략한 표현",
+          "친밀한 또래 속어 선택 경계 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 친밀한 또래 속어 선택 경계의 결합 위치를 바꿈",
+          "오류: 친밀한 또래 속어 선택 경계을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active",
+      "usage_status": "active",
+      "volatility": "high",
+      "last_reviewed_at": "2026-06-19",
+      "age_group_affinity": [],
+      "platform_affinity": [],
+      "default_selection_allowed": false
+    }
+  ]
+}

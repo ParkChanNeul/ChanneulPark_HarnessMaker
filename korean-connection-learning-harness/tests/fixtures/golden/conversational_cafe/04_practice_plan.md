@@ -5,6 +5,36 @@
   "practice_plan_id": "cafe-practice-001",
   "lesson_scope_lock_ref": "00_conversation/lesson_scope_lock.md",
   "source_blueprint": "03_lesson_blueprint.md",
+  "situation_scope": {
+    "pack_ref": "cafe_ordering",
+    "sub_situation_ids": [
+      "order_item",
+      "answer_staff_question",
+      "request_takeout"
+    ]
+  },
+  "language_targets": [
+    {
+      "target_ref": "chunk_request_noun_juseyo",
+      "treatment": "new"
+    },
+    {
+      "target_ref": "discourse_short_noun_iyo",
+      "treatment": "review"
+    },
+    {
+      "target_ref": "register_haeyo_polite",
+      "treatment": "retrieval"
+    },
+    {
+      "target_ref": "grammar_request_verb_eo_juseyo",
+      "treatment": "transfer"
+    },
+    {
+      "target_ref": "interaction_confirm_and_answer",
+      "treatment": "practice"
+    }
+  ],
   "vocabulary_scope": {
     "target_pack": "cafe_core",
     "lesson_vocabulary_set_ref": null,
@@ -19,52 +49,95 @@
       {
         "task_id": "controlled-menu-001",
         "type": "controlled",
-        "targets": [
-          "iyo_order"
+        "language_targets": [
+          {
+            "target_ref": "discourse_short_noun_iyo",
+            "treatment": "practice"
+          }
         ],
-        "prompt": "메뉴를 보고 N-(이)요로 고르기"
+        "prompt": "메뉴를 보고 N-(이)요로 고르기",
+        "examples": [
+          "아메리카노요.",
+          "라테요."
+        ]
       }
     ],
     "guided": [
       {
         "task_id": "guided-order-001",
         "type": "guided",
-        "targets": [
-          "request_juseyo",
-          "listen_answer_confirm"
+        "language_targets": [
+          {
+            "target_ref": "chunk_request_noun_juseyo",
+            "treatment": "practice"
+          },
+          {
+            "target_ref": "interaction_confirm_and_answer",
+            "treatment": "practice"
+          }
         ],
-        "prompt": "메뉴와 직원 질문 카드를 보고 주문 조합하기"
+        "prompt": "메뉴와 직원 질문 카드를 보고 주문 조합하기",
+        "examples": [
+          "아메리카노 주세요.",
+          "네, 맞아요."
+        ]
       }
     ],
     "independent": [
       {
         "task_id": "independent-roleplay-001",
         "type": "roleplay",
-        "targets": [
-          "request_juseyo",
-          "listen_answer_confirm"
+        "language_targets": [
+          {
+            "target_ref": "chunk_request_noun_juseyo",
+            "treatment": "practice"
+          },
+          {
+            "target_ref": "interaction_confirm_and_answer",
+            "treatment": "practice"
+          }
         ],
-        "prompt": "메뉴 도움 없이 주문하고 직원 질문에 답하기"
+        "prompt": "메뉴 도움 없이 주문하고 직원 질문에 답하기",
+        "examples": [
+          "라테 한 잔 주세요.",
+          "네, 포장이에요."
+        ]
       }
     ],
     "transfer": [
       {
         "task_id": "transfer-takeout-001",
         "type": "transfer",
-        "targets": [
-          "request_juseyo_to_takeout"
+        "language_targets": [
+          {
+            "target_ref": "grammar_request_verb_eo_juseyo",
+            "treatment": "practice"
+          }
         ],
-        "prompt": "포장 주문으로 바꾸어 요청하기"
+        "prompt": "포장해 주세요, 데워 주세요, 빼 주세요, 넣어 주세요 중 알맞은 동사 요청을 사용한다.",
+        "examples": [
+          "포장해 주세요.",
+          "데워 주세요.",
+          "얼음은 빼 주세요.",
+          "시럽은 넣어 주세요."
+        ]
       }
     ]
   },
   "retrieval_prompts": [
     {
       "prompt_id": "retrieval-polite-001",
-      "targets": [
-        "polite_yo"
+      "language_targets": [
+        {
+          "target_ref": "register_haeyo_polite",
+          "treatment": "practice"
+        }
       ],
-      "prompt": "존댓말 짧은 답을 모델 없이 말하기"
+      "prompt": "존댓말 짧은 답을 모델 없이 말하기",
+      "examples": [
+        "네, 맞아요.",
+        "아니요, 괜찮아요."
+      ]
     }
   ],
   "roleplay_variations": [

@@ -1,0 +1,2795 @@
+{
+  "registry_type": "interactional_function",
+  "records": [
+    {
+      "target_id": "interaction_greet",
+      "target_type": "interactional_function",
+      "canonical_form": "인사하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "greet"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "인사하기의 greet 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "인사하기을 사용해 greet을 수행한다"
+        ],
+        "reading": [
+          "문장에서 인사하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 인사하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 greet을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`인사하기`은/는 초급 학습자가 greet을 수행할 때 사용하는 항목이다.",
+        "en": "`인사하기` helps a beginner perform the function: greet."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "인사하기의 형태 결합을 잘못함",
+        "인사하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 인사하기",
+          "서비스 상황에서 인사하기",
+          "관계 상황에서 인사하기"
+        ],
+        "register_variants": [
+          "해요체: 인사하기",
+          "관계 거리를 확인한 변형: 인사하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_self_introduce",
+      "target_type": "interactional_function",
+      "canonical_form": "자기소개하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "self_introduce"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "자기소개하기의 self_introduce 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "자기소개하기을 사용해 self_introduce을 수행한다"
+        ],
+        "reading": [
+          "문장에서 자기소개하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 자기소개하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 self_introduce을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`자기소개하기`은/는 초급 학습자가 self_introduce을 수행할 때 사용하는 항목이다.",
+        "en": "`자기소개하기` helps a beginner perform the function: self_introduce."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "자기소개하기의 형태 결합을 잘못함",
+        "자기소개하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 자기소개하기",
+          "서비스 상황에서 자기소개하기",
+          "관계 상황에서 자기소개하기"
+        ],
+        "register_variants": [
+          "해요체: 자기소개하기",
+          "관계 거리를 확인한 변형: 자기소개하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_request_item",
+      "target_type": "interactional_function",
+      "canonical_form": "물건 요청하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_item"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "물건 요청하기의 request_item 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "물건 요청하기을 사용해 request_item을 수행한다"
+        ],
+        "reading": [
+          "문장에서 물건 요청하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 물건 요청하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_item을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`물건 요청하기`은/는 초급 학습자가 request_item을 수행할 때 사용하는 항목이다.",
+        "en": "`물건 요청하기` helps a beginner perform the function: request_item."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "물건 요청하기의 형태 결합을 잘못함",
+        "물건 요청하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 물건 요청하기",
+          "서비스 상황에서 물건 요청하기",
+          "관계 상황에서 물건 요청하기"
+        ],
+        "register_variants": [
+          "해요체: 물건 요청하기",
+          "관계 거리를 확인한 변형: 물건 요청하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_request_action",
+      "target_type": "interactional_function",
+      "canonical_form": "행동 요청하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_action"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "행동 요청하기의 request_action 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "행동 요청하기을 사용해 request_action을 수행한다"
+        ],
+        "reading": [
+          "문장에서 행동 요청하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 행동 요청하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_action을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`행동 요청하기`은/는 초급 학습자가 request_action을 수행할 때 사용하는 항목이다.",
+        "en": "`행동 요청하기` helps a beginner perform the function: request_action."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "행동 요청하기의 형태 결합을 잘못함",
+        "행동 요청하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 행동 요청하기",
+          "서비스 상황에서 행동 요청하기",
+          "관계 상황에서 행동 요청하기"
+        ],
+        "register_variants": [
+          "해요체: 행동 요청하기",
+          "관계 거리를 확인한 변형: 행동 요청하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_ask_permission",
+      "target_type": "interactional_function",
+      "canonical_form": "허락 구하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "ask_permission"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "허락 구하기의 ask_permission 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "허락 구하기을 사용해 ask_permission을 수행한다"
+        ],
+        "reading": [
+          "문장에서 허락 구하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 허락 구하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_permission을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`허락 구하기`은/는 초급 학습자가 ask_permission을 수행할 때 사용하는 항목이다.",
+        "en": "`허락 구하기` helps a beginner perform the function: ask_permission."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "허락 구하기의 형태 결합을 잘못함",
+        "허락 구하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 허락 구하기",
+          "서비스 상황에서 허락 구하기",
+          "관계 상황에서 허락 구하기"
+        ],
+        "register_variants": [
+          "해요체: 허락 구하기",
+          "관계 거리를 확인한 변형: 허락 구하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_refuse_softly",
+      "target_type": "interactional_function",
+      "canonical_form": "부드럽게 거절하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "refuse_softly"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "부드럽게 거절하기의 refuse_softly 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "부드럽게 거절하기을 사용해 refuse_softly을 수행한다"
+        ],
+        "reading": [
+          "문장에서 부드럽게 거절하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 부드럽게 거절하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 refuse_softly을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`부드럽게 거절하기`은/는 초급 학습자가 refuse_softly을 수행할 때 사용하는 항목이다.",
+        "en": "`부드럽게 거절하기` helps a beginner perform the function: refuse_softly."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "부드럽게 거절하기의 형태 결합을 잘못함",
+        "부드럽게 거절하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 부드럽게 거절하기",
+          "서비스 상황에서 부드럽게 거절하기",
+          "관계 상황에서 부드럽게 거절하기"
+        ],
+        "register_variants": [
+          "해요체: 부드럽게 거절하기",
+          "관계 거리를 확인한 변형: 부드럽게 거절하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_apologize",
+      "target_type": "interactional_function",
+      "canonical_form": "사과하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "apologize"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "사과하기의 apologize 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "사과하기을 사용해 apologize을 수행한다"
+        ],
+        "reading": [
+          "문장에서 사과하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 사과하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 apologize을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`사과하기`은/는 초급 학습자가 apologize을 수행할 때 사용하는 항목이다.",
+        "en": "`사과하기` helps a beginner perform the function: apologize."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "사과하기의 형태 결합을 잘못함",
+        "사과하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 사과하기",
+          "서비스 상황에서 사과하기",
+          "관계 상황에서 사과하기"
+        ],
+        "register_variants": [
+          "해요체: 사과하기",
+          "관계 거리를 확인한 변형: 사과하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_thank",
+      "target_type": "interactional_function",
+      "canonical_form": "감사하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "thank"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "감사하기의 thank 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "감사하기을 사용해 thank을 수행한다"
+        ],
+        "reading": [
+          "문장에서 감사하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 감사하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 thank을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`감사하기`은/는 초급 학습자가 thank을 수행할 때 사용하는 항목이다.",
+        "en": "`감사하기` helps a beginner perform the function: thank."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "감사하기의 형태 결합을 잘못함",
+        "감사하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 감사하기",
+          "서비스 상황에서 감사하기",
+          "관계 상황에서 감사하기"
+        ],
+        "register_variants": [
+          "해요체: 감사하기",
+          "관계 거리를 확인한 변형: 감사하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_confirm_and_answer",
+      "target_type": "interactional_function",
+      "canonical_form": "확인하고 답하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "confirm_and_answer"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "확인하고 답하기의 confirm_and_answer 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "확인하고 답하기을 사용해 confirm_and_answer을 수행한다"
+        ],
+        "reading": [
+          "문장에서 확인하고 답하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 확인하고 답하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 confirm_and_answer을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`확인하고 답하기`은/는 초급 학습자가 confirm_and_answer을 수행할 때 사용하는 항목이다.",
+        "en": "`확인하고 답하기` helps a beginner perform the function: confirm_and_answer."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "확인하고 답하기의 형태 결합을 잘못함",
+        "확인하고 답하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 확인하고 답하기",
+          "서비스 상황에서 확인하고 답하기",
+          "관계 상황에서 확인하고 답하기"
+        ],
+        "register_variants": [
+          "해요체: 확인하고 답하기",
+          "관계 거리를 확인한 변형: 확인하고 답하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_ask_back",
+      "target_type": "interactional_function",
+      "canonical_form": "되묻기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "ask_back"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "되묻기의 ask_back 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "되묻기을 사용해 ask_back을 수행한다"
+        ],
+        "reading": [
+          "문장에서 되묻기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 되묻기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_back을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`되묻기`은/는 초급 학습자가 ask_back을 수행할 때 사용하는 항목이다.",
+        "en": "`되묻기` helps a beginner perform the function: ask_back."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "되묻기의 형태 결합을 잘못함",
+        "되묻기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 되묻기",
+          "서비스 상황에서 되묻기",
+          "관계 상황에서 되묻기"
+        ],
+        "register_variants": [
+          "해요체: 되묻기",
+          "관계 거리를 확인한 변형: 되묻기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_request_correction",
+      "target_type": "interactional_function",
+      "canonical_form": "수정 요청하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "request_correction"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "수정 요청하기의 request_correction 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "수정 요청하기을 사용해 request_correction을 수행한다"
+        ],
+        "reading": [
+          "문장에서 수정 요청하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 수정 요청하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 request_correction을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`수정 요청하기`은/는 초급 학습자가 request_correction을 수행할 때 사용하는 항목이다.",
+        "en": "`수정 요청하기` helps a beginner perform the function: request_correction."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "수정 요청하기의 형태 결합을 잘못함",
+        "수정 요청하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 수정 요청하기",
+          "서비스 상황에서 수정 요청하기",
+          "관계 상황에서 수정 요청하기"
+        ],
+        "register_variants": [
+          "해요체: 수정 요청하기",
+          "관계 거리를 확인한 변형: 수정 요청하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_buy_time",
+      "target_type": "interactional_function",
+      "canonical_form": "시간 벌기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "buy_time"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "시간 벌기의 buy_time 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "시간 벌기을 사용해 buy_time을 수행한다"
+        ],
+        "reading": [
+          "문장에서 시간 벌기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 시간 벌기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 buy_time을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`시간 벌기`은/는 초급 학습자가 buy_time을 수행할 때 사용하는 항목이다.",
+        "en": "`시간 벌기` helps a beginner perform the function: buy_time."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "시간 벌기의 형태 결합을 잘못함",
+        "시간 벌기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 시간 벌기",
+          "서비스 상황에서 시간 벌기",
+          "관계 상황에서 시간 벌기"
+        ],
+        "register_variants": [
+          "해요체: 시간 벌기",
+          "관계 거리를 확인한 변형: 시간 벌기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_signal_nonunderstanding",
+      "target_type": "interactional_function",
+      "canonical_form": "이해 실패 표시하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "signal_nonunderstanding"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "이해 실패 표시하기의 signal_nonunderstanding 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "이해 실패 표시하기을 사용해 signal_nonunderstanding을 수행한다"
+        ],
+        "reading": [
+          "문장에서 이해 실패 표시하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 이해 실패 표시하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 signal_nonunderstanding을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`이해 실패 표시하기`은/는 초급 학습자가 signal_nonunderstanding을 수행할 때 사용하는 항목이다.",
+        "en": "`이해 실패 표시하기` helps a beginner perform the function: signal_nonunderstanding."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "이해 실패 표시하기의 형태 결합을 잘못함",
+        "이해 실패 표시하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 이해 실패 표시하기",
+          "서비스 상황에서 이해 실패 표시하기",
+          "관계 상황에서 이해 실패 표시하기"
+        ],
+        "register_variants": [
+          "해요체: 이해 실패 표시하기",
+          "관계 거리를 확인한 변형: 이해 실패 표시하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_explain_problem",
+      "target_type": "interactional_function",
+      "canonical_form": "문제 설명하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "explain_problem"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "문제 설명하기의 explain_problem 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "문제 설명하기을 사용해 explain_problem을 수행한다"
+        ],
+        "reading": [
+          "문장에서 문제 설명하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 문제 설명하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 explain_problem을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`문제 설명하기`은/는 초급 학습자가 explain_problem을 수행할 때 사용하는 항목이다.",
+        "en": "`문제 설명하기` helps a beginner perform the function: explain_problem."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "문제 설명하기의 형태 결합을 잘못함",
+        "문제 설명하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 문제 설명하기",
+          "서비스 상황에서 문제 설명하기",
+          "관계 상황에서 문제 설명하기"
+        ],
+        "register_variants": [
+          "해요체: 문제 설명하기",
+          "관계 거리를 확인한 변형: 문제 설명하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_ask_help",
+      "target_type": "interactional_function",
+      "canonical_form": "도움 요청하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_help"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "도움 요청하기의 ask_help 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "도움 요청하기을 사용해 ask_help을 수행한다"
+        ],
+        "reading": [
+          "문장에서 도움 요청하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 도움 요청하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_help을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`도움 요청하기`은/는 초급 학습자가 ask_help을 수행할 때 사용하는 항목이다.",
+        "en": "`도움 요청하기` helps a beginner perform the function: ask_help."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "도움 요청하기의 형태 결합을 잘못함",
+        "도움 요청하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 도움 요청하기",
+          "서비스 상황에서 도움 요청하기",
+          "관계 상황에서 도움 요청하기"
+        ],
+        "register_variants": [
+          "해요체: 도움 요청하기",
+          "관계 거리를 확인한 변형: 도움 요청하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_adjust_appointment",
+      "target_type": "interactional_function",
+      "canonical_form": "약속 조정하기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "adjust_appointment"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "약속 조정하기의 adjust_appointment 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "약속 조정하기을 사용해 adjust_appointment을 수행한다"
+        ],
+        "reading": [
+          "문장에서 약속 조정하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 약속 조정하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 adjust_appointment을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`약속 조정하기`은/는 초급 학습자가 adjust_appointment을 수행할 때 사용하는 항목이다.",
+        "en": "`약속 조정하기` helps a beginner perform the function: adjust_appointment."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "약속 조정하기의 형태 결합을 잘못함",
+        "약속 조정하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 약속 조정하기",
+          "서비스 상황에서 약속 조정하기",
+          "관계 상황에서 약속 조정하기"
+        ],
+        "register_variants": [
+          "해요체: 약속 조정하기",
+          "관계 거리를 확인한 변형: 약속 조정하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_state_opinion",
+      "target_type": "interactional_function",
+      "canonical_form": "의견 말하기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "state_opinion"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "의견 말하기의 state_opinion 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "의견 말하기을 사용해 state_opinion을 수행한다"
+        ],
+        "reading": [
+          "문장에서 의견 말하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 의견 말하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 state_opinion을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`의견 말하기`은/는 초급 학습자가 state_opinion을 수행할 때 사용하는 항목이다.",
+        "en": "`의견 말하기` helps a beginner perform the function: state_opinion."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "의견 말하기의 형태 결합을 잘못함",
+        "의견 말하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 의견 말하기",
+          "서비스 상황에서 의견 말하기",
+          "관계 상황에서 의견 말하기"
+        ],
+        "register_variants": [
+          "해요체: 의견 말하기",
+          "관계 거리를 확인한 변형: 의견 말하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_agree",
+      "target_type": "interactional_function",
+      "canonical_form": "동의하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "agree"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "동의하기의 agree 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "동의하기을 사용해 agree을 수행한다"
+        ],
+        "reading": [
+          "문장에서 동의하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 동의하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 agree을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`동의하기`은/는 초급 학습자가 agree을 수행할 때 사용하는 항목이다.",
+        "en": "`동의하기` helps a beginner perform the function: agree."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "동의하기의 형태 결합을 잘못함",
+        "동의하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 동의하기",
+          "서비스 상황에서 동의하기",
+          "관계 상황에서 동의하기"
+        ],
+        "register_variants": [
+          "해요체: 동의하기",
+          "관계 거리를 확인한 변형: 동의하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_disagree",
+      "target_type": "interactional_function",
+      "canonical_form": "비동의하기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "disagree"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "비동의하기의 disagree 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "비동의하기을 사용해 disagree을 수행한다"
+        ],
+        "reading": [
+          "문장에서 비동의하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 비동의하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 disagree을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`비동의하기`은/는 초급 학습자가 disagree을 수행할 때 사용하는 항목이다.",
+        "en": "`비동의하기` helps a beginner perform the function: disagree."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "비동의하기의 형태 결합을 잘못함",
+        "비동의하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 비동의하기",
+          "서비스 상황에서 비동의하기",
+          "관계 상황에서 비동의하기"
+        ],
+        "register_variants": [
+          "해요체: 비동의하기",
+          "관계 거리를 확인한 변형: 비동의하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_react_and_ask",
+      "target_type": "interactional_function",
+      "canonical_form": "반응 후 되묻기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "react_and_ask"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "반응 후 되묻기의 react_and_ask 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "반응 후 되묻기을 사용해 react_and_ask을 수행한다"
+        ],
+        "reading": [
+          "문장에서 반응 후 되묻기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 반응 후 되묻기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 react_and_ask을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`반응 후 되묻기`은/는 초급 학습자가 react_and_ask을 수행할 때 사용하는 항목이다.",
+        "en": "`반응 후 되묻기` helps a beginner perform the function: react_and_ask."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "반응 후 되묻기의 형태 결합을 잘못함",
+        "반응 후 되묻기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 반응 후 되묻기",
+          "서비스 상황에서 반응 후 되묻기",
+          "관계 상황에서 반응 후 되묻기"
+        ],
+        "register_variants": [
+          "해요체: 반응 후 되묻기",
+          "관계 거리를 확인한 변형: 반응 후 되묻기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_close_conversation",
+      "target_type": "interactional_function",
+      "canonical_form": "대화 종료하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "close_conversation"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "대화 종료하기의 close_conversation 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "대화 종료하기을 사용해 close_conversation을 수행한다"
+        ],
+        "reading": [
+          "문장에서 대화 종료하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 대화 종료하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 close_conversation을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`대화 종료하기`은/는 초급 학습자가 close_conversation을 수행할 때 사용하는 항목이다.",
+        "en": "`대화 종료하기` helps a beginner perform the function: close_conversation."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "대화 종료하기의 형태 결합을 잘못함",
+        "대화 종료하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 대화 종료하기",
+          "서비스 상황에서 대화 종료하기",
+          "관계 상황에서 대화 종료하기"
+        ],
+        "register_variants": [
+          "해요체: 대화 종료하기",
+          "관계 거리를 확인한 변형: 대화 종료하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_answer_question",
+      "target_type": "interactional_function",
+      "canonical_form": "질문에 답하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "answer_question"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "질문에 답하기의 answer_question 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "질문에 답하기을 사용해 answer_question을 수행한다"
+        ],
+        "reading": [
+          "문장에서 질문에 답하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 질문에 답하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 answer_question을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`질문에 답하기`은/는 초급 학습자가 answer_question을 수행할 때 사용하는 항목이다.",
+        "en": "`질문에 답하기` helps a beginner perform the function: answer_question."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "질문에 답하기의 형태 결합을 잘못함",
+        "질문에 답하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 질문에 답하기",
+          "서비스 상황에서 질문에 답하기",
+          "관계 상황에서 질문에 답하기"
+        ],
+        "register_variants": [
+          "해요체: 질문에 답하기",
+          "관계 거리를 확인한 변형: 질문에 답하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_ask_question",
+      "target_type": "interactional_function",
+      "canonical_form": "질문하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "ask_question"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "질문하기의 ask_question 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "질문하기을 사용해 ask_question을 수행한다"
+        ],
+        "reading": [
+          "문장에서 질문하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 질문하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 ask_question을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`질문하기`은/는 초급 학습자가 ask_question을 수행할 때 사용하는 항목이다.",
+        "en": "`질문하기` helps a beginner perform the function: ask_question."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "질문하기의 형태 결합을 잘못함",
+        "질문하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 질문하기",
+          "서비스 상황에서 질문하기",
+          "관계 상황에서 질문하기"
+        ],
+        "register_variants": [
+          "해요체: 질문하기",
+          "관계 거리를 확인한 변형: 질문하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_select_option",
+      "target_type": "interactional_function",
+      "canonical_form": "선택하기",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "select_option"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "선택하기의 select_option 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "선택하기을 사용해 select_option을 수행한다"
+        ],
+        "reading": [
+          "문장에서 선택하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 선택하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 select_option을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`선택하기`은/는 초급 학습자가 select_option을 수행할 때 사용하는 항목이다.",
+        "en": "`선택하기` helps a beginner perform the function: select_option."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "선택하기의 형태 결합을 잘못함",
+        "선택하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 선택하기",
+          "서비스 상황에서 선택하기",
+          "관계 상황에서 선택하기"
+        ],
+        "register_variants": [
+          "해요체: 선택하기",
+          "관계 거리를 확인한 변형: 선택하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_report_emergency",
+      "target_type": "interactional_function",
+      "canonical_form": "긴급 문제 보고하기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "report_emergency"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "긴급 문제 보고하기의 report_emergency 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "긴급 문제 보고하기을 사용해 report_emergency을 수행한다"
+        ],
+        "reading": [
+          "문장에서 긴급 문제 보고하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 긴급 문제 보고하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 report_emergency을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`긴급 문제 보고하기`은/는 초급 학습자가 report_emergency을 수행할 때 사용하는 항목이다.",
+        "en": "`긴급 문제 보고하기` helps a beginner perform the function: report_emergency."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "긴급 문제 보고하기의 형태 결합을 잘못함",
+        "긴급 문제 보고하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 긴급 문제 보고하기",
+          "서비스 상황에서 긴급 문제 보고하기",
+          "관계 상황에서 긴급 문제 보고하기"
+        ],
+        "register_variants": [
+          "해요체: 긴급 문제 보고하기",
+          "관계 거리를 확인한 변형: 긴급 문제 보고하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_follow_instruction",
+      "target_type": "interactional_function",
+      "canonical_form": "지시 확인하고 따르기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "follow_instruction"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "지시 확인하고 따르기의 follow_instruction 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "지시 확인하고 따르기을 사용해 follow_instruction을 수행한다"
+        ],
+        "reading": [
+          "문장에서 지시 확인하고 따르기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 지시 확인하고 따르기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 follow_instruction을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`지시 확인하고 따르기`은/는 초급 학습자가 follow_instruction을 수행할 때 사용하는 항목이다.",
+        "en": "`지시 확인하고 따르기` helps a beginner perform the function: follow_instruction."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "지시 확인하고 따르기의 형태 결합을 잘못함",
+        "지시 확인하고 따르기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 지시 확인하고 따르기",
+          "서비스 상황에서 지시 확인하고 따르기",
+          "관계 상황에서 지시 확인하고 따르기"
+        ],
+        "register_variants": [
+          "해요체: 지시 확인하고 따르기",
+          "관계 거리를 확인한 변형: 지시 확인하고 따르기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_repair_misheard_item",
+      "target_type": "interactional_function",
+      "canonical_form": "잘못 들은 항목 고치기",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "repair_misheard_item"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "잘못 들은 항목 고치기의 repair_misheard_item 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "잘못 들은 항목 고치기을 사용해 repair_misheard_item을 수행한다"
+        ],
+        "reading": [
+          "문장에서 잘못 들은 항목 고치기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 잘못 들은 항목 고치기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 repair_misheard_item을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`잘못 들은 항목 고치기`은/는 초급 학습자가 repair_misheard_item을 수행할 때 사용하는 항목이다.",
+        "en": "`잘못 들은 항목 고치기` helps a beginner perform the function: repair_misheard_item."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "잘못 들은 항목 고치기의 형태 결합을 잘못함",
+        "잘못 들은 항목 고치기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 잘못 들은 항목 고치기",
+          "서비스 상황에서 잘못 들은 항목 고치기",
+          "관계 상황에서 잘못 들은 항목 고치기"
+        ],
+        "register_variants": [
+          "해요체: 잘못 들은 항목 고치기",
+          "관계 거리를 확인한 변형: 잘못 들은 항목 고치기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_manage_public_boundary",
+      "target_type": "interactional_function",
+      "canonical_form": "공개 상호작용 경계 관리하기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "manage_public_boundary"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "공개 상호작용 경계 관리하기의 manage_public_boundary 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "공개 상호작용 경계 관리하기을 사용해 manage_public_boundary을 수행한다"
+        ],
+        "reading": [
+          "문장에서 공개 상호작용 경계 관리하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 공개 상호작용 경계 관리하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 manage_public_boundary을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`공개 상호작용 경계 관리하기`은/는 초급 학습자가 manage_public_boundary을 수행할 때 사용하는 항목이다.",
+        "en": "`공개 상호작용 경계 관리하기` helps a beginner perform the function: manage_public_boundary."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "공개 상호작용 경계 관리하기의 형태 결합을 잘못함",
+        "공개 상호작용 경계 관리하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 공개 상호작용 경계 관리하기",
+          "서비스 상황에서 공개 상호작용 경계 관리하기",
+          "관계 상황에서 공개 상호작용 경계 관리하기"
+        ],
+        "register_variants": [
+          "해요체: 공개 상호작용 경계 관리하기",
+          "관계 거리를 확인한 변형: 공개 상호작용 경계 관리하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_coordinate_work",
+      "target_type": "interactional_function",
+      "canonical_form": "업무 조정하기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "coordinate_work"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "업무 조정하기의 coordinate_work 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "업무 조정하기을 사용해 coordinate_work을 수행한다"
+        ],
+        "reading": [
+          "문장에서 업무 조정하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 업무 조정하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 coordinate_work을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`업무 조정하기`은/는 초급 학습자가 coordinate_work을 수행할 때 사용하는 항목이다.",
+        "en": "`업무 조정하기` helps a beginner perform the function: coordinate_work."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "업무 조정하기의 형태 결합을 잘못함",
+        "업무 조정하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 업무 조정하기",
+          "서비스 상황에서 업무 조정하기",
+          "관계 상황에서 업무 조정하기"
+        ],
+        "register_variants": [
+          "해요체: 업무 조정하기",
+          "관계 거리를 확인한 변형: 업무 조정하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "interaction_give_feedback",
+      "target_type": "interactional_function",
+      "canonical_form": "피드백 말하기",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "give_feedback"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "피드백 말하기의 give_feedback 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "피드백 말하기을 사용해 give_feedback을 수행한다"
+        ],
+        "reading": [
+          "문장에서 피드백 말하기을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 피드백 말하기을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 give_feedback을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`피드백 말하기`은/는 초급 학습자가 give_feedback을 수행할 때 사용하는 항목이다.",
+        "en": "`피드백 말하기` helps a beginner perform the function: give_feedback."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "피드백 말하기의 형태 결합을 잘못함",
+        "피드백 말하기을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "situation_examples": [
+          "생활 상황에서 피드백 말하기",
+          "서비스 상황에서 피드백 말하기",
+          "관계 상황에서 피드백 말하기"
+        ],
+        "register_variants": [
+          "해요체: 피드백 말하기",
+          "관계 거리를 확인한 변형: 피드백 말하기"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    }
+  ]
+}

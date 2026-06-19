@@ -20,6 +20,10 @@ The top-level Codex agent is the parent orchestrator. There is no separate orche
 9. `references/human_approval_gates.md`
 10. `domain/07_governance/source_priority.md`
 11. `domain/07_governance/privacy.md`
+12. `domain/02_language_map/README.md`
+13. `domain/02_language_map/registry_manifest.json`
+14. `domain/03_situations/situation_pack_manifest.json`
+15. `domain/04_profiles/profile_manifest.json`
 
 ## Core Principles
 
@@ -76,6 +80,8 @@ Front-stage uses no specialist agent by default. If an explicit learner-context 
 6. Preserve teacher overrides through progression, architecture, follow-up, and assessment.
 7. Run privacy review when identifying context appears.
 8. Run semantic, cross-artifact, and executable acceptance validation before accepting a Golden or runtime assessment result.
+9. Resolve lesson targets through the canonical registries and preserve the single `language_targets` and `situation_scope` interfaces.
+10. Keep 1:1 legacy aliases separate from contextual or manual migrations.
 
 ## Execution Modes
 
@@ -112,7 +118,7 @@ Run assessment review and conditional privacy audit against supplied artifacts. 
 
 ### `research_to_domain`
 
-Run research synthesis, domain curation, and the existing human approval gate. Research cannot silently rewrite approved domain knowledge.
+Run research synthesis, source verification, language-map coverage and migration assessment, domain curation, and the existing human approval gate. Research cannot silently rewrite approved domain knowledge. Never invent source metadata or mark inaccessible material reviewed.
 
 ### `audit_domain`
 
@@ -133,4 +139,4 @@ Identify the changed input, rerun its owner and downstream consumers, then revie
 
 ## Completion Criteria
 
-A conversation is complete when it reaches the requested teacher decision boundary. An execution run is complete only when its required approval contracts, generated artifacts, reviewer status, privacy status, canonical vocabulary scope, and cross-artifact links are valid. A manually written `overall_status: pass` is not evidence; calculated validation results control acceptance.
+A conversation is complete when it reaches the requested teacher decision boundary. An execution run is complete only when its required approval contracts, generated artifacts, reviewer status, privacy status, canonical language targets, canonical situation scope, canonical vocabulary scope, source requirements, and cross-artifact links are valid. Target-ID-only practice coverage is insufficient: prompts or examples must visibly realize the target. A manually written `overall_status: pass` is not evidence; calculated validation results control acceptance.

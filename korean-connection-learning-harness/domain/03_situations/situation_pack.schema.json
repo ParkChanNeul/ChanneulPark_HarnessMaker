@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "required_fields": [
+    "pack_id",
+    "status",
+    "runtime_selectable",
+    "title_ko",
+    "title_en",
+    "level_range",
+    "profile_affinities",
+    "sub_situations",
+    "interactional_function_refs",
+    "recommended_language_target_refs",
+    "optional_language_target_refs",
+    "phonology_focus_refs",
+    "orthography_focus_refs",
+    "vocabulary_retrieval",
+    "transfer_pack_refs",
+    "source_refs"
+  ]
+}

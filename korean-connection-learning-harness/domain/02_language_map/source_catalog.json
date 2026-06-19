@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "nuri_sejong_korean_intro",
+      "publisher": "세종학당재단",
+      "title": "세종학당 한국어 입문",
+      "source_type": "official_introductory_textbook",
+      "url": "https://nuri.iksi.or.kr/front/cms/contents/layout2/learningsejong/detail.do?csCmsMastrSeq=15258&menuSn=647",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "한글, 발음, 기초 연습과 자주 쓰는 표현의 입문 범위를 확인한다. A0와의 공식 등치 자료는 아니다.",
+      "evidence_locators": {
+        "official_content_scope": "공식 상세 페이지의 Content Introduction 및 Table of Contents: 한글, 발음, 기초 연습, 자주 쓰는 표현의 12단원 입문 범위"
+      }
+    },
+    {
+      "source_id": "nuri_sejong_korean_1a",
+      "publisher": "국립국어원; 제공: 세종학당재단",
+      "title": "세종한국어 1A",
+      "source_type": "official_beginner_textbook",
+      "url": "https://nuri.iksi.or.kr/front/cms/contents/layout2/learningsejong/detail.do?csCmsMastrSeq=15203&menuSn=649",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "초기 초급의 기능과 배열을 확인한다. CEFR A1과의 공식 등치 자료는 아니다.",
+      "evidence_locators": {
+        "official_table_of_contents": "공식 상세 페이지 Table of Contents: 한글, 자기소개, 사물과 동작, 구매, 시간과 날씨, 주말 활동의 초기 초급 배열"
+      }
+    },
+    {
+      "source_id": "nuri_sejong_korean_1b",
+      "publisher": "국립국어원; 제공: 세종학당재단",
+      "title": "세종한국어 1B",
+      "source_type": "official_beginner_textbook",
+      "url": "https://nuri.iksi.or.kr/front/cms/contents/layout2/learningsejong/detail.do?csCmsMastrSeq=15205&menuSn=649",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "후속 초급의 기능과 배열을 확인한다. CEFR A1/A2와의 공식 등치 자료는 아니다.",
+      "evidence_locators": {
+        "official_table_of_contents": "공식 상세 페이지 Table of Contents: 선호, 쇼핑, 교통, 여행, 건강, 모임과 선물의 후속 초급 배열"
+      }
+    },
+    {
+      "source_id": "nuri_sejong_korean_2a",
+      "publisher": "국립국어원; 제공: 세종학당재단",
+      "title": "세종한국어 2A",
+      "source_type": "official_beginner_textbook",
+      "url": "https://nuri.iksi.or.kr/front/cms/contents/layout2/learningsejong/detail.do?csCmsMastrSeq=15207&menuSn=649",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "상위 초급의 기능과 배열을 확인한다. CEFR A2와의 공식 등치 자료는 아니다.",
+      "evidence_locators": {
+        "official_table_of_contents": "공식 상세 페이지 Table of Contents: 직업, 일상, 생활 공간, 건강, 선호, 경험의 상위 초급 배열"
+      }
+    },
+    {
+      "source_id": "nuri_sejong_korean_2b",
+      "publisher": "국립국어원; 제공: 세종학당재단",
+      "title": "세종한국어 2B",
+      "source_type": "official_beginner_textbook",
+      "url": "https://nuri.iksi.or.kr/front/cms/contents/layout2/learningsejong/detail.do?csCmsMastrSeq=15209&menuSn=649",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "상위 초급 후반의 기능과 배열을 확인한다. CEFR A2와의 공식 등치 자료는 아니다.",
+      "evidence_locators": {
+        "official_table_of_contents": "공식 상세 페이지 Table of Contents: 모임, 이동, 개인 경험, 예절, 성격, 희망과 변화의 상위 초급 후반 배열"
+      }
+    },
+    {
+      "source_id": "nuri_learning_roadmap",
+      "publisher": "세종학당재단",
+      "title": "Korean Study Roadmap (누리 세종학당 학습 로드맵)",
+      "source_type": "official_learning_roadmap",
+      "url": "https://nuri.iksi.or.kr/front/page/siteguide/learning/roadmap/main.do",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "입문과 Beginner 1·2의 과정 배열을 확인한다. CEFR 공식 등치표가 아니다.",
+      "evidence_locators": {
+        "official_roadmap": "공식 Korean Study Roadmap의 입문, Beginner 1, Beginner 2 과정 연결"
+      }
+    },
+    {
+      "source_id": "krdict",
+      "publisher": "국립국어원",
+      "title": "한국어기초사전",
+      "source_type": "official_learner_dictionary",
+      "url": "https://krdict.korean.go.kr/",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "표제어의 뜻풀이, 발음, 문형, 활용과 예문을 확인한다. CEFR 등급 자료가 아니다.",
+      "evidence_locators": {
+        "portal_scope": "공식 한국어기초사전 서비스의 뜻풀이, 발음, 문형, 활용, 예문 제공 범위"
+      }
+    },
+    {
+      "source_id": "korean_learner_corpus_portal",
+      "publisher": "국립국어원",
+      "title": "국립국어원 한국어 학습자 말뭉치 나눔터",
+      "source_type": "official_learner_corpus_portal",
+      "url": "https://kcorpus.korean.go.kr/",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "학습자 사용과 오류를 검토한다. 규범적 도입 순서를 정하는 자료로 사용하지 않는다.",
+      "evidence_locators": {
+        "portal_scope": "공식 학습자 말뭉치 포털의 원시, 형태, 오류 주석 검색 및 통계 제공 범위"
+      }
+    },
+    {
+      "source_id": "international_standard_curriculum_report",
+      "publisher": "국립국어원",
+      "title": "국제 통용 한국어 표준 교육과정 보고회 자료집",
+      "source_type": "official_curriculum_report",
+      "url": "https://kcenter.korean.go.kr/kcenter/intnsnal/intnal/view.do?organizationSeq=3561",
+      "retrieved_at": "2026-06-18",
+      "scope_notes": "등급별 목표와 교육 내용 범주를 확인한다. A0–A2와의 직접 등치는 별도 근거 없이 선언하지 않는다.",
+      "evidence_locators": {
+        "curriculum_content": "공식 PDF 발표 '국제 통용 한국어 표준 교육과정의 내용', pp. 33–73",
+        "curriculum_application_example": "공식 PDF의 주제·기능·문법·어휘 단원 구성 예시, pp. 97–98",
+        "curriculum_summary": "공식 PDF '[요약본] 국제 통용 한국어 표준 교육과정', p. 154 이후"
+      }
+    }
+  ]
+}

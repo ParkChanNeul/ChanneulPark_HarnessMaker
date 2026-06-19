@@ -29,6 +29,12 @@ jobs:
       - name: Validate structure
         run: python3.11 scripts/validate_structure.py
 
+      - name: Validate A0-A2 language map
+        run: python3.11 scripts/validate_language_map.py
+
+      - name: Check language-map coverage report
+        run: python3.11 scripts/render_language_map_coverage.py --check
+
       - name: Validate contract documentation
         run: python3.11 scripts/validate_contracts.py
 

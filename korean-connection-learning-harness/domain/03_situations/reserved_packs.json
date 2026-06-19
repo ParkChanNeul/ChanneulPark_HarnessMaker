@@ -1,0 +1,358 @@
+{
+  "packs": [
+    {
+      "pack_id": "service_work",
+      "status": "reserved",
+      "runtime_selectable": false,
+      "title_ko": "service work",
+      "title_en": "Service Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_interaction",
+        "perform_core_task",
+        "repair_problem",
+        "close_interaction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "service_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "food_service_work",
+      "status": "reserved",
+      "runtime_selectable": false,
+      "title_ko": "food service work",
+      "title_en": "Food Service Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_interaction",
+        "perform_core_task",
+        "repair_problem",
+        "close_interaction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "food_service_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "logistics_work",
+      "status": "reserved",
+      "runtime_selectable": false,
+      "title_ko": "logistics work",
+      "title_en": "Logistics Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_interaction",
+        "perform_core_task",
+        "repair_problem",
+        "close_interaction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "logistics_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "medical_work",
+      "status": "reserved",
+      "runtime_selectable": false,
+      "title_ko": "medical work",
+      "title_en": "Medical Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_interaction",
+        "perform_core_task",
+        "repair_problem",
+        "close_interaction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "medical_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "education_work",
+      "status": "reserved",
+      "runtime_selectable": false,
+      "title_ko": "education work",
+      "title_en": "Education Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_interaction",
+        "perform_core_task",
+        "repair_problem",
+        "close_interaction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "education_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    },
+    {
+      "pack_id": "field_work",
+      "status": "reserved",
+      "runtime_selectable": false,
+      "title_ko": "field work",
+      "title_en": "Field Work",
+      "level_range": {
+        "min": "A0",
+        "max": "A2"
+      },
+      "profile_affinities": [
+        "general_adult_conversation"
+      ],
+      "sub_situations": [
+        "open_interaction",
+        "perform_core_task",
+        "repair_problem",
+        "close_interaction"
+      ],
+      "interactional_function_refs": [
+        "interaction_confirm_and_answer"
+      ],
+      "recommended_language_target_refs": [
+        "register_haeyo_polite",
+        "interaction_confirm_and_answer"
+      ],
+      "optional_language_target_refs": [],
+      "phonology_focus_refs": [
+        "phonology_question_intonation"
+      ],
+      "orthography_focus_refs": [
+        "orthography_basic_spacing"
+      ],
+      "vocabulary_retrieval": {
+        "search_intents": [
+          "field_work communicative vocabulary"
+        ],
+        "required_semantic_groups": [
+          "people or roles",
+          "actions",
+          "objects or places"
+        ],
+        "productive_selection_hints": [
+          "mission-critical high-frequency items"
+        ],
+        "receptive_selection_hints": [
+          "likely counterpart questions and responses"
+        ],
+        "excluded_default_varieties": [
+          "slang",
+          "neologism",
+          "dialect",
+          "historical",
+          "specialized"
+        ]
+      },
+      "transfer_pack_refs": [],
+      "source_refs": []
+    }
+  ]
+}

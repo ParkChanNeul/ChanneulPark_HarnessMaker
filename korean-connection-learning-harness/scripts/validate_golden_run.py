@@ -13,13 +13,17 @@ from structured_artifacts import (
     resolve_artifact_ref,
 )
 from validate_semantic_contracts import (
+    reject_legacy_fields,
+    validate_language_targets,
     validate_lesson_intake_state,
     validate_lesson_scope_lock,
     validate_next_lesson_decision_lock,
     validate_post_lesson_teacher_card,
+    validate_situation_scope,
     validate_teacher_decision_card,
     validate_vocabulary_scope,
 )
+from validate_language_map import MAP_ROOT, load_json, load_manifest_data
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -69,7 +73,7 @@ REQUIRED_FIELDS = {
         "level_band",
         "goals",
         "active_situations",
-        "grammar_status",
+        "language_target_status",
         "conversation_status",
         "mission_history_summary",
         "privacy_redactions",
@@ -80,13 +84,9 @@ REQUIRED_FIELDS = {
         "lesson_scope_lock_ref",
         "learner_alias",
         "planning_window",
-        "primary_situation",
+        "situation_scope",
         "approved_mode",
-        "new_target_candidates",
-        "review_targets",
-        "retrieval_targets",
-        "transfer_targets",
-        "conversation_skill_targets",
+        "language_targets",
         "vocabulary_scope",
         "teacher_overrides_applied",
         "blocked_targets",
@@ -99,13 +99,9 @@ REQUIRED_FIELDS = {
         "source_progression_plan",
         "lesson_title",
         "learner_alias",
-        "situation",
+        "situation_scope",
         "lesson_promise",
-        "new_targets",
-        "review_targets",
-        "retrieval_targets",
-        "transfer_targets",
-        "conversation_skill_targets",
+        "language_targets",
         "vocabulary_scope",
         "teacher_overrides_applied",
         "culture_point",
@@ -117,6 +113,8 @@ REQUIRED_FIELDS = {
         "practice_plan_id",
         "lesson_scope_lock_ref",
         "source_blueprint",
+        "situation_scope",
+        "language_targets",
         "vocabulary_scope",
         "practice_ladder",
         "retrieval_prompts",
@@ -142,7 +140,8 @@ REQUIRED_FIELDS = {
         "lesson_result_id",
         "lesson_id",
         "learner_alias",
-        "planned_targets",
+        "situation_scope",
+        "language_targets",
         "observed_evidence",
         "followup_inputs",
         "privacy_redactions",
@@ -177,13 +176,13 @@ REQUIRED_FIELDS = {
         "source_lesson_result",
         "source_next_lesson_decision_lock",
         "selected_direction",
-        "prior_target_treatments",
+        "situation_scope",
+        "language_targets",
         "must_review",
         "should_transfer",
         "learner_question_to_revisit",
         "mission_result_to_check",
         "risk_if_ignored",
-        "suggested_next_situation",
     ],
     "weekly_pack": [
         "weekly_learning_pack_id",
@@ -286,6 +285,17 @@ def _walk_reference_values(value: Any, key: str | None = None):
             yield from _walk_reference_values(child, key)
 
 
+def _walk_named_values(value: Any, names: set[str]):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if key in names:
+                yield key, child
+            yield from _walk_named_values(child, names)
+    elif isinstance(value, list):
+        for child in value:
+            yield from _walk_named_values(child, names)
+
+
 def _compare(
     errors: list[str],
     label: str,
@@ -302,10 +312,37 @@ def _task_targets(tasks: Any) -> set[str]:
         return targets
     for task in tasks:
         if isinstance(task, dict):
-            values = task.get("targets", [])
+            values = task.get("language_targets", [])
             if isinstance(values, list):
-                targets.update(value for value in values if isinstance(value, str))
+                targets.update(
+                    value.get("target_ref")
+                    for value in values
+                    if isinstance(value, dict)
+                    and isinstance(value.get("target_ref"), str)
+                )
     return targets
+
+
+def _targets_by_treatment(data: dict) -> dict[str, set[str]]:
+    grouped: dict[str, set[str]] = {}
+    for item in data.get("language_targets", []):
+        if not isinstance(item, dict):
+            continue
+        target_ref = item.get("target_ref")
+        treatment = item.get("treatment")
+        if isinstance(target_ref, str) and isinstance(treatment, str):
+            grouped.setdefault(treatment, set()).add(target_ref)
+    return grouped
+
+
+def _task_surface_text(task: dict) -> str:
+    values: list[str] = []
+    if isinstance(task.get("prompt"), str):
+        values.append(task["prompt"])
+    examples = task.get("examples", [])
+    if isinstance(examples, list):
+        values.extend(item for item in examples if isinstance(item, str))
+    return "\n".join(values)
 
 
 def _validate_references(
@@ -322,6 +359,48 @@ def _validate_references(
             if resolved is None or not resolved.exists():
                 errors.append(
                     f"{ARTIFACTS[name]}: referenced path does not exist: {ref}"
+                )
+    return errors
+
+
+def _validate_domain_refs(artifacts: dict[str, dict]) -> list[str]:
+    try:
+        targets, packs, _profiles = load_manifest_data()
+        aliases = set(load_json(MAP_ROOT / "legacy_aliases.json")["aliases"])
+        migrations = {
+            item.get("legacy_id")
+            for item in load_json(MAP_ROOT / "legacy_migrations.json")["migrations"]
+        }
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        return [f"language map unavailable: {error}"]
+
+    target_ids = set(targets)
+    pack_ids = set(packs)
+    legacy_ids = aliases | migrations
+    errors: list[str] = []
+    for name, data in artifacts.items():
+        for field, value in _walk_named_values(
+            data,
+            {"language_targets", "candidate_language_targets"},
+        ):
+            if not isinstance(value, list):
+                continue
+            for index, item in enumerate(value):
+                if not isinstance(item, dict):
+                    continue
+                target_ref = item.get("target_ref")
+                context = f"{ARTIFACTS[name]}:{field}[{index}]"
+                if target_ref in legacy_ids:
+                    errors.append(f"{context}: legacy target_ref {target_ref!r} is forbidden")
+                elif target_ref not in target_ids:
+                    errors.append(f"{context}: unregistered target_ref {target_ref!r}")
+        for _field, value in _walk_named_values(data, {"situation_scope"}):
+            if not isinstance(value, dict):
+                continue
+            pack_ref = value.get("pack_ref")
+            if pack_ref not in pack_ids:
+                errors.append(
+                    f"{ARTIFACTS[name]}: unregistered situation pack_ref {pack_ref!r}"
                 )
     return errors
 
@@ -358,6 +437,48 @@ def _validate_semantics(artifacts: dict[str, dict]) -> list[str]:
                     f"{name}.vocabulary_scope",
                 )
             )
+    for name in ["progression", "blueprint", "practice", "lesson_result"]:
+        if name not in artifacts:
+            continue
+        data = artifacts[name]
+        errors.extend(
+            f"{ARTIFACTS[name]}: {error}"
+            for error in reject_legacy_fields(data, name)
+        )
+        errors.extend(
+            f"{ARTIFACTS[name]}: {error}"
+            for error in validate_language_targets(
+                data.get("language_targets"),
+                f"{name}.language_targets",
+            )
+        )
+        errors.extend(
+            f"{ARTIFACTS[name]}: {error}"
+            for error in validate_situation_scope(
+                data.get("situation_scope"),
+                f"{name}.situation_scope",
+            )
+        )
+    for name, data in artifacts.items():
+        for field, value in _walk_named_values(
+            data,
+            {"language_targets", "candidate_language_targets"},
+        ):
+            errors.extend(
+                f"{ARTIFACTS[name]}: {error}"
+                for error in validate_language_targets(
+                    value,
+                    f"{name}.{field}",
+                )
+            )
+        for _field, value in _walk_named_values(data, {"situation_scope"}):
+            errors.extend(
+                f"{ARTIFACTS[name]}: {error}"
+                for error in validate_situation_scope(
+                    value,
+                    f"{name}.situation_scope",
+                )
+            )
     return errors
 
 
@@ -367,44 +488,19 @@ def _validate_lock_to_progression(artifacts: dict[str, dict]) -> list[str]:
     lock = artifacts["lesson_lock"]
     progression = artifacts["progression"]
     lesson = lock.get("lesson", {})
-    targets = lock.get("targets", {})
     errors: list[str] = []
     _compare(errors, "lesson mode", lesson.get("mode"), progression.get("approved_mode"))
     _compare(
         errors,
-        "primary situation",
-        lesson.get("primary_situation"),
-        progression.get("primary_situation"),
+        "situation scope",
+        lesson.get("situation_scope"),
+        progression.get("situation_scope"),
     )
     _compare(
         errors,
-        "new grammar",
-        targets.get("approved_new_grammar"),
-        progression.get("new_target_candidates"),
-    )
-    _compare(
-        errors,
-        "review grammar",
-        targets.get("approved_review_grammar"),
-        progression.get("review_targets"),
-    )
-    _compare(
-        errors,
-        "retrieval targets",
-        targets.get("retrieval_targets"),
-        progression.get("retrieval_targets"),
-    )
-    _compare(
-        errors,
-        "transfer targets",
-        targets.get("transfer_targets"),
-        progression.get("transfer_targets"),
-    )
-    _compare(
-        errors,
-        "conversation targets",
-        targets.get("conversation_skill_targets"),
-        progression.get("conversation_skill_targets"),
+        "language targets",
+        lock.get("language_targets"),
+        progression.get("language_targets"),
     )
     _compare(
         errors,
@@ -423,15 +519,8 @@ def _validate_progression_to_blueprint(artifacts: dict[str, dict]) -> list[str]:
     blueprint = artifacts["blueprint"]
     errors: list[str] = []
     pairs = [
-        ("new targets", "new_target_candidates", "new_targets"),
-        ("review targets", "review_targets", "review_targets"),
-        ("retrieval targets", "retrieval_targets", "retrieval_targets"),
-        ("transfer targets", "transfer_targets", "transfer_targets"),
-        (
-            "conversation targets",
-            "conversation_skill_targets",
-            "conversation_skill_targets",
-        ),
+        ("language targets", "language_targets", "language_targets"),
+        ("situation scope", "situation_scope", "situation_scope"),
         ("vocabulary scope", "vocabulary_scope", "vocabulary_scope"),
         (
             "teacher overrides",
@@ -446,12 +535,6 @@ def _validate_progression_to_blueprint(artifacts: dict[str, dict]) -> list[str]:
             progression.get(progression_field),
             blueprint.get(blueprint_field),
         )
-    _compare(
-        errors,
-        "blueprint situation",
-        progression.get("primary_situation"),
-        blueprint.get("situation"),
-    )
     _compare(
         errors,
         "lesson promise",
@@ -475,6 +558,18 @@ def _validate_blueprint_to_practice(artifacts: dict[str, dict]) -> list[str]:
     )
     _compare(
         errors,
+        "practice situation scope",
+        blueprint.get("situation_scope"),
+        practice.get("situation_scope"),
+    )
+    _compare(
+        errors,
+        "practice language targets",
+        blueprint.get("language_targets"),
+        practice.get("language_targets"),
+    )
+    _compare(
+        errors,
         "practice teacher overrides",
         blueprint.get("teacher_overrides_applied"),
         practice.get("teacher_overrides_applied"),
@@ -490,25 +585,51 @@ def _validate_blueprint_to_practice(artifacts: dict[str, dict]) -> list[str]:
     retrieval = _task_targets(practice.get("retrieval_prompts"))
     all_practice = controlled | guided | independent | transfer
 
-    for target in blueprint.get("new_targets", []):
+    targets_by_treatment = _targets_by_treatment(blueprint)
+    for target in targets_by_treatment.get("new", set()):
         if target not in all_practice:
             errors.append(f"new target {target!r} is not covered by practice")
-    for target in blueprint.get("review_targets", []):
+    for target in targets_by_treatment.get("review", set()):
         if target not in all_practice | retrieval:
             errors.append(f"review target {target!r} is not covered by practice")
-    for target in blueprint.get("retrieval_targets", []):
+    for target in targets_by_treatment.get("retrieval", set()):
         if target not in retrieval:
             errors.append(f"retrieval target {target!r} has no retrieval prompt")
-    for target in blueprint.get("transfer_targets", []):
+    for target in targets_by_treatment.get("transfer", set()):
         if target not in transfer:
             errors.append(f"transfer target {target!r} has no transfer task")
     conversation_practice = guided | independent
-    for target in blueprint.get("conversation_skill_targets", []):
+    for target in targets_by_treatment.get("practice", set()):
         if target not in conversation_practice:
             errors.append(
-                f"conversation target {target!r} is not covered by "
+                f"practice target {target!r} is not covered by "
                 "guided or independent roleplay"
             )
+    transfer_tasks = ladder.get("transfer", [])
+    if isinstance(transfer_tasks, list):
+        for target in targets_by_treatment.get("transfer", set()):
+            matching = [
+                task
+                for task in transfer_tasks
+                if isinstance(task, dict) and target in _task_targets([task])
+            ]
+            surface_text = "\n".join(_task_surface_text(task) for task in matching)
+            required_surfaces = (
+                ("포장해 주세요",),
+                ("데워 주세요",),
+                ("빼 주세요",),
+                ("넣어 주세요",),
+            )
+            has_surface_evidence = bool(surface_text.strip())
+            if target == "grammar_request_verb_eo_juseyo":
+                has_surface_evidence = all(
+                    any(surface in surface_text for surface in alternatives)
+                    for alternatives in required_surfaces
+                )
+            if matching and not has_surface_evidence:
+                errors.append(
+                    f"transfer target surface evidence missing for {target!r}"
+                )
     if not practice.get("evidence_capture_points"):
         errors.append("practice plan requires evidence_capture_points")
     return errors
@@ -606,15 +727,15 @@ def _validate_followup(artifacts: dict[str, dict]) -> list[str]:
         )
         _compare(
             errors,
-            "next lesson situation",
-            next_lock.get("selected_direction", {}).get("primary_situation"),
-            next_check.get("suggested_next_situation"),
+            "next lesson situation scope",
+            next_lock.get("selected_direction", {}).get("situation_scope"),
+            next_check.get("situation_scope"),
         )
         _compare(
             errors,
-            "prior target treatment",
-            next_lock.get("prior_targets"),
-            next_check.get("prior_target_treatments"),
+            "next lesson language targets",
+            next_lock.get("language_targets"),
+            next_check.get("language_targets"),
         )
     return errors
 
@@ -636,6 +757,7 @@ def collect_golden_errors(golden: Path = GOLDEN) -> list[str]:
     errors.extend(_validate_required_fields(artifacts))
     errors.extend(_validate_semantics(artifacts))
     errors.extend(_validate_references(golden, artifacts))
+    errors.extend(_validate_domain_refs(artifacts))
     errors.extend(_validate_lock_to_progression(artifacts))
     errors.extend(_validate_progression_to_blueprint(artifacts))
     errors.extend(_validate_blueprint_to_practice(artifacts))

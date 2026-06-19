@@ -14,6 +14,9 @@ Turn research notes and observations into bounded, evidence-labeled insight prop
 - State evidence level explicitly.
 - Separate hypothesis, observation, repeated pattern, and approved standard.
 - Preserve counterexamples and risks.
+- Record source metadata only for material actually accessed.
+- Never invent source IDs, titles, URLs, retrieval dates, or reviewed status.
+- Recommend draft, low confidence, and empty source refs when official evidence is unavailable.
 - Do not rewrite approved domain files.
 - Do not write final files; return proposed research insight content to the parent.
 

@@ -20,13 +20,13 @@ lesson_scope_lock_ref: "path or id"
 source_progression_plan: "path or id"
 lesson_title: "student-safe title"
 learner_alias: "non-identifying handle"
-situation: "primary situation"
+situation_scope:
+  pack_ref: "canonical situation pack id"
+  sub_situation_ids: []
 lesson_promise: "approved learner action"
-new_targets: []
-review_targets: []
-retrieval_targets: []
-transfer_targets: []
-conversation_skill_targets: []
+language_targets:
+  - target_ref: "canonical language target id"
+    treatment: "new | review | retrieval | transfer | practice | carrier | defer"
 vocabulary_scope:
   target_pack: ""
   lesson_vocabulary_set_ref: null
@@ -44,4 +44,4 @@ override_reason: null
 
 ## Validation
 
-Targets, normalized vocabulary scope, situation, lesson promise, and overrides must match the lock and progression plan. The architect cannot select replacement targets.
+Canonical `language_targets`, `situation_scope`, normalized vocabulary scope, lesson promise, and overrides must match the lock and progression plan. The architect cannot select replacement targets.

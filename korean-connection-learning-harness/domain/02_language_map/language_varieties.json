@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "varieties": [
+    {"variety_id": "standard", "default_selection_allowed": true},
+    {"variety_id": "colloquial", "default_selection_allowed": true},
+    {"variety_id": "slang", "default_selection_allowed": false},
+    {"variety_id": "neologism", "default_selection_allowed": false},
+    {"variety_id": "dialect", "default_selection_allowed": false},
+    {"variety_id": "historical", "default_selection_allowed": false},
+    {"variety_id": "specialized", "default_selection_allowed": false}
+  ]
+}

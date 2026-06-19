@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "supported_level_bands": ["A0", "A1", "A2", "B1", "B2", "C1", "C2", "special_content"],
+  "populated_level_bands": ["A0", "A1", "A2"],
+  "target_types": [
+    "grammar_construction",
+    "particle_function",
+    "register_feature",
+    "discourse_pattern",
+    "interactional_function",
+    "core_interaction_chunk",
+    "phonology_feature",
+    "orthography_feature"
+  ],
+  "required_fields": [
+    "target_id",
+    "target_type",
+    "canonical_form",
+    "level",
+    "functions",
+    "situation_refs",
+    "prerequisites",
+    "complexity",
+    "skill_mastery",
+    "language_varieties",
+    "explanations",
+    "common_errors",
+    "example_refs",
+    "source_refs",
+    "source_evidence",
+    "status"
+  ]
+}

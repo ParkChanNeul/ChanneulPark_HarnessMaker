@@ -27,11 +27,19 @@
     {
       "option_id": "A",
       "mode": "advance",
-      "new_grammar_candidates": [
-        "request_juseyo"
+      "situation_scope": {
+        "pack_ref": "cafe_ordering",
+        "sub_situation_ids": [
+          "order_item",
+          "answer_staff_question"
+        ]
+      },
+      "candidate_language_targets": [
+        {
+          "target_ref": "chunk_request_noun_juseyo",
+          "treatment": "new"
+        }
       ],
-      "review_candidates": [],
-      "conversation_targets": [],
       "vocabulary_scope": {
         "target_pack": "cafe_core",
         "lesson_vocabulary_set_ref": null,
@@ -51,14 +59,35 @@
     {
       "option_id": "B",
       "mode": "mixed",
-      "new_grammar_candidates": [
-        "request_juseyo"
-      ],
-      "review_candidates": [
-        "iyo_order"
-      ],
-      "conversation_targets": [
-        "listen_answer_confirm"
+      "situation_scope": {
+        "pack_ref": "cafe_ordering",
+        "sub_situation_ids": [
+          "order_item",
+          "answer_staff_question",
+          "request_takeout"
+        ]
+      },
+      "candidate_language_targets": [
+        {
+          "target_ref": "chunk_request_noun_juseyo",
+          "treatment": "new"
+        },
+        {
+          "target_ref": "discourse_short_noun_iyo",
+          "treatment": "review"
+        },
+        {
+          "target_ref": "register_haeyo_polite",
+          "treatment": "retrieval"
+        },
+        {
+          "target_ref": "grammar_request_verb_eo_juseyo",
+          "treatment": "transfer"
+        },
+        {
+          "target_ref": "interaction_confirm_and_answer",
+          "treatment": "practice"
+        }
       ],
       "vocabulary_scope": {
         "target_pack": "cafe_core",

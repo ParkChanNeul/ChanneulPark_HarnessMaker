@@ -17,7 +17,13 @@
     "learner_type": "existing",
     "learner_level": "A1",
     "lesson_duration_minutes": 50,
-    "target_situation": "cafe",
+    "situation_scope": {
+      "pack_ref": "cafe_ordering",
+      "sub_situation_ids": [
+        "order_item",
+        "answer_staff_question"
+      ]
+    },
     "teacher_goal": "order and respond without freezing",
     "previous_lesson_ref": "synthetic-previous-lesson"
   },

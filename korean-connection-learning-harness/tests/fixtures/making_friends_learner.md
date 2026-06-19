@@ -6,15 +6,16 @@ mode: "build_lesson"
 learner_alias: "friends_learner"
 current_level: "A1"
 lesson_goal: "ask casual questions and respond naturally when meeting peers"
-target_situation: "making_friends"
+situation_scope:
+  pack_ref: "making_friends"
+  sub_situation_ids: ["answer", "react", "ask_back"]
 known_evidence:
-  grammar:
-    - target_id: "questions.basic"
+  language_targets:
+    - target_ref: "grammar_question_haeyo"
       status: "guided"
-    - target_id: "topic.marker"
+    - target_ref: "particle_topic_eunneun"
       status: "controlled"
-  conversation:
-    - skill_id: "reaction.simple"
+    - target_ref: "discourse_a_geuraeyo"
       status: "modeled"
   mission_history:
     - "completed a short greeting role-play"

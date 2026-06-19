@@ -24,7 +24,9 @@ known_context:
   learner_type: "new | existing | unknown"
   learner_level: ""
   lesson_duration_minutes: null
-  target_situation: ""
+  situation_scope:
+    pack_ref: ""
+    sub_situation_ids: []
   teacher_goal: ""
   previous_lesson_ref: null
 unknowns:

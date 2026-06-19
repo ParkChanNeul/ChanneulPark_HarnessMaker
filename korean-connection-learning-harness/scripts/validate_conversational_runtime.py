@@ -219,11 +219,16 @@ def main() -> None:
     next_contract = contract_root / 'next_lesson_decision_lock.md'
     if next_contract.is_file():
         content = text(next_contract)
-        for term in ['explicit_review', 'retrieval', 'carrier', 'transfer', 'defer']:
+        for term in ['new', 'review', 'retrieval', 'transfer', 'practice', 'carrier', 'defer']:
             if term not in content:
                 failures.append(f'next_lesson_decision_lock missing treatment {term}')
 
-    all_text_files = [p for p in ROOT.rglob('*') if p.is_file() and p.suffix in {'.md', '.toml', '.py', '.txt'} and '.git' not in p.parts]
+    all_text_files = [
+        p for p in ROOT.rglob('*')
+        if p.is_file()
+        and p.suffix in {'.json', '.md', '.toml', '.py', '.txt'}
+        and '.git' not in p.parts
+    ]
     for path in all_text_files:
         content = text(path)
         for pattern in PRIVATE_PATTERNS:

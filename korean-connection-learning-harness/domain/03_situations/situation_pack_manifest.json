@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "pack_files": [
+    "active_packs.json",
+    "reserved_packs.json"
+  ]
+}

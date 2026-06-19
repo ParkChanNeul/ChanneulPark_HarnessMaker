@@ -52,6 +52,72 @@ class GoldenRunTests(unittest.TestCase):
     def test_current_golden_cafe_run_passes(self) -> None:
         self.assertEqual(validate_golden_run(GOLDEN), [])
 
+    def test_golden_uses_canonical_target_and_situation_structures(self) -> None:
+        lock = extract_structured_block(
+            GOLDEN / "00_conversation" / "lesson_scope_lock.md"
+        )
+        progression = extract_structured_block(GOLDEN / "02_progression_plan.md")
+        blueprint = extract_structured_block(GOLDEN / "03_lesson_blueprint.md")
+        result = extract_structured_block(GOLDEN / "06_lesson_result.md")
+
+        self.assertIn("language_targets", lock)
+        self.assertIn("situation_scope", lock["lesson"])
+        self.assertIn("language_targets", progression)
+        self.assertIn("situation_scope", progression)
+        self.assertIn("language_targets", blueprint)
+        self.assertIn("situation_scope", blueprint)
+        self.assertIn("language_targets", result)
+
+    def test_transfer_target_requires_surface_evidence(self) -> None:
+        temp, root = self.golden_copy()
+        self.addCleanup(temp.cleanup)
+
+        def remove_surface_evidence(data: dict) -> None:
+            transfer_task = data["practice_ladder"]["transfer"][0]
+            transfer_task["targets"] = ["grammar_request_verb_eo_juseyo"]
+            transfer_task["prompt"] = "다른 방식으로 요청하기"
+            transfer_task["examples"] = []
+
+        self.mutate(root, "04_practice_plan.md", remove_surface_evidence)
+        self.assert_has_error(
+            validate_golden_run(root),
+            "transfer target surface evidence",
+        )
+
+    def test_transfer_target_rejects_noun_request_only(self) -> None:
+        temp, root = self.golden_copy()
+        self.addCleanup(temp.cleanup)
+
+        def replace_with_noun_request(data: dict) -> None:
+            transfer_task = data["practice_ladder"]["transfer"][0]
+            transfer_task["prompt"] = "아메리카노 주세요."
+            transfer_task["examples"] = ["라테 주세요.", "물 주세요."]
+
+        self.mutate(root, "04_practice_plan.md", replace_with_noun_request)
+        self.assert_has_error(
+            validate_golden_run(root),
+            "transfer target surface evidence",
+        )
+
+    def test_task_level_language_target_shape_is_validated(self) -> None:
+        temp, root = self.golden_copy()
+        self.addCleanup(temp.cleanup)
+
+        def add_duplicate_and_type(data: dict) -> None:
+            targets = data["practice_ladder"]["transfer"][0]["language_targets"]
+            targets[0]["target_type"] = "grammar_construction"
+            targets.append(
+                {
+                    "target_ref": "grammar_request_verb_eo_juseyo",
+                    "treatment": "review",
+                }
+            )
+
+        self.mutate(root, "04_practice_plan.md", add_duplicate_and_type)
+        errors = validate_golden_run(root)
+        self.assert_has_error(errors, "unexpected fields target_type")
+        self.assert_has_error(errors, "cannot have multiple treatments")
+
     def test_missing_relative_reference_fails(self) -> None:
         temp, root = self.golden_copy()
         self.addCleanup(temp.cleanup)
@@ -62,15 +128,41 @@ class GoldenRunTests(unittest.TestCase):
         )
         self.assert_has_error(validate_golden_run(root), "missing_homework.md")
 
-    def test_scope_lock_and_progression_new_grammar_mismatch_fails(self) -> None:
+    def test_scope_lock_and_progression_language_target_mismatch_fails(self) -> None:
         temp, root = self.golden_copy()
         self.addCleanup(temp.cleanup)
         self.mutate(
             root,
             "02_progression_plan.md",
-            lambda data: data.update({"new_target_candidates": ["different_target"]}),
+            lambda data: data["language_targets"][0].update(
+                {"target_ref": "different_target"}
+            ),
         )
-        self.assert_has_error(validate_golden_run(root), "new grammar")
+        self.assert_has_error(validate_golden_run(root), "language targets")
+
+    def test_unregistered_canonical_target_fails(self) -> None:
+        temp, root = self.golden_copy()
+        self.addCleanup(temp.cleanup)
+        self.mutate(
+            root,
+            "00_conversation/lesson_scope_lock.md",
+            lambda data: data["language_targets"][0].update(
+                {"target_ref": "unknown_canonical_target"}
+            ),
+        )
+        self.assert_has_error(validate_golden_run(root), "unregistered target_ref")
+
+    def test_legacy_target_id_in_new_artifact_fails(self) -> None:
+        temp, root = self.golden_copy()
+        self.addCleanup(temp.cleanup)
+        self.mutate(
+            root,
+            "00_conversation/lesson_scope_lock.md",
+            lambda data: data["language_targets"][0].update(
+                {"target_ref": "request_juseyo"}
+            ),
+        )
+        self.assert_has_error(validate_golden_run(root), "legacy target_ref")
 
     def test_progression_and_blueprint_vocabulary_mismatch_fails(self) -> None:
         temp, root = self.golden_copy()

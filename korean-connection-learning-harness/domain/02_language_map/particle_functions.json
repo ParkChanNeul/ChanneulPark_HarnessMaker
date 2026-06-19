@@ -1,0 +1,2683 @@
+{
+  "registry_type": "particle_function",
+  "records": [
+    {
+      "target_id": "particle_topic_eunneun",
+      "target_type": "particle_function",
+      "canonical_form": "은/는",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_topic"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "은/는의 mark_topic 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "은/는을 사용해 mark_topic을 수행한다"
+        ],
+        "reading": [
+          "문장에서 은/는을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 은/는을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_topic을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`은/는`은/는 초급 학습자가 mark_topic을 수행할 때 사용하는 항목이다.",
+        "en": "`은/는` helps a beginner perform the function: mark_topic."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "은/는의 형태 결합을 잘못함",
+        "은/는을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "은/는을 사용해 mark_topic을 수행한다.",
+          "짧은 문장에서 은/는을 알아듣는다.",
+          "질문에 은/는을 사용해 답한다.",
+          "새 상황에서 은/는을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 은/는",
+          "일상 대화: 은/는",
+          "역할극 전이: 은/는"
+        ],
+        "contrasts": [
+          "은/는 사용 / 형태를 생략한 표현",
+          "은/는 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 은/는의 결합 위치를 바꿈",
+          "오류: 은/는을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_contrast_eunneun",
+      "target_type": "particle_function",
+      "canonical_form": "은/는",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_contrast"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "은/는의 mark_contrast 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "은/는을 사용해 mark_contrast을 수행한다"
+        ],
+        "reading": [
+          "문장에서 은/는을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 은/는을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_contrast을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`은/는`은/는 초급 학습자가 mark_contrast을 수행할 때 사용하는 항목이다.",
+        "en": "`은/는` helps a beginner perform the function: mark_contrast."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "은/는의 형태 결합을 잘못함",
+        "은/는을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "은/는을 사용해 mark_contrast을 수행한다.",
+          "짧은 문장에서 은/는을 알아듣는다.",
+          "질문에 은/는을 사용해 답한다.",
+          "새 상황에서 은/는을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 은/는",
+          "일상 대화: 은/는",
+          "역할극 전이: 은/는"
+        ],
+        "contrasts": [
+          "은/는 사용 / 형태를 생략한 표현",
+          "은/는 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 은/는의 결합 위치를 바꿈",
+          "오류: 은/는을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_subject_iga",
+      "target_type": "particle_function",
+      "canonical_form": "이/가",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_subject"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "이/가의 mark_subject 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "이/가을 사용해 mark_subject을 수행한다"
+        ],
+        "reading": [
+          "문장에서 이/가을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 이/가을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_subject을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`이/가`은/는 초급 학습자가 mark_subject을 수행할 때 사용하는 항목이다.",
+        "en": "`이/가` helps a beginner perform the function: mark_subject."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "이/가의 형태 결합을 잘못함",
+        "이/가을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "이/가을 사용해 mark_subject을 수행한다.",
+          "짧은 문장에서 이/가을 알아듣는다.",
+          "질문에 이/가을 사용해 답한다.",
+          "새 상황에서 이/가을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 이/가",
+          "일상 대화: 이/가",
+          "역할극 전이: 이/가"
+        ],
+        "contrasts": [
+          "이/가 사용 / 형태를 생략한 표현",
+          "이/가 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 이/가의 결합 위치를 바꿈",
+          "오류: 이/가을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_subject_focus_iga",
+      "target_type": "particle_function",
+      "canonical_form": "이/가",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "focus_new_subject"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "이/가의 focus_new_subject 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "이/가을 사용해 focus_new_subject을 수행한다"
+        ],
+        "reading": [
+          "문장에서 이/가을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 이/가을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 focus_new_subject을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`이/가`은/는 초급 학습자가 focus_new_subject을 수행할 때 사용하는 항목이다.",
+        "en": "`이/가` helps a beginner perform the function: focus_new_subject."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "이/가의 형태 결합을 잘못함",
+        "이/가을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "이/가을 사용해 focus_new_subject을 수행한다.",
+          "짧은 문장에서 이/가을 알아듣는다.",
+          "질문에 이/가을 사용해 답한다.",
+          "새 상황에서 이/가을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 이/가",
+          "일상 대화: 이/가",
+          "역할극 전이: 이/가"
+        ],
+        "contrasts": [
+          "이/가 사용 / 형태를 생략한 표현",
+          "이/가 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 이/가의 결합 위치를 바꿈",
+          "오류: 이/가을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_object_eulreul",
+      "target_type": "particle_function",
+      "canonical_form": "을/를",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_object"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "을/를의 mark_object 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "을/를을 사용해 mark_object을 수행한다"
+        ],
+        "reading": [
+          "문장에서 을/를을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 을/를을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_object을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`을/를`은/는 초급 학습자가 mark_object을 수행할 때 사용하는 항목이다.",
+        "en": "`을/를` helps a beginner perform the function: mark_object."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "을/를의 형태 결합을 잘못함",
+        "을/를을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "을/를을 사용해 mark_object을 수행한다.",
+          "짧은 문장에서 을/를을 알아듣는다.",
+          "질문에 을/를을 사용해 답한다.",
+          "새 상황에서 을/를을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 을/를",
+          "일상 대화: 을/를",
+          "역할극 전이: 을/를"
+        ],
+        "contrasts": [
+          "을/를 사용 / 형태를 생략한 표현",
+          "을/를 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 을/를의 결합 위치를 바꿈",
+          "오류: 을/를을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_time_e",
+      "target_type": "particle_function",
+      "canonical_form": "에",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_time"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "에의 mark_time 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "에을 사용해 mark_time을 수행한다"
+        ],
+        "reading": [
+          "문장에서 에을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 에을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_time을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`에`은/는 초급 학습자가 mark_time을 수행할 때 사용하는 항목이다.",
+        "en": "`에` helps a beginner perform the function: mark_time."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "에의 형태 결합을 잘못함",
+        "에을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "에을 사용해 mark_time을 수행한다.",
+          "짧은 문장에서 에을 알아듣는다.",
+          "질문에 에을 사용해 답한다.",
+          "새 상황에서 에을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 에",
+          "일상 대화: 에",
+          "역할극 전이: 에"
+        ],
+        "contrasts": [
+          "에 사용 / 형태를 생략한 표현",
+          "에 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 에의 결합 위치를 바꿈",
+          "오류: 에을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_destination_e",
+      "target_type": "particle_function",
+      "canonical_form": "에",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_destination"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "에의 mark_destination 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "에을 사용해 mark_destination을 수행한다"
+        ],
+        "reading": [
+          "문장에서 에을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 에을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_destination을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`에`은/는 초급 학습자가 mark_destination을 수행할 때 사용하는 항목이다.",
+        "en": "`에` helps a beginner perform the function: mark_destination."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "에의 형태 결합을 잘못함",
+        "에을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "에을 사용해 mark_destination을 수행한다.",
+          "짧은 문장에서 에을 알아듣는다.",
+          "질문에 에을 사용해 답한다.",
+          "새 상황에서 에을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 에",
+          "일상 대화: 에",
+          "역할극 전이: 에"
+        ],
+        "contrasts": [
+          "에 사용 / 형태를 생략한 표현",
+          "에 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 에의 결합 위치를 바꿈",
+          "오류: 에을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_location_e",
+      "target_type": "particle_function",
+      "canonical_form": "에",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_existence_location"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "에의 mark_existence_location 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "에을 사용해 mark_existence_location을 수행한다"
+        ],
+        "reading": [
+          "문장에서 에을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 에을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_existence_location을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`에`은/는 초급 학습자가 mark_existence_location을 수행할 때 사용하는 항목이다.",
+        "en": "`에` helps a beginner perform the function: mark_existence_location."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "에의 형태 결합을 잘못함",
+        "에을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "에을 사용해 mark_existence_location을 수행한다.",
+          "짧은 문장에서 에을 알아듣는다.",
+          "질문에 에을 사용해 답한다.",
+          "새 상황에서 에을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 에",
+          "일상 대화: 에",
+          "역할극 전이: 에"
+        ],
+        "contrasts": [
+          "에 사용 / 형태를 생략한 표현",
+          "에 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 에의 결합 위치를 바꿈",
+          "오류: 에을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_action_location_eseo",
+      "target_type": "particle_function",
+      "canonical_form": "에서",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_action_location"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "에서의 mark_action_location 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "에서을 사용해 mark_action_location을 수행한다"
+        ],
+        "reading": [
+          "문장에서 에서을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 에서을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_action_location을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`에서`은/는 초급 학습자가 mark_action_location을 수행할 때 사용하는 항목이다.",
+        "en": "`에서` helps a beginner perform the function: mark_action_location."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "에서의 형태 결합을 잘못함",
+        "에서을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "에서을 사용해 mark_action_location을 수행한다.",
+          "짧은 문장에서 에서을 알아듣는다.",
+          "질문에 에서을 사용해 답한다.",
+          "새 상황에서 에서을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 에서",
+          "일상 대화: 에서",
+          "역할극 전이: 에서"
+        ],
+        "contrasts": [
+          "에서 사용 / 형태를 생략한 표현",
+          "에서 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 에서의 결합 위치를 바꿈",
+          "오류: 에서을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_origin_eseo",
+      "target_type": "particle_function",
+      "canonical_form": "에서",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_origin"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "에서의 mark_origin 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "에서을 사용해 mark_origin을 수행한다"
+        ],
+        "reading": [
+          "문장에서 에서을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 에서을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_origin을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`에서`은/는 초급 학습자가 mark_origin을 수행할 때 사용하는 항목이다.",
+        "en": "`에서` helps a beginner perform the function: mark_origin."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "에서의 형태 결합을 잘못함",
+        "에서을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "에서을 사용해 mark_origin을 수행한다.",
+          "짧은 문장에서 에서을 알아듣는다.",
+          "질문에 에서을 사용해 답한다.",
+          "새 상황에서 에서을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 에서",
+          "일상 대화: 에서",
+          "역할극 전이: 에서"
+        ],
+        "contrasts": [
+          "에서 사용 / 형태를 생략한 표현",
+          "에서 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 에서의 결합 위치를 바꿈",
+          "오류: 에서을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_direction_euro",
+      "target_type": "particle_function",
+      "canonical_form": "(으)로",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_direction"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "(으)로의 mark_direction 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "(으)로을 사용해 mark_direction을 수행한다"
+        ],
+        "reading": [
+          "문장에서 (으)로을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 (으)로을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_direction을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`(으)로`은/는 초급 학습자가 mark_direction을 수행할 때 사용하는 항목이다.",
+        "en": "`(으)로` helps a beginner perform the function: mark_direction."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "(으)로의 형태 결합을 잘못함",
+        "(으)로을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "(으)로을 사용해 mark_direction을 수행한다.",
+          "짧은 문장에서 (으)로을 알아듣는다.",
+          "질문에 (으)로을 사용해 답한다.",
+          "새 상황에서 (으)로을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: (으)로",
+          "일상 대화: (으)로",
+          "역할극 전이: (으)로"
+        ],
+        "contrasts": [
+          "(으)로 사용 / 형태를 생략한 표현",
+          "(으)로 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: (으)로의 결합 위치를 바꿈",
+          "오류: (으)로을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_means_euro",
+      "target_type": "particle_function",
+      "canonical_form": "(으)로",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_means"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "(으)로의 mark_means 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "(으)로을 사용해 mark_means을 수행한다"
+        ],
+        "reading": [
+          "문장에서 (으)로을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 (으)로을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_means을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`(으)로`은/는 초급 학습자가 mark_means을 수행할 때 사용하는 항목이다.",
+        "en": "`(으)로` helps a beginner perform the function: mark_means."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "(으)로의 형태 결합을 잘못함",
+        "(으)로을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "(으)로을 사용해 mark_means을 수행한다.",
+          "짧은 문장에서 (으)로을 알아듣는다.",
+          "질문에 (으)로을 사용해 답한다.",
+          "새 상황에서 (으)로을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: (으)로",
+          "일상 대화: (으)로",
+          "역할극 전이: (으)로"
+        ],
+        "contrasts": [
+          "(으)로 사용 / 형태를 생략한 표현",
+          "(으)로 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: (으)로의 결합 위치를 바꿈",
+          "오류: (으)로을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_recipient_hante",
+      "target_type": "particle_function",
+      "canonical_form": "한테",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_informal_recipient"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "한테의 mark_informal_recipient 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "한테을 사용해 mark_informal_recipient을 수행한다"
+        ],
+        "reading": [
+          "문장에서 한테을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 한테을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_informal_recipient을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`한테`은/는 초급 학습자가 mark_informal_recipient을 수행할 때 사용하는 항목이다.",
+        "en": "`한테` helps a beginner perform the function: mark_informal_recipient."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "한테의 형태 결합을 잘못함",
+        "한테을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "한테을 사용해 mark_informal_recipient을 수행한다.",
+          "짧은 문장에서 한테을 알아듣는다.",
+          "질문에 한테을 사용해 답한다.",
+          "새 상황에서 한테을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 한테",
+          "일상 대화: 한테",
+          "역할극 전이: 한테"
+        ],
+        "contrasts": [
+          "한테 사용 / 형태를 생략한 표현",
+          "한테 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 한테의 결합 위치를 바꿈",
+          "오류: 한테을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_recipient_ege",
+      "target_type": "particle_function",
+      "canonical_form": "에게",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_recipient"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "에게의 mark_recipient 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "에게을 사용해 mark_recipient을 수행한다"
+        ],
+        "reading": [
+          "문장에서 에게을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 에게을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_recipient을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`에게`은/는 초급 학습자가 mark_recipient을 수행할 때 사용하는 항목이다.",
+        "en": "`에게` helps a beginner perform the function: mark_recipient."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "에게의 형태 결합을 잘못함",
+        "에게을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "에게을 사용해 mark_recipient을 수행한다.",
+          "짧은 문장에서 에게을 알아듣는다.",
+          "질문에 에게을 사용해 답한다.",
+          "새 상황에서 에게을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 에게",
+          "일상 대화: 에게",
+          "역할극 전이: 에게"
+        ],
+        "contrasts": [
+          "에게 사용 / 형태를 생략한 표현",
+          "에게 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 에게의 결합 위치를 바꿈",
+          "오류: 에게을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_honorific_recipient_kke",
+      "target_type": "particle_function",
+      "canonical_form": "께",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "mark_honored_recipient"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "께의 mark_honored_recipient 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "께을 사용해 mark_honored_recipient을 수행한다"
+        ],
+        "reading": [
+          "문장에서 께을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 께을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_honored_recipient을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`께`은/는 초급 학습자가 mark_honored_recipient을 수행할 때 사용하는 항목이다.",
+        "en": "`께` helps a beginner perform the function: mark_honored_recipient."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "께의 형태 결합을 잘못함",
+        "께을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "께을 사용해 mark_honored_recipient을 수행한다.",
+          "짧은 문장에서 께을 알아듣는다.",
+          "질문에 께을 사용해 답한다.",
+          "새 상황에서 께을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 께",
+          "일상 대화: 께",
+          "역할극 전이: 께"
+        ],
+        "contrasts": [
+          "께 사용 / 형태를 생략한 표현",
+          "께 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 께의 결합 위치를 바꿈",
+          "오류: 께을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_companion_hago",
+      "target_type": "particle_function",
+      "canonical_form": "하고",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_companion"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "하고의 mark_companion 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "하고을 사용해 mark_companion을 수행한다"
+        ],
+        "reading": [
+          "문장에서 하고을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 하고을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_companion을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`하고`은/는 초급 학습자가 mark_companion을 수행할 때 사용하는 항목이다.",
+        "en": "`하고` helps a beginner perform the function: mark_companion."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "하고의 형태 결합을 잘못함",
+        "하고을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "하고을 사용해 mark_companion을 수행한다.",
+          "짧은 문장에서 하고을 알아듣는다.",
+          "질문에 하고을 사용해 답한다.",
+          "새 상황에서 하고을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 하고",
+          "일상 대화: 하고",
+          "역할극 전이: 하고"
+        ],
+        "contrasts": [
+          "하고 사용 / 형태를 생략한 표현",
+          "하고 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 하고의 결합 위치를 바꿈",
+          "오류: 하고을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_companion_rang",
+      "target_type": "particle_function",
+      "canonical_form": "(이)랑",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_colloquial_companion"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "(이)랑의 mark_colloquial_companion 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "(이)랑을 사용해 mark_colloquial_companion을 수행한다"
+        ],
+        "reading": [
+          "문장에서 (이)랑을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 (이)랑을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_colloquial_companion을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`(이)랑`은/는 초급 학습자가 mark_colloquial_companion을 수행할 때 사용하는 항목이다.",
+        "en": "`(이)랑` helps a beginner perform the function: mark_colloquial_companion."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "(이)랑의 형태 결합을 잘못함",
+        "(이)랑을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "(이)랑을 사용해 mark_colloquial_companion을 수행한다.",
+          "짧은 문장에서 (이)랑을 알아듣는다.",
+          "질문에 (이)랑을 사용해 답한다.",
+          "새 상황에서 (이)랑을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: (이)랑",
+          "일상 대화: (이)랑",
+          "역할극 전이: (이)랑"
+        ],
+        "contrasts": [
+          "(이)랑 사용 / 형태를 생략한 표현",
+          "(이)랑 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: (이)랑의 결합 위치를 바꿈",
+          "오류: (이)랑을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_with_wa_gwa",
+      "target_type": "particle_function",
+      "canonical_form": "와/과",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "connect_nouns_formally"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "와/과의 connect_nouns_formally 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "와/과을 사용해 connect_nouns_formally을 수행한다"
+        ],
+        "reading": [
+          "문장에서 와/과을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 와/과을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 connect_nouns_formally을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`와/과`은/는 초급 학습자가 connect_nouns_formally을 수행할 때 사용하는 항목이다.",
+        "en": "`와/과` helps a beginner perform the function: connect_nouns_formally."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "와/과의 형태 결합을 잘못함",
+        "와/과을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "와/과을 사용해 connect_nouns_formally을 수행한다.",
+          "짧은 문장에서 와/과을 알아듣는다.",
+          "질문에 와/과을 사용해 답한다.",
+          "새 상황에서 와/과을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 와/과",
+          "일상 대화: 와/과",
+          "역할극 전이: 와/과"
+        ],
+        "contrasts": [
+          "와/과 사용 / 형태를 생략한 표현",
+          "와/과 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 와/과의 결합 위치를 바꿈",
+          "오류: 와/과을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_also_do",
+      "target_type": "particle_function",
+      "canonical_form": "도",
+      "level": {
+        "primary_band": "A0",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_intro",
+          "nuri_sejong_korean_1a"
+        ]
+      },
+      "functions": [
+        "mark_addition"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "도의 mark_addition 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "도을 사용해 mark_addition을 수행한다"
+        ],
+        "reading": [
+          "문장에서 도을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 도을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_addition을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`도`은/는 초급 학습자가 mark_addition을 수행할 때 사용하는 항목이다.",
+        "en": "`도` helps a beginner perform the function: mark_addition."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "도의 형태 결합을 잘못함",
+        "도을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "도을 사용해 mark_addition을 수행한다.",
+          "짧은 문장에서 도을 알아듣는다.",
+          "질문에 도을 사용해 답한다.",
+          "새 상황에서 도을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 도",
+          "일상 대화: 도",
+          "역할극 전이: 도"
+        ],
+        "contrasts": [
+          "도 사용 / 형태를 생략한 표현",
+          "도 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 도의 결합 위치를 바꿈",
+          "오류: 도을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_intro",
+        "nuri_sejong_korean_1a"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_intro",
+          "locator_ref": "official_content_scope",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_only_man",
+      "target_type": "particle_function",
+      "canonical_form": "만",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_exclusion"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "만의 mark_exclusion 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "만을 사용해 mark_exclusion을 수행한다"
+        ],
+        "reading": [
+          "문장에서 만을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 만을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_exclusion을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`만`은/는 초급 학습자가 mark_exclusion을 수행할 때 사용하는 항목이다.",
+        "en": "`만` helps a beginner perform the function: mark_exclusion."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "만의 형태 결합을 잘못함",
+        "만을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "만을 사용해 mark_exclusion을 수행한다.",
+          "짧은 문장에서 만을 알아듣는다.",
+          "질문에 만을 사용해 답한다.",
+          "새 상황에서 만을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 만",
+          "일상 대화: 만",
+          "역할극 전이: 만"
+        ],
+        "contrasts": [
+          "만 사용 / 형태를 생략한 표현",
+          "만 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 만의 결합 위치를 바꿈",
+          "오류: 만을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_from_buteo",
+      "target_type": "particle_function",
+      "canonical_form": "부터",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_start"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "부터의 mark_start 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "부터을 사용해 mark_start을 수행한다"
+        ],
+        "reading": [
+          "문장에서 부터을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 부터을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_start을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`부터`은/는 초급 학습자가 mark_start을 수행할 때 사용하는 항목이다.",
+        "en": "`부터` helps a beginner perform the function: mark_start."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "부터의 형태 결합을 잘못함",
+        "부터을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "부터을 사용해 mark_start을 수행한다.",
+          "짧은 문장에서 부터을 알아듣는다.",
+          "질문에 부터을 사용해 답한다.",
+          "새 상황에서 부터을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 부터",
+          "일상 대화: 부터",
+          "역할극 전이: 부터"
+        ],
+        "contrasts": [
+          "부터 사용 / 형태를 생략한 표현",
+          "부터 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 부터의 결합 위치를 바꿈",
+          "오류: 부터을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_until_kkaji",
+      "target_type": "particle_function",
+      "canonical_form": "까지",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_end"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "까지의 mark_end 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "까지을 사용해 mark_end을 수행한다"
+        ],
+        "reading": [
+          "문장에서 까지을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 까지을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_end을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`까지`은/는 초급 학습자가 mark_end을 수행할 때 사용하는 항목이다.",
+        "en": "`까지` helps a beginner perform the function: mark_end."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "까지의 형태 결합을 잘못함",
+        "까지을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "까지을 사용해 mark_end을 수행한다.",
+          "짧은 문장에서 까지을 알아듣는다.",
+          "질문에 까지을 사용해 답한다.",
+          "새 상황에서 까지을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 까지",
+          "일상 대화: 까지",
+          "역할극 전이: 까지"
+        ],
+        "contrasts": [
+          "까지 사용 / 형태를 생략한 표현",
+          "까지 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 까지의 결합 위치를 바꿈",
+          "오류: 까지을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_comparison_boda",
+      "target_type": "particle_function",
+      "canonical_form": "보다",
+      "level": {
+        "primary_band": "A1",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_1a",
+          "nuri_sejong_korean_1b"
+        ]
+      },
+      "functions": [
+        "mark_comparison_standard"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "보다의 mark_comparison_standard 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "보다을 사용해 mark_comparison_standard을 수행한다"
+        ],
+        "reading": [
+          "문장에서 보다을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 보다을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_comparison_standard을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`보다`은/는 초급 학습자가 mark_comparison_standard을 수행할 때 사용하는 항목이다.",
+        "en": "`보다` helps a beginner perform the function: mark_comparison_standard."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "보다의 형태 결합을 잘못함",
+        "보다을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "보다을 사용해 mark_comparison_standard을 수행한다.",
+          "짧은 문장에서 보다을 알아듣는다.",
+          "질문에 보다을 사용해 답한다.",
+          "새 상황에서 보다을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 보다",
+          "일상 대화: 보다",
+          "역할극 전이: 보다"
+        ],
+        "contrasts": [
+          "보다 사용 / 형태를 생략한 표현",
+          "보다 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 보다의 결합 위치를 바꿈",
+          "오류: 보다을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_1a",
+        "nuri_sejong_korean_1b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_1a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_approximation_jjeum",
+      "target_type": "particle_function",
+      "canonical_form": "쯤",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "mark_approximation"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "쯤의 mark_approximation 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "쯤을 사용해 mark_approximation을 수행한다"
+        ],
+        "reading": [
+          "문장에서 쯤을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 쯤을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_approximation을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`쯤`은/는 초급 학습자가 mark_approximation을 수행할 때 사용하는 항목이다.",
+        "en": "`쯤` helps a beginner perform the function: mark_approximation."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "쯤의 형태 결합을 잘못함",
+        "쯤을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "쯤을 사용해 mark_approximation을 수행한다.",
+          "짧은 문장에서 쯤을 알아듣는다.",
+          "질문에 쯤을 사용해 답한다.",
+          "새 상황에서 쯤을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 쯤",
+          "일상 대화: 쯤",
+          "역할극 전이: 쯤"
+        ],
+        "contrasts": [
+          "쯤 사용 / 형태를 생략한 표현",
+          "쯤 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 쯤의 결합 위치를 바꿈",
+          "오류: 쯤을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_every_mada",
+      "target_type": "particle_function",
+      "canonical_form": "마다",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "mark_each"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "마다의 mark_each 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "마다을 사용해 mark_each을 수행한다"
+        ],
+        "reading": [
+          "문장에서 마다을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 마다을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_each을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`마다`은/는 초급 학습자가 mark_each을 수행할 때 사용하는 항목이다.",
+        "en": "`마다` helps a beginner perform the function: mark_each."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "마다의 형태 결합을 잘못함",
+        "마다을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "마다을 사용해 mark_each을 수행한다.",
+          "짧은 문장에서 마다을 알아듣는다.",
+          "질문에 마다을 사용해 답한다.",
+          "새 상황에서 마다을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: 마다",
+          "일상 대화: 마다",
+          "역할극 전이: 마다"
+        ],
+        "contrasts": [
+          "마다 사용 / 형태를 생략한 표현",
+          "마다 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: 마다의 결합 위치를 바꿈",
+          "오류: 마다을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "target_id": "particle_choice_na",
+      "target_type": "particle_function",
+      "canonical_form": "(이)나",
+      "level": {
+        "primary_band": "A2",
+        "confidence": "medium",
+        "source_refs": [
+          "international_standard_curriculum_report",
+          "nuri_sejong_korean_2a",
+          "nuri_sejong_korean_2b"
+        ]
+      },
+      "functions": [
+        "mark_choice_or_approximation"
+      ],
+      "situation_refs": [],
+      "prerequisites": {
+        "hard": [],
+        "soft": []
+      },
+      "complexity": {
+        "prerequisite_depth": 0,
+        "morphology_load": "medium",
+        "semantic_load": "medium",
+        "processing_load": "medium",
+        "register_load": "medium",
+        "discourse_load": "medium"
+      },
+      "skill_mastery": {
+        "listening": [
+          "(이)나의 mark_choice_or_approximation 기능을 알아듣는다"
+        ],
+        "speaking": [
+          "(이)나을 사용해 mark_choice_or_approximation을 수행한다"
+        ],
+        "reading": [
+          "문장에서 (이)나을 식별한다"
+        ],
+        "writing": [
+          "짧은 문장에 (이)나을 적용한다"
+        ],
+        "pronunciation": [],
+        "interaction": [
+          "상황에 맞게 mark_choice_or_approximation을 수행한다"
+        ]
+      },
+      "language_varieties": [
+        "standard"
+      ],
+      "explanations": {
+        "ko": "`(이)나`은/는 초급 학습자가 mark_choice_or_approximation을 수행할 때 사용하는 항목이다.",
+        "en": "`(이)나` helps a beginner perform the function: mark_choice_or_approximation."
+      },
+      "english_speaker_notes": {
+        "literal_translation_risk": "Do not map the Korean form one-to-one onto a single English word.",
+        "common_transfer_error": "English word order or directness may produce an unnatural Korean choice."
+      },
+      "common_errors": [
+        "(이)나의 형태 결합을 잘못함",
+        "(이)나을 기능이나 상황에 맞지 않게 사용함"
+      ],
+      "examples": {
+        "basic": [
+          "(이)나을 사용해 mark_choice_or_approximation을 수행한다.",
+          "짧은 문장에서 (이)나을 알아듣는다.",
+          "질문에 (이)나을 사용해 답한다.",
+          "새 상황에서 (이)나을 스스로 말한다."
+        ],
+        "situation_variants": [
+          "서비스 상황: (이)나",
+          "일상 대화: (이)나",
+          "역할극 전이: (이)나"
+        ],
+        "contrasts": [
+          "(이)나 사용 / 형태를 생략한 표현",
+          "(이)나 사용 / 다른 기능의 유사 표현"
+        ],
+        "error_examples": [
+          "오류: (이)나의 결합 위치를 바꿈",
+          "오류: (이)나을 관계와 상황에 맞지 않게 사용함"
+        ]
+      },
+      "example_refs": [],
+      "source_refs": [
+        "international_standard_curriculum_report",
+        "nuri_sejong_korean_2a",
+        "nuri_sejong_korean_2b"
+      ],
+      "source_evidence": [
+        {
+          "source_ref": "international_standard_curriculum_report",
+          "locator_ref": "curriculum_content",
+          "claim_scope": "교육 내용 범주와 초급 지도 구성의 공식 기준. 개별 A0/A1/A2 등치는 내부 추천 metadata이다."
+        },
+        {
+          "source_ref": "nuri_sejong_korean_2a",
+          "locator_ref": "official_table_of_contents",
+          "claim_scope": "공식 입문·초급 과정 배열과의 교차 확인. 자체 생성 설명과 예문을 복사 근거로 사용하지 않는다."
+        }
+      ],
+      "status": "active"
+    }
+  ]
+}

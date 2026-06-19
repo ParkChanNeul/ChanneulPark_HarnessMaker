@@ -48,6 +48,32 @@ Teacher-approved progression
 
 Culture explains why a form matters, where it is safe, and how it changes relationship distance. Grammar, vocabulary, and expressions remain cumulative skills that need retrieval, production, transfer, and delayed review. AI recommends; the teacher approves progression.
 
+## Canonical A0–A2 Language Map
+
+`domain/02_language_map/` is the fixed teaching map for grammar constructions, particle functions, register features, discourse patterns, interactional functions, core interaction chunks, phonology, and orthography. It is not a lexeme, sense, collocation, or lesson-vocabulary database.
+
+Every active lesson artifact uses one target interface:
+
+```yaml
+language_targets:
+  - target_ref: "canonical target id"
+    treatment: "new | review | retrieval | transfer | practice | carrier | defer"
+```
+
+`target_ref` resolves the target and its type through the registries. `treatment` states how the current lesson handles it. Teacher Decision Cards may use the same item shape under `candidate_language_targets` before approval.
+
+Every active artifact uses one situation interface:
+
+```yaml
+situation_scope:
+  pack_ref: "cafe_ordering"
+  sub_situation_ids: []
+```
+
+`domain/03_situations/` contains 26 active Situation Packs and six reserved workplace packs. `domain/04_profiles/` contains the general adult conversation base profile plus active and reserved overlays. Runtime selection combines the fixed map with situation need, learner evidence, prerequisites, profile rules, processing load, and teacher approval.
+
+Legacy handling is read-time only. `legacy_aliases.json` contains exact 1:1 aliases; `legacy_migrations.json` contains contextual, split, non-automatic, and manual-review cases. New artifacts may not store legacy IDs or split target fields.
+
 ## Existing Execution Modes
 
 The seven execution modes remain `build_lesson`, `render_materials`, `post_lesson_followup`, `review_outputs`, `research_to_domain`, `audit_domain`, and `partial_rerun`. Conversational routes are not execution modes.
@@ -66,9 +92,12 @@ The current specialist agents remain read-only and are registered in `references
 2. Approved documents in `domain/`
 3. Approved documents in `contracts/`
 4. Current learner evidence and approval locks
-5. Existing italki reference repository
-6. Archive and historical examples
-7. External research
+5. Verified official sources in `domain/02_language_map/source_catalog.json`
+6. Existing italki reference repository for lesson rhythm and structure only
+7. Archive and historical examples for rhythm and structure only
+8. External research
+
+The italki repository and archive are not language-map seed sources. Source IDs, titles, URLs, access dates, and review status must reflect material actually accessed. A core grammar, register, or phonology record without verified official support remains draft with low confidence and blocks completion.
 
 ## Safety Boundaries
 
@@ -91,6 +120,8 @@ The Markdown files under `tests/acceptance/` remain human-readable requirements.
 
 ```bash
 python3.11 scripts/validate_structure.py
+python3.11 scripts/validate_language_map.py
+python3.11 scripts/render_language_map_coverage.py --check
 python3.11 scripts/validate_contracts.py
 python3.11 scripts/validate_agent_boundaries.py
 python3.11 scripts/validate_semantic_contracts.py
@@ -100,5 +131,7 @@ python3.11 scripts/render_golden_assessment.py --check
 python3.11 -m unittest discover -s tests -p 'test_*.py'
 python3.11 scripts/validate_harness.py
 ```
+
+Use `python3.11 scripts/build_language_map_seed.py` only for deterministic registry maintenance, followed by both language-map validation commands and the complete harness validation chain.
 
 Use `python3.11 scripts/render_golden_assessment.py --write` only when intentionally maintaining the tracked Golden Fixture.

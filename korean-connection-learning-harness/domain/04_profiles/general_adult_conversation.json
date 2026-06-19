@@ -1,0 +1,50 @@
+{
+  "profile_id": "general_adult_conversation",
+  "profile_type": "base",
+  "status": "active",
+  "runtime_selectable": true,
+  "priority_situation_refs": [
+    "survival_basics",
+    "self_introduction",
+    "daily_routine",
+    "shopping_checkout",
+    "cafe_ordering",
+    "restaurant_ordering",
+    "transport_navigation",
+    "directions_location",
+    "housing_home",
+    "clinic_pharmacy",
+    "appointments_scheduling",
+    "emergency_problem_reporting",
+    "making_friends",
+    "small_talk",
+    "preferences_opinions",
+    "invitations_plans",
+    "family_relationships",
+    "messaging_calls",
+    "conflict_repair",
+    "delivery_pickup",
+    "banking_payment",
+    "public_services",
+    "mobile_internet",
+    "neighborhood_life",
+    "workplace_core",
+    "office_work"
+  ],
+  "skill_imbalance_hints": [],
+  "explanation_preferences": [
+    "situation-first",
+    "short bilingual clarification"
+  ],
+  "pronunciation_reading_support": [
+    "add only when the target or evidence requires it"
+  ],
+  "goal_adjustments": [
+    "prioritize reusable interaction"
+  ],
+  "default_exclusions": [
+    "private learner identity",
+    "slang by default",
+    "specialized vocabulary by default"
+  ]
+}

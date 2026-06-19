@@ -1,0 +1,25 @@
+{
+  "profile_id": "korea_resident_worker",
+  "profile_type": "overlay",
+  "status": "active",
+  "runtime_selectable": true,
+  "priority_situation_refs": [
+    "workplace_core",
+    "office_work",
+    "public_services"
+  ],
+  "skill_imbalance_hints": [],
+  "explanation_preferences": [
+    "preserve learner-safe and identity-safe framing"
+  ],
+  "pronunciation_reading_support": [
+    "adjust only from evidence"
+  ],
+  "goal_adjustments": [
+    "reprioritize situations without duplicating curriculum"
+  ],
+  "default_exclusions": [
+    "private identity assumptions",
+    "automatic level gating"
+  ]
+}

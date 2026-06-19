@@ -30,8 +30,12 @@ homework_options:
 next_lesson_options:
   - option_id: "A"
     mode: "advance | review | mixed | transfer | vocabulary_focus | listening_repair | conversation_repair"
-    new_target_candidates: []
-    prior_target_treatment: []
+    situation_scope:
+      pack_ref: "canonical situation pack id"
+      sub_situation_ids: []
+    candidate_language_targets:
+      - target_ref: "canonical target id"
+        treatment: "new | review | retrieval | transfer | practice | carrier | defer"
     reason: ""
     risk: ""
 recommendation:
@@ -48,4 +52,4 @@ status: "open | partial | ready_to_lock"
 
 ## Validation
 
-Observed and inferred claims must remain distinct. `homework_only` requires `homework_approved: true` and approval evidence. This card alone cannot authorize `next_lesson_check` or progression decisions.
+Observed and inferred claims must remain distinct. Every next-lesson option uses canonical `situation_scope` and `candidate_language_targets`; split target fields and legacy IDs are forbidden. `homework_only` requires `homework_approved: true` and approval evidence. This card alone cannot authorize `next_lesson_check` or progression decisions.
