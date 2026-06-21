@@ -1,0 +1,56 @@
+# Material Manifest
+
+```yaml
+material_manifest_id: "materials-clinic-pharmacy-001"
+run_id: "2026-06-14-build-lesson-clinic-pharmacy"
+materials:
+  - path: "00_run_handoff.md"
+    type: "other"
+    source_contract: ".agents/skills/korean-connection-orchestrator/SKILL.md"
+    intended_user: "parent"
+  - path: "01_learner_context_snapshot.md"
+    type: "review"
+    source_contract: "contracts/learner_context_snapshot.md"
+    intended_user: "reviewer"
+  - path: "02_progression_plan.md"
+    type: "review"
+    source_contract: "contracts/progression_plan.md"
+    intended_user: "reviewer"
+  - path: "03_lesson_blueprint.md"
+    type: "review"
+    source_contract: "contracts/lesson_blueprint.md"
+    intended_user: "teacher"
+  - path: "04_practice_plan.md"
+    type: "review"
+    source_contract: "contracts/practice_plan.md"
+    intended_user: "teacher"
+  - path: "05_student_deck_spec.md"
+    type: "student_deck"
+    source_contract: "contracts/student_deck_spec.md"
+    intended_user: "teacher"
+  - path: "07_student_deck.html"
+    type: "html"
+    source_contract: "05_student_deck_spec.md"
+    intended_user: "student"
+  - path: "08_design_manifest.md"
+    type: "other"
+    source_contract: "contracts/design_manifest.md"
+    intended_user: "reviewer"
+  - path: "10_render_assessment_report.md"
+    type: "review"
+    source_contract: "contracts/assessment_report.md"
+    intended_user: "reviewer"
+  - path: "11_privacy_report.md"
+    type: "review"
+    source_contract: "contracts/privacy_report.md"
+    intended_user: "reviewer"
+status: "reviewed"
+known_gaps:
+  - "No PDF export generated."
+  - "No live learner result supplied; mission completion remains unknown."
+  - "No deterministic renderer script exists yet; parent rendered this static HTML from the deck spec."
+```
+
+## Review Note
+
+This bundle completes `build_lesson` through `render_materials` for the clinic/pharmacy next lesson in the current V2 harness workspace.

@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clinic / Pharmacy Korean | Korean Connection</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23087f8c'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='24' font-family='Arial' font-weight='700' fill='white'%3EKC%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f5ef;
+      --surface: #ffffff;
+      --ink: #1c211f;
+      --muted: #5d6966;
+      --line: #d8dedb;
+      --teal: #087f8c;
+      --coral: #d94f38;
+      --green: #2f7d32;
+      --blue: #2456a6;
+      --gold: #b47b17;
+      --shadow: 0 18px 46px rgba(28, 33, 31, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        linear-gradient(135deg, rgba(8, 127, 140, 0.11), transparent 34%),
+        linear-gradient(315deg, rgba(217, 79, 56, 0.12), transparent 30%),
+        var(--paper);
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .deck-shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem clamp(1rem, 4vw, 2rem);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      min-width: 0;
+    }
+
+    .mark {
+      width: 2.35rem;
+      height: 2.35rem;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: var(--surface);
+      font-weight: 800;
+    }
+
+    .brand-text {
+      min-width: 0;
+    }
+
+    .brand-text strong,
+    .brand-text span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .brand-text strong {
+      font-size: 0.98rem;
+    }
+
+    .brand-text span {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .counter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 5.4rem;
+      height: 2.3rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .slides {
+      position: relative;
+      display: grid;
+      align-items: center;
+      padding: clamp(0.5rem, 1.2vw, 0.9rem);
+    }
+
+    .slide {
+      width: min(1120px, 100%);
+      min-height: min(620px, calc(100vh - 12rem));
+      margin: 0 auto;
+      display: none;
+      grid-template-columns: minmax(0, 1fr);
+      align-content: center;
+      gap: clamp(1rem, 2vw, 1.5rem);
+      padding: clamp(1.1rem, 4vw, 3rem);
+      border: 1px solid rgba(28, 33, 31, 0.12);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .slide.is-active {
+      display: grid;
+    }
+
+    .slide-kicker {
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: clamp(0.78rem, 1vw, 0.9rem);
+    }
+
+    .slide h1,
+    .slide h2 {
+      margin: 0;
+      max-width: 14ch;
+      font-weight: 850;
+      line-height: 1.03;
+      letter-spacing: 0;
+    }
+
+    .slide h1 {
+      font-size: clamp(2.6rem, 8vw, 6rem);
+    }
+
+    .slide h2 {
+      font-size: clamp(2.2rem, 6vw, 4.6rem);
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+      line-height: 1.42;
+    }
+
+    .phrase {
+      display: inline-block;
+      font-size: clamp(2.15rem, 6vw, 5rem);
+      line-height: 1.1;
+      font-weight: 850;
+      letter-spacing: 0;
+      word-break: keep-all;
+    }
+
+    .roman {
+      margin-top: 0.4rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
+
+    .mission-grid,
+    .tile-grid,
+    .choice-grid,
+    .role-grid {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .mission-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tile-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .choice-grid,
+    .role-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tile,
+    .choice,
+    .role {
+      min-height: 8.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .tile small,
+    .choice small,
+    .role small {
+      color: var(--muted);
+      font-weight: 750;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+
+    .tile strong,
+    .choice strong,
+    .role strong {
+      font-size: clamp(1.35rem, 3vw, 2.15rem);
+      line-height: 1.16;
+      word-break: keep-all;
+    }
+
+    .tile em,
+    .choice em,
+    .role em {
+      color: var(--muted);
+      font-style: normal;
+      line-height: 1.35;
+    }
+
+    .accent-teal {
+      border-top: 6px solid var(--teal);
+    }
+
+    .accent-coral {
+      border-top: 6px solid var(--coral);
+    }
+
+    .accent-blue {
+      border-top: 6px solid var(--blue);
+    }
+
+    .accent-green {
+      border-top: 6px solid var(--green);
+    }
+
+    .accent-gold {
+      border-top: 6px solid var(--gold);
+    }
+
+    .map {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .step {
+      min-height: 9rem;
+      padding: 1rem;
+      border-radius: 8px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .step:nth-child(1) {
+      background: var(--coral);
+    }
+
+    .step:nth-child(2) {
+      background: var(--gold);
+    }
+
+    .step:nth-child(3) {
+      background: var(--blue);
+    }
+
+    .step:nth-child(4) {
+      background: var(--teal);
+    }
+
+    .step span {
+      font-size: 0.88rem;
+      font-weight: 800;
+      opacity: 0.88;
+    }
+
+    .step strong {
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      line-height: 1.05;
+    }
+
+    .formula {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+      font-size: clamp(1.35rem, 4vw, 2.6rem);
+      font-weight: 850;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 3.4rem;
+      padding: 0.55rem 0.85rem;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .arrow {
+      color: var(--muted);
+      font-weight: 850;
+    }
+
+    .bottom-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 0.75rem clamp(1rem, 4vw, 2rem) 1.2rem;
+    }
+
+    .icon-button {
+      width: 3rem;
+      height: 3rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(28, 33, 31, 0.1);
+    }
+
+    .icon-button:disabled {
+      color: #a0aaa6;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .progress-track {
+      position: relative;
+      width: min(420px, 44vw);
+      height: 0.55rem;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(28, 33, 31, 0.12);
+    }
+
+    .progress-bar {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 0;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--teal), var(--coral));
+      transition: width 180ms ease;
+    }
+
+    .print-note {
+      display: none;
+    }
+
+    @media (max-width: 820px) {
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .counter {
+        min-width: 4.8rem;
+      }
+
+      .slide {
+        min-height: calc(100vh - 12rem);
+        padding: 1.25rem;
+      }
+
+      .mission-grid,
+      .tile-grid,
+      .choice-grid,
+      .role-grid,
+      .map {
+        grid-template-columns: 1fr;
+      }
+
+      .tile,
+      .choice,
+      .role,
+      .step {
+        min-height: 6.4rem;
+      }
+
+      .progress-track {
+        width: min(260px, 42vw);
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .topbar,
+      .bottom-nav {
+        display: none;
+      }
+
+      .deck-shell {
+        display: block;
+      }
+
+      .slides {
+        display: block;
+        padding: 0;
+      }
+
+      .slide,
+      .slide.is-active {
+        display: grid;
+        min-height: 100vh;
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        break-after: page;
+      }
+
+      .print-note {
+        display: block;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="deck-shell">
+    <header class="topbar">
+      <div class="brand" aria-label="Korean Connection">
+        <div class="mark">KC</div>
+        <div class="brand-text">
+          <strong>Clinic / Pharmacy Korean</strong>
+          <span>Say the symptom, check the next step</span>
+        </div>
+      </div>
+      <div class="counter" aria-live="polite"><span id="currentSlide">1</span> / <span id="totalSlides">14</span></div>
+    </header>
+
+    <main class="slides" aria-label="Clinic and pharmacy Korean student deck">
+      <section class="slide is-active" data-slide>
+        <div class="slide-kicker">Week 6</div>
+        <h1>Today's Mission</h1>
+        <p class="lead">Say one symptom. Ask again if needed. Check one next step.</p>
+        <div class="mission-grid">
+          <div class="tile accent-coral"><small>1</small><strong>Symptom</strong><em>머리가 아파요.</em></div>
+          <div class="tile accent-blue"><small>2</small><strong>Repeat</strong><em>다시 한 번 말해 주세요.</em></div>
+          <div class="tile accent-teal"><small>3</small><strong>Check</strong><em>이거 먹어도 돼요?</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Recall</div>
+        <h2>Week 5 Quick Check</h2>
+        <p class="lead">Start from the PT/Gym lines. Say them once without notes.</p>
+        <div class="tile-grid">
+          <div class="tile accent-teal"><small>Too fast</small><strong>천천히 해 주세요.</strong><em>Please go slowly.</em></div>
+          <div class="tile accent-blue"><small>Missed it</small><strong>다시 한 번 말해 주세요.</strong><em>Please say it one more time.</em></div>
+          <div class="tile accent-coral"><small>Pain</small><strong>아파요.</strong><em>It hurts.</em></div>
+          <div class="tile accent-green"><small>Rest</small><strong>잠깐 쉬어도 돼요?</strong><em>Can I rest for a moment?</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Map</div>
+        <h2>Clinic / Pharmacy Map</h2>
+        <p class="lead">Use the smallest useful chain first.</p>
+        <div class="map">
+          <div class="step"><span>1</span><strong>Symptom</strong><em>머리가 아파요.</em></div>
+          <div class="step"><span>2</span><strong>Time</strong><em>어제부터요.</em></div>
+          <div class="step"><span>3</span><strong>Repeat</strong><em>다시 한 번...</em></div>
+          <div class="step"><span>4</span><strong>Check</strong><em>먹어도 돼요?</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">New Chunk</div>
+        <h2>Say One Symptom</h2>
+        <div>
+          <div class="phrase">머리가 아파요.</div>
+          <div class="roman">meo-ri-ga a-pa-yo</div>
+        </div>
+        <div class="formula" aria-label="body part plus particle plus hurts">
+          <span class="chip">body part</span>
+          <span class="arrow">+</span>
+          <span class="chip">이/가</span>
+          <span class="arrow">+</span>
+          <span class="chip">아파요</span>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Transform</div>
+        <h2>Swap the Body Part</h2>
+        <div class="tile-grid">
+          <div class="tile accent-coral"><small>머리</small><strong>머리가 아파요.</strong><em>Head hurts.</em></div>
+          <div class="tile accent-coral"><small>목</small><strong>목이 아파요.</strong><em>Throat hurts.</em></div>
+          <div class="tile accent-coral"><small>배</small><strong>배가 아파요.</strong><em>Stomach hurts.</em></div>
+          <div class="tile accent-coral"><small>허리</small><strong>허리가 아파요.</strong><em>Back hurts.</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Support Chunk</div>
+        <h2>Add One Time Clue</h2>
+        <p class="lead">Keep it short. Add the time after the symptom.</p>
+        <div class="choice-grid">
+          <div class="choice accent-gold"><small>Since yesterday</small><strong>어제부터요.</strong><em>eo-je-bu-teo-yo</em></div>
+          <div class="choice accent-gold"><small>Since this morning</small><strong>오늘 아침부터요.</strong><em>o-neul a-chim-bu-teo-yo</em></div>
+          <div class="choice accent-coral"><small>Combine</small><strong>머리가 아파요. 어제부터요.</strong><em>Symptom + time.</em></div>
+          <div class="choice accent-blue"><small>Then wait</small><strong>아, 네.</strong><em>Let staff ask the next question.</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Choice</div>
+        <h2>Keep It Short</h2>
+        <p class="lead">In a clinic or pharmacy, the key fact first is helpful.</p>
+        <div class="choice-grid">
+          <div class="choice accent-green"><small>Start</small><strong>One symptom first.</strong><em>머리가 아파요.</em></div>
+          <div class="choice accent-gold"><small>Add</small><strong>One time clue.</strong><em>어제부터요.</em></div>
+          <div class="choice accent-blue"><small>Repair</small><strong>Ask again.</strong><em>다시 한 번 말해 주세요.</em></div>
+          <div class="choice accent-teal"><small>Check</small><strong>One action.</strong><em>이거 먹어도 돼요?</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Recall</div>
+        <h2>Ask Again</h2>
+        <p class="lead">If staff speech is fast, use the Week 5 repair line.</p>
+        <div>
+          <div class="phrase">다시 한 번 말해 주세요.</div>
+          <div class="roman">da-si han beon mal-hae ju-se-yo</div>
+        </div>
+        <div class="formula">
+          <span class="chip">아, 잠깐만요.</span>
+          <span class="arrow">then</span>
+          <span class="chip">다시 한 번...</span>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Transfer</div>
+        <h2>Check the Next Step</h2>
+        <div>
+          <div class="phrase">이거 먹어도 돼요?</div>
+          <div class="roman">i-geo meo-geo-do dwae-yo?</div>
+        </div>
+        <div class="tile-grid">
+          <div class="tile accent-teal"><small>먹다</small><strong>먹어도 돼요?</strong><em>Can I take/eat it?</em></div>
+          <div class="tile accent-teal"><small>마시다</small><strong>마셔도 돼요?</strong><em>Can I drink it?</em></div>
+          <div class="tile accent-teal"><small>쉬다</small><strong>쉬어도 돼요?</strong><em>Can I rest?</em></div>
+          <div class="tile accent-teal"><small>운동하다</small><strong>운동해도 돼요?</strong><em>Can I exercise?</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Choose</div>
+        <h2>Choose Your Line</h2>
+        <p class="lead">Match the moment to the shortest useful Korean.</p>
+        <div class="choice-grid">
+          <div class="choice accent-coral"><small>Staff asks what hurts</small><strong>머리가 아파요.</strong></div>
+          <div class="choice accent-gold"><small>Staff asks since when</small><strong>어제부터요.</strong></div>
+          <div class="choice accent-blue"><small>Staff speaks fast</small><strong>다시 한 번 말해 주세요.</strong></div>
+          <div class="choice accent-teal"><small>You need to check</small><strong>이거 먹어도 돼요?</strong></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Role-Play</div>
+        <h2>Pharmacy Role-Play</h2>
+        <p class="lead">Walk in. Say one symptom. Add one time clue.</p>
+        <div class="role-grid">
+          <div class="role accent-green"><small>Staff</small><strong>어디가 아프세요?</strong><em>Where does it hurt?</em></div>
+          <div class="role accent-coral"><small>You</small><strong>머리가 아파요. 어제부터요.</strong><em>Head hurts. Since yesterday.</em></div>
+          <div class="role accent-blue"><small>Staff</small><strong>이 약 드시면 돼요.</strong><em>You can take this medicine.</em></div>
+          <div class="role accent-teal"><small>You</small><strong>이거 먹어도 돼요?</strong><em>Can I take this?</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Role-Play</div>
+        <h2>Clinic Role-Play</h2>
+        <p class="lead">Staff gives an instruction. Ask again, then check one next step.</p>
+        <div class="role-grid">
+          <div class="role accent-coral"><small>You</small><strong>목이 아파요. 오늘 아침부터요.</strong></div>
+          <div class="role accent-blue"><small>Staff speaks fast</small><strong>...검사하고 기다리세요.</strong></div>
+          <div class="role accent-blue"><small>You repair</small><strong>다시 한 번 말해 주세요.</strong></div>
+          <div class="role accent-teal"><small>You check</small><strong>물 마셔도 돼요?</strong></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Transfer</div>
+        <h2>New Place, Same Skill</h2>
+        <p class="lead">The grammar tool is familiar. The situation changed.</p>
+        <div class="choice-grid">
+          <div class="choice accent-green"><small>PT / Gym</small><strong>잠깐 쉬어도 돼요?</strong><em>Can I rest for a moment?</em></div>
+          <div class="choice accent-teal"><small>Pharmacy</small><strong>이거 먹어도 돼요?</strong><em>Can I take this?</em></div>
+          <div class="choice accent-blue"><small>Same tool</small><strong>-아/어도 돼요?</strong><em>Check if one action is okay.</em></div>
+          <div class="choice accent-coral"><small>Same pressure</small><strong>Short, polite, clear.</strong><em>No long explanation first.</em></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide>
+        <div class="slide-kicker">Mission</div>
+        <h2>Tiny Mission</h2>
+        <p class="lead">Private rehearsal only. No real medical details needed.</p>
+        <div class="role-grid">
+          <div class="role accent-coral"><small>Say</small><strong>머리가 아파요. 어제부터요.</strong><em>Symptom + time.</em></div>
+          <div class="role accent-blue"><small>Ask again</small><strong>다시 한 번 말해 주세요.</strong><em>Repair.</em></div>
+          <div class="role accent-teal"><small>Check</small><strong>이거 먹어도 돼요?</strong><em>Next step.</em></div>
+          <div class="role accent-green"><small>Next lesson</small><strong>Which line came out fastest?</strong><em>Symptom, repeat, or check?</em></div>
+        </div>
+        <p class="print-note">Korean Connection student deck. Generic examples only.</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Slide navigation">
+      <button class="icon-button" id="prevSlide" type="button" aria-label="Previous slide" title="Previous slide">‹</button>
+      <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+      <button class="icon-button" id="nextSlide" type="button" aria-label="Next slide" title="Next slide">›</button>
+    </nav>
+  </div>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll("[data-slide]"));
+    const currentSlide = document.getElementById("currentSlide");
+    const totalSlides = document.getElementById("totalSlides");
+    const progressBar = document.getElementById("progressBar");
+    const prevButton = document.getElementById("prevSlide");
+    const nextButton = document.getElementById("nextSlide");
+    let index = 0;
+
+    totalSlides.textContent = String(slides.length);
+
+    function updateSlide(nextIndex) {
+      index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle("is-active", slideIndex === index);
+      });
+      currentSlide.textContent = String(index + 1);
+      progressBar.style.width = `${((index + 1) / slides.length) * 100}%`;
+      prevButton.disabled = index === 0;
+      nextButton.disabled = index === slides.length - 1;
+    }
+
+    prevButton.addEventListener("click", () => updateSlide(index - 1));
+    nextButton.addEventListener("click", () => updateSlide(index + 1));
+
+    document.addEventListener("keydown", (event) => {
+      const key = event.key;
+      if (key === "ArrowRight" || key === "PageDown") updateSlide(index + 1);
+      if (key === "ArrowLeft" || key === "PageUp") updateSlide(index - 1);
+      if (key === "Home") updateSlide(0);
+      if (key === "End") updateSlide(slides.length - 1);
+    });
+
+    updateSlide(0);
+  </script>
+</body>
+</html>
