@@ -7,10 +7,11 @@ CONTRACT_DIR = ROOT / 'contracts'
 CONVERSATION_DIR = CONTRACT_DIR / 'conversation'
 
 BASE_CONTRACTS = [
-    'lesson_request', 'learner_context_snapshot', 'learner_state_delta', 'progression_plan',
-    'lesson_blueprint', 'practice_plan', 'student_deck_spec', 'design_manifest', 'lesson_result',
-    'material_manifest', 'weekly_learning_pack', 'homework_plan', 'quizlet_plan',
-    'follow_up_message', 'next_lesson_check', 'assessment_report', 'privacy_report',
+    'lesson_request', 'lesson_vocabulary_set', 'learner_context_snapshot',
+    'learner_state_delta', 'progression_plan', 'lesson_blueprint', 'practice_plan',
+    'student_deck_spec', 'design_manifest', 'lesson_result', 'material_manifest',
+    'weekly_learning_pack', 'homework_plan', 'quizlet_plan', 'follow_up_message',
+    'next_lesson_check', 'assessment_report', 'privacy_report',
     'research_insight_proposal', 'domain_update_proposal', 'approval_state',
 ]
 

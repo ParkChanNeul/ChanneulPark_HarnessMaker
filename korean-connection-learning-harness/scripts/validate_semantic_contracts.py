@@ -162,6 +162,44 @@ NEXT_LOCK_FIELDS = [
     "teacher_notes",
     "unresolved_blockers",
 ]
+LESSON_VOCABULARY_SET_FIELDS = [
+    "lesson_vocabulary_set_id",
+    "revision",
+    "supersedes",
+    "selection_status",
+    "selection_mode",
+    "lesson_scope_lock_ref",
+    "target_pack",
+    "approved_by_teacher",
+    "approval_evidence",
+    "counts",
+    "items",
+    "created_artifact_refs",
+]
+LESSON_VOCABULARY_COUNT_FIELDS = [
+    "review",
+    "productive_core",
+    "receptive_support",
+    "homework_expansion",
+]
+LESSON_VOCABULARY_ITEM_FIELDS = [
+    "item_id",
+    "surface_form",
+    "item_type",
+    "gloss_en",
+    "role",
+    "collocations",
+    "example_ko",
+    "example_en",
+    "production_prompt",
+    "target_refs",
+    "situation_refs",
+    "notes",
+]
+LESSON_VOCABULARY_STATUSES = {"proposed", "locked", "superseded"}
+LESSON_VOCABULARY_SELECTION_MODES = {"manual", "suggest"}
+LESSON_VOCABULARY_ITEM_TYPES = {"word", "chunk", "collocation"}
+LESSON_VOCABULARY_ROLES = set(LESSON_VOCABULARY_COUNT_FIELDS)
 
 
 def validate_language_targets(
@@ -595,6 +633,193 @@ def validate_next_lesson_decision_lock(data: dict) -> list[str]:
             direction=True,
         )
     )
+    return errors
+
+
+def validate_lesson_vocabulary_set(
+    data: dict,
+    lesson_scope_lock: dict,
+    canonical_target_ids: set[str],
+) -> list[str]:
+    context = "lesson_vocabulary_set"
+    errors = require_fields(data, LESSON_VOCABULARY_SET_FIELDS, context)
+
+    revision = data.get("revision")
+    if not isinstance(revision, int) or isinstance(revision, bool) or revision < 1:
+        errors.append(f"{context}: revision must be an integer >= 1")
+
+    status = data.get("selection_status")
+    if status not in LESSON_VOCABULARY_STATUSES:
+        errors.append(f"{context}: invalid selection_status {status!r}")
+    mode = data.get("selection_mode")
+    if mode not in LESSON_VOCABULARY_SELECTION_MODES:
+        errors.append(f"{context}: invalid selection_mode {mode!r}")
+    if not isinstance(data.get("approved_by_teacher"), bool):
+        errors.append(f"{context}: approved_by_teacher must be boolean")
+
+    scope_lock_id = None
+    scope_target_ids: set[str] = set()
+    scope_new_item_count = None
+    if not isinstance(lesson_scope_lock, dict):
+        errors.append(f"{context}: lesson_scope_lock must be an object")
+    else:
+        scope_lock_id = lesson_scope_lock.get("lesson_scope_lock_id")
+        if not isinstance(scope_lock_id, str) or not scope_lock_id.strip():
+            errors.append(
+                f"{context}: lesson_scope_lock must have non-empty "
+                "lesson_scope_lock_id"
+            )
+        language_targets = lesson_scope_lock.get("language_targets")
+        if not isinstance(language_targets, list):
+            errors.append(
+                f"{context}: lesson_scope_lock.language_targets must be an array"
+            )
+        else:
+            scope_target_ids = {
+                target.get("target_ref")
+                for target in language_targets
+                if isinstance(target, dict)
+                and isinstance(target.get("target_ref"), str)
+                and target.get("target_ref").strip()
+            }
+        vocabulary_scope = lesson_scope_lock.get("vocabulary_scope")
+        if not isinstance(vocabulary_scope, dict):
+            errors.append(
+                f"{context}: lesson_scope_lock.vocabulary_scope must be an object"
+            )
+        else:
+            scope_new_item_count = vocabulary_scope.get("in_class_new_item_count")
+            if not _is_non_negative_integer(scope_new_item_count):
+                errors.append(
+                    f"{context}: lesson_scope_lock vocabulary "
+                    "in_class_new_item_count must be a non-negative integer"
+                )
+
+    scope_ref = data.get("lesson_scope_lock_ref")
+    if status == "locked":
+        if data.get("approved_by_teacher") is not True:
+            errors.append(f"{context}: locked requires approved_by_teacher true")
+        if not str(data.get("approval_evidence", "")).strip():
+            errors.append(f"{context}: locked requires non-empty approval_evidence")
+        if (
+            not isinstance(scope_ref, str)
+            or not scope_ref.strip()
+            or scope_ref != scope_lock_id
+        ):
+            errors.append(
+                f"{context}: locked requires lesson_scope_lock_ref matching "
+                "the controlling lesson_scope_lock_id"
+            )
+    elif scope_ref is not None and scope_ref != scope_lock_id:
+        errors.append(
+            f"{context}: lesson_scope_lock_ref must match the controlling "
+            "lesson_scope_lock_id when provided"
+        )
+
+    counts = data.get("counts")
+    if not isinstance(counts, dict):
+        errors.append(f"{context}: counts must be an object")
+        counts = {}
+    else:
+        errors.extend(
+            require_fields(counts, LESSON_VOCABULARY_COUNT_FIELDS, f"{context}.counts")
+        )
+    for role in LESSON_VOCABULARY_COUNT_FIELDS:
+        if role in counts and not _is_non_negative_integer(counts[role]):
+            errors.append(f"{context}.counts: {role} must be a non-negative integer")
+
+    items = data.get("items")
+    if not isinstance(items, list):
+        errors.append(f"{context}: items must be an array")
+        items = []
+
+    actual_counts = {role: 0 for role in LESSON_VOCABULARY_COUNT_FIELDS}
+    item_ids: list[str] = []
+    for index, item in enumerate(items):
+        item_context = f"{context}.items[{index}]"
+        if not isinstance(item, dict):
+            errors.append(f"{item_context}: item must be an object")
+            continue
+        errors.extend(
+            require_fields(item, LESSON_VOCABULARY_ITEM_FIELDS, item_context)
+        )
+
+        item_id = item.get("item_id")
+        if not isinstance(item_id, str) or not item_id.strip():
+            errors.append(f"{item_context}: item_id must be non-empty")
+        else:
+            item_ids.append(item_id)
+
+        for field in ["surface_form", "role", "item_type"]:
+            value = item.get(field)
+            if not isinstance(value, str) or not value.strip():
+                errors.append(f"{item_context}: {field} must be non-empty")
+
+        role = item.get("role")
+        if isinstance(role, str) and role:
+            if role not in LESSON_VOCABULARY_ROLES:
+                errors.append(f"{item_context}: invalid role {role!r}")
+            else:
+                actual_counts[role] += 1
+
+        item_type = item.get("item_type")
+        if (
+            isinstance(item_type, str)
+            and item_type
+            and item_type not in LESSON_VOCABULARY_ITEM_TYPES
+        ):
+            errors.append(f"{item_context}: invalid item_type {item_type!r}")
+
+        for field in ["collocations", "target_refs", "situation_refs"]:
+            values = item.get(field)
+            if not isinstance(values, list):
+                errors.append(f"{item_context}: {field} must be an array")
+                continue
+            if not all(isinstance(value, str) and value.strip() for value in values):
+                errors.append(
+                    f"{item_context}: {field} must contain non-empty strings"
+                )
+
+        target_refs = item.get("target_refs")
+        if isinstance(target_refs, list):
+            for target_ref in target_refs:
+                if not isinstance(target_ref, str) or not target_ref.strip():
+                    continue
+                if target_ref not in canonical_target_ids:
+                    errors.append(
+                        f"{item_context}: unknown target_ref {target_ref!r}"
+                    )
+                elif target_ref not in scope_target_ids:
+                    errors.append(
+                        f"{item_context}: target_ref {target_ref!r} is not in "
+                        "the controlling Lesson Scope Lock"
+                    )
+
+    if len(item_ids) != len(set(item_ids)):
+        errors.append(f"{context}: item_id values must be unique")
+
+    for role in LESSON_VOCABULARY_COUNT_FIELDS:
+        if _is_non_negative_integer(counts.get(role)) and counts[role] != actual_counts[role]:
+            errors.append(
+                f"{context}: {role} role count {actual_counts[role]} does not "
+                f"match counts.{role} {counts[role]}"
+            )
+
+    productive_count = counts.get("productive_core")
+    receptive_count = counts.get("receptive_support")
+    if (
+        _is_non_negative_integer(productive_count)
+        and _is_non_negative_integer(receptive_count)
+        and _is_non_negative_integer(scope_new_item_count)
+        and productive_count + receptive_count != scope_new_item_count
+    ):
+        errors.append(
+            f"{context}: productive_core + receptive_support must equal "
+            "Lesson Scope Lock in_class_new_item_count"
+        )
+
+    if not isinstance(data.get("created_artifact_refs"), list):
+        errors.append(f"{context}: created_artifact_refs must be an array")
     return errors
 
 
